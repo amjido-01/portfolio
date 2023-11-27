@@ -102,7 +102,7 @@ export const Links: React.FunctionComponent<LinksProps> = ({handleRoute, to, chi
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-3 md:p-4"
+        className="relative z-10 p-1 md:p-4"
       >
         <FiArrowRight className="text-[3rem] text-neutral-50" />
       </motion.div>
