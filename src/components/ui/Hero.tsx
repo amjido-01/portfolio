@@ -64,7 +64,7 @@ export const Hero: React.FunctionComponent  = () => {
           <Button size="lg" className='text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.56019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]'>Projects</Button>
         </div>
         <div className="down">
-          <SmDownArrow className='w-[2.7rem] h-[2.7rem] mx-auto mt-[7.37rem] block md:hidden' />
+          <SmDownArrow className=' w-[3.2rem] h-[3.2rem] pl-[1px] mx-auto mt-[7.37rem] block md:hidden' />
           <LgDownArrow className='hidden  md:block w-[4rem] h-[4rem]'/>
         </div>
       </div>
