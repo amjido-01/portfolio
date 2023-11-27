@@ -22,7 +22,7 @@ export function Test({ animationDuration = 5, ...props }: TestProps) {
      duration: animationDuration,
      ease: "linear",
      times: [0, 0.5, 1], 
-     repeat: Infinity,
+     repeat: 4,
     }}
         >
       <path d="M440 60l120 336h320L618 592l94 348-272-208-272 208 94-348L0 396h320L440 60" />

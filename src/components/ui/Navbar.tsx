@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import {useNavigate} from "react-router-dom"
 import {Links} from "./Links"
-import logo from "../../assets/logo.png"
-import smlogo from "../../assets/smlogo.png"
+import logo from "@/assets/logo.png"
+import smlogo from "@/assets/smlogo.png"
 import { LgMenu } from "./LgMenu";
 import { SmMenu } from "./SmMenu";
 import {X} from "./X"
@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="header bg-transparent fixed px-2 h-[5rem] sm:px-4 py-2 md:py-[3rem] z-20 top-0 left-0 box-shadow w-full flex items-center"
+      className="header bg-transparent fixed shadow-sm px-2 h-[5rem] sm:px-4 py-2 md:py-[3rem] z-20 top-0 left-0 box-shadow w-full flex items-center"
     >
       <div className="wrapper order-2 w-[95%] md:w-[90%] flex items-center justify-between mx-auto">
 
