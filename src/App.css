@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 780px) {
   .test {
-    background-image: url("./assets/LgHero.jpg");
+    background-image: url("./assets/LgHero _.png");
     /* background-position: inherit; */
     background-attachment: fixed;
     /* background-position-y: -90px; */
