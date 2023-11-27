@@ -2,37 +2,18 @@ import React from 'react';
 import {Button} from "./button";
 import { LgDownArrow } from './LgDownArrow';
 import { SmDownArrow } from './SmDownArrow';
-import union from "../../assets/union.svg"
+
 import smUnion from "../../assets/smUnion.svg";
 import lgUnion from "../../assets/lgUnion.svg"
-// import { MdStars } from './MdStarts';
-import { Start } from './Star';
+
 import {Test } from "./Test"
-import Star from "../../assets/Star.svg"
-// import Typed from "typed.js";
-// import { useEffect } from 'react';
+
 export const Hero: React.FunctionComponent  = () => {
-  //  useEffect(() => {
-  //   const options = {
-  //     strings: [
-  //       "Reality",
-  //       "Existence",
-  //       "Virtual Realm"
-  //     ],
-  //     typeSpeed: 50,
-  //     backSpeed: 50,
-  //     smartBackspace: true,
-  //     loop: true,
-  //   };
-  //   const typed = new Typed("#target", options);
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+ 
   return (
     <div
     className="hero test text-white pt-20 relative overflow-hidden">
-      {/* <img src={union} className='absolute -top-[16rem] -right-24' alt="" /> */}
+     
       <img src={smUnion} alt="" className='absolute top-0 right-0 block sm:hidden'/>
    
       <img src={lgUnion} className='absolute hidden sm:block -top-[4rem] -right-[14rem] md:-top-8 md:-right-[10rem] lg:right-0' />
@@ -40,8 +21,7 @@ export const Hero: React.FunctionComponent  = () => {
         <div className="text-center mx-auto text-[#fff]">
           <div className='relative w-[19rem] md:w-[46.375rem] border2 md:h-[7.8125rem] mx-auto'>
 
-            {/* <img src={Star} alt="" className='border-2'/> */}
-            {/* <Start className='absolute -left-4 -top-7 border-2'/> */}
+       
             
             <div className='border2 w-fit'>
               <Test animationDuration={8} className='absolute -left-16 -top-20 mx-auto w-[2rem] h-[2rem]'/>
