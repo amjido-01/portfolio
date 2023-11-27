@@ -36,7 +36,7 @@
 }
 
 .test {
-  background-image: url("./assets/smHero.png");
+  background-image: url("./assets/heroMobile_.png");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 780px) {
   .test {
-    background-image: url("./assets/LgHero _.png");
+    background-image: url("./assets/heroDesktop.png");
     /* background-position: inherit; */
     background-attachment: fixed;
     /* background-position-y: -90px; */
