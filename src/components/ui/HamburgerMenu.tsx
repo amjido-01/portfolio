@@ -35,11 +35,11 @@ export const HamburgerMenu:React.FunctionComponent = () => {
 
         <div
           className={`nav-menu h-screen bg-[#141835] text-[18px] font-normal text-black overflow-hidden list-none z-10 ${
-            isMenuOpen ? "active border-2" : ""
+            isMenuOpen ? "active" : ""
           } `}
         >
           <ul
-            className="border-2 h-m"
+            className="h-m"
           >
             <li className="my-[2.5rem] ml-20 hover:text-[#086d57]">
               <a href="#" className="" onClick={closeMenu}>
@@ -72,7 +72,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
         </div>
 
         <div
-          className={`hamburger flex justify-center w-[1.375rem] h-[1.375rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[10px] md:p-[8px] border-[2px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
+          className={`hamburger flex justify-center w-[1.575rem] h-[1.575rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[10px] md:p-[8px] border-[2px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
          <div className="borde flex flex-col gap-1 justify-center items-center dd">
