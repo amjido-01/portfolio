@@ -2,6 +2,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #57585b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #192546;
+}
+
 .style {
   font-style: normal;
 }
@@ -44,15 +62,81 @@
   background-size: cover;
 }
 
+.bar {
+  display: block;
+  width: 20px;
+  border-radius: 25%;
+  height: 2.3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.menu-open {
+  overflow: hidden;
+}
+
+.head.active {
+  z-index: 100;
+}
+
+.nav-menu {
+  position: fixed;
+  /* border: 2px solid red; */
+  right: -100%;
+  top: 6rem;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  transition: 0.3s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.ok {
+  transition:  0.2s ease-in-out;
+}
+
+.nav-menu.active {
+  right: 0;
+  /* top: 0; */
+  /* z-index: 40; */
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  left: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  transform: translateY(0px) rotate(-45deg);
+}
+.hamburger.active .dd {
+  margin-bottom: 2px;
+}
+/* } */
+
 @media screen and (min-width: 780px) {
+  .nav-menu {
+    top: 6rem;
+  }
   .test {
     background-image: url("./assets/heroDesktop.png");
     /* background-position: inherit; */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* background-position-y: -90px; */
 
-    /* background-position: 50% 50%; 
-    background-repeat: no-repeat; */
+    /* background-position: 50% 50%;  */
+    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }

@@ -6,7 +6,7 @@ export const Home: React.FC = () => {
     <div
     className="bg-[#0B1121] h-screen">
       <Hero />
-      <Me />
+      {/* <Me /> */}
     </div>
   );
 };

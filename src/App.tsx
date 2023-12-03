@@ -6,11 +6,13 @@ import { Projects } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
 import { Resume } from "./pages/Resume";
 import { Home } from "./pages/Home";
+import { HamburgerMenu } from './components/ui/HamburgerMenu';
 function App() {
   return (
     <BrowserRouter>
        <div className='bg-[#0B1121] min-h-screen'>
-        <Navbar />
+        {/* <Navbar /> */}
+        {/* <HamburgerMenu /> */}
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>

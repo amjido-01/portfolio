@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
 
         <div className="logo">
           <img src={smlogo} alt="logo" className="block md:hidden w-[3.1875rem] h-[1.77081rem]"/>
-            <img src={logo} className="hidden md:block w-[5.0625rem] h-[2.8125rem]" alt="Logo" />
+            <img src={logo} className="hidden md:block w-[5.0625rem] h-[2.8125rem]" alt="Logo"/>
         </div>
 
           <div

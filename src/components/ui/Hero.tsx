@@ -8,6 +8,7 @@ import lgUnion from "@/assets/lgUnion.svg"
 // import { MdStars } from './MdStarts';
 // import { Start } from './Star';
 import {Test } from "./Test"
+import { HamburgerMenu } from './HamburgerMenu';
 // import Star from "../../assets/Star.svg"
 // import Typed from "typed.js";
 // import { useEffect } from 'react';
@@ -32,11 +33,13 @@ export const Hero: React.FunctionComponent  = () => {
   return (
     <div
     className="hero test text-white pt-20 relative overflow-hidden">
+      <HamburgerMenu />
       {/* <img src={union} className='absolute -top-[16rem] -right-24' alt="" /> */}
-      <img src={smUnion} alt="" className='absolute top-0 right-0 block sm:hidden'/>
+      <div>
+        <img src={smUnion} alt="" className='absolute top-0 right-0 block sm:hidden'/>
    
       <img src={lgUnion} className='absolute hidden sm:block -top-[4rem] -right-[14rem] md:-top-8 md:-right-[10rem] lg:right-0' />
-      <div className=' md:w-[84%] mt-[60px] md:mt-[150px] mx-auto'>
+      <div className=' md:w-[86%] mt-[60px] md:mt-[150px] mx-auto'>
         <div className="text-center mx-auto text-[#fff]">
           <div className='relative w-[19rem] md:w-[46.375rem] border2 md:h-[7.8125rem] mx-auto'>
 
@@ -70,6 +73,7 @@ export const Hero: React.FunctionComponent  = () => {
           <SmDownArrow className=' w-[3.2rem] h-[3.2rem] pl-[1px] mx-auto mt-[7rem] block md:hidden' />
           <LgDownArrow className='hidden  md:block w-[4rem] h-[4rem]'/>
         </div>
+      </div>
       </div>
     </div>
   )
