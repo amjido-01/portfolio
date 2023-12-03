@@ -67,7 +67,7 @@
   width: 10px;
   border-radius: 25%;
   height: 2px;
-  margin: 5px auto;
+  /* margin: 5px auto; */
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
@@ -114,14 +114,14 @@
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
   transform: translateY(0px) rotate(-45deg);
 }
 .hamburger.active .dd {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
 }
 /* } */
 

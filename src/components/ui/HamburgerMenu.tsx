@@ -75,7 +75,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
           className={`hamburger flex justify-center w-[1.375rem] h-[1.375rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[10px] md:p-[8px] border-[2px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
-         <div className="borde dd">
+         <div className="borde flex flex-col gap-1 justify-center items-center dd">
              <span className="bar" style={{ backgroundColor: "white" }}></span>
           <span className="bar" style={{ backgroundColor: "white" }}></span>
          </div>
