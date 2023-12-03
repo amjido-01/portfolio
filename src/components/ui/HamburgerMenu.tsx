@@ -72,7 +72,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
         </div>
 
         <div
-          className={`hamburger flex justify-center h-[2.75rem] w-[2.75rem] items-center p-[8px] border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
+          className={`hamburger flex justify-center w-[1.375rem] h-[1.375rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[10px] md:p-[8px] border-[2px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
          <div className="borde dd">

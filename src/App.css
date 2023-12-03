@@ -64,9 +64,9 @@
 
 .bar {
   display: block;
-  width: 20px;
+  width: 10px;
   border-radius: 25%;
-  height: 2.3px;
+  height: 2px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -128,6 +128,10 @@
 @media screen and (min-width: 780px) {
   .nav-menu {
     top: 6rem;
+  }
+  .bar {
+    width: 20px;
+    height: 2.3px;
   }
   .test {
     background-image: url("./assets/heroDesktop.png");
