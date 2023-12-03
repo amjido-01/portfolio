@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hero } from "@/components/ui/Hero"
-import { Me } from '@/components/ui/Me';
+// import { Me } from '@/components/ui/Me';
 export const Home: React.FC = () => {
   return (
     <div
