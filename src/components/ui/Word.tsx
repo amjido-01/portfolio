@@ -17,7 +17,7 @@ export const Word: React.FunctionComponent<wordProps> = ({value}) => {
 
   return (
     <h1
-     className='flex flex-wrap items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
+     className='flex flex-wrap justify-center md:justify-start border-2 items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
     ref={element}
     >{
         kalma.map((kalmae, index) => {
