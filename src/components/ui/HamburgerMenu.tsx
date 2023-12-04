@@ -11,10 +11,6 @@ export const HamburgerMenu:React.FunctionComponent = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add("menu-open");
