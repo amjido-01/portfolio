@@ -140,7 +140,7 @@
 .word span {
   display: block;
   height: 100%;
-  padding-left: 6px;
+  padding-left: 7px;
   animation: 8s linear infinite spin_words;
   animation-delay: 4s;
 }
@@ -172,11 +172,11 @@
   }
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
   .nav-list {
     bottom: ;
   }
-}
+} */
 
 @media screen and (min-width: 780px) {
   .nav-menu {
@@ -193,6 +193,9 @@
 
   .hamburger.active .bar:nth-child(2) {
     transform: translateY(0px) rotate(-45deg);
+  }
+  .word span {
+    padding-left: 12px;
   }
   .hero-bg {
     background-image: url("./assets/heroDesktop.png");
