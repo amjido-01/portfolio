@@ -24,7 +24,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`w-full fixed top-0 left-0 z-20 px-2 sm:px-4 md:py-[rem] ${isMenuOpen ? 'active bg-[#141835] bg-collapse right-0' : "bg-collapse"}`}>
+    <header className={`w-full absolute top-0 left-0 z-20 px-2 sm:px-4 md:py-[rem] ${isMenuOpen ? 'active bg-[#141835] bg-collapse right-0' : "bg-collapse"}`}>
 
       <nav className="w-[95%] h-[6rem] md:w-[90%] flex justify-between items-center mx-auto">
         <div>

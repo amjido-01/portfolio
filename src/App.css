@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.montserrat {
+   font-family: "Montserrat", sans-serif;
+}
+
 .style {
   font-style: normal;
 }
@@ -91,7 +95,7 @@
 } */
 
 .hero {
-  height: 100svh;
+  height: 90svh;
 }
 
 .hero-bg {
@@ -114,7 +118,7 @@
   font-weight: 400;
 }
 
-.btn button {
+.btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background: linear-gradient(93deg, #cf60d1 10.33%, #2c91ef 99.93%);
@@ -197,6 +201,9 @@
   .word span {
     padding-left: 12px;
   }
+  .hero {
+  height: 100svh;
+}
   .hero-bg {
     background-image: url("./assets/heroDesktop.png");
     /* background-position: inherit; */
