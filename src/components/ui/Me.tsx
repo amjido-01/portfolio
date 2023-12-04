@@ -6,14 +6,14 @@ import { Paragraph } from './Paragraph';
 
 export const Me: React.FunctionComponent = () => {
   return (
-    <section className='bg-[#0d1226] h-[30rem] mb-20 overflow-hidden border2 mt-20'>
+    <section className='bg-[#0d1226] h-[30re mb-20 pt-20 overflow-hidden border2'>
         <div className='md:w-[80rem] border2 mx-auto block md:flex justify-between items-center'>
 
        <div className='w-full md:w-1/2'>
          <img src={ala} className='w-[18.625rem] h-[18.625rem] border2 md:w-[30rem] md:h-[30rem] mx-auto' alt="" />
        </div>
 
-        <div className='border2 w-full md:w-1/2'>
+        <div className='border2 w-full md:w-1/2 mt-20'>
           <div className="content border2 capitalize leading-normal text-center md:text-start">
             <h2 className='montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'>Hi there, I’m Ala jido </h2>
             <Paragraph  value="a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise."/>
