@@ -7,7 +7,7 @@ import { Word } from './Word';
 
 export const Me: React.FunctionComponent = () => {
   return (
-    <section className='bg-[#0d1226] h-[30re mb-20 pt-20 overflow-hidden border2'>
+    <section className='bg-[#0d1226] h-[30re mb-20 pt-10 md:pt-20 overflow-hidden border2'>
         <div className='md:w-[80rem] border2 mx-auto block md:flex justify-between items-center'>
 
        <div className='w-full md:w-1/2'>
