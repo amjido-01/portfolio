@@ -16,8 +16,8 @@ export const Word: React.FunctionComponent<wordProps> = ({value}) => {
     const kalma = value.split(" ");
 
   return (
-    <p
-     className='flex flex-wrap items-center border2 mx-auto md:mx-0 w-[19.25rem] md:w-[31.5rem]  text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'
+    <h1
+     className='flex flex-wrap items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
     ref={element}
     >{
         kalma.map((kalmae, index) => {
@@ -27,7 +27,7 @@ export const Word: React.FunctionComponent<wordProps> = ({value}) => {
             
             return <Words key={index} range={[start, end]} progress={scrollYProgress}>{kalmae}</Words>
         })
-    }</p>
+    }</h1>
   )
 }
 

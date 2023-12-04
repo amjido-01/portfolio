@@ -3,6 +3,7 @@ import ala from "@/assets/ala.png";
 import {Button} from "./button";
 import { ReadMore } from './ReadMore';
 import { Paragraph } from './Paragraph';
+import { Word } from './Word';
 
 export const Me: React.FunctionComponent = () => {
   return (
@@ -15,7 +16,7 @@ export const Me: React.FunctionComponent = () => {
 
         <div className='border2 w-full md:w-1/2 mt-20'>
           <div className="content border2 capitalize leading-normal text-center md:text-start">
-            <h2 className='montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'>Hi there, I’m Ala jido </h2>
+            <Word value='Hi there, I’m Ala jido'/>
             <Paragraph  value="a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. My dedication to innovation and commitment to excellence are the cornerstones of my approach. Let's build something extraordinary together – your vision, my expertise."/>
              {/* <Word value="a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise."/> */}
             {/* <p className='border-2 mx-auto md:mx-0 w-[19.25rem] md:w-[31.5rem]  text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'>a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility.  My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise.</p> */}
