@@ -33,12 +33,12 @@ export const HamburgerMenu:React.FunctionComponent = () => {
         </div>
 
         <div
-          className={`nav-menu border-2 h-screen bg-[#141835] text-[18px] font-normal text-black overflow-hidden list-none z-10 ${
+          className={`nav-menu h-screen bg-[#141835] text-[18px] font-normal text-black overflow-hidden list-none z-10 ${
             isMenuOpen ? "active" : ""
           } `}
         >
           <ul
-            className="flex absolute bottom-[230px] sm:bottom-[110px] flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
+            className="flex nav-list absolute flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
           >
             <li className="">
              <Links to="/" handleRoute={(e) => {
