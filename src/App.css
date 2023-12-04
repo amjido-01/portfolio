@@ -84,9 +84,9 @@
   transition: ease-in-out 0, 5s;
 }
 /* bottom-[230px] sm:bottom-[110px]  */
-.nav-list {
-  bottom: 150px;
-}
+/* .nav-list {
+  bottom: 230px;
+} */
 
 .hero {
   height: 100svh;
