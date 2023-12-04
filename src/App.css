@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.style {
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -20,61 +24,76 @@
   background: #192546;
 }
 
-.wraps{
-    box-sizing: content-box;
-    display: flex;
-    justify-content: center;
+
+.bar {
+  display: block;
+  width: 10px;
+  border-radius: 25%;
+  height: 2px;
+  /* margin: 5px auto; */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
-.word {
+.menu-open {
   overflow: hidden;
 }
 
-.word span{
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    padding-left: 6px;
-    border: 2px solid green;
-    animation: 6s linear infinite spin_words;
-    animation-fill-mode: forwards;
+.nav-menu {
+  position: fixed;
+  /* border: 2px solid red; */
+  right: -100%;
+  top: 6rem;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  transition: 0.3s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-
-@keyframes spin_words{
-    10%{
-        transform: translateY(-112%);
-    }
-    25%{
-        transform: translateY(-100%);
-    }
-    35%{
-        transform: translateY(-212%);
-    }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-312%);
-    }
-    75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-412%);
-    }
-    100%{
-        transform: translateY(-400%);
-    }
+.bg-collapse {
+  transition: 0.2s ease-in-out;
 }
 
-.style {
-  font-style: normal;
+.nav-menu.active {
+  right: 0;
+  /* top: 0; */
+  /* z-index: 40; */
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  left: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  transform: translateY(0px) rotate(-45deg);
+}
+.hamburger.active .dd {
+  margin-bottom: 7px;
+  transition: ease-in-out 0, 5s;
 }
 
 .hero {
   height: 100svh;
-  /* border: 1px solid red; */
+}
+
+.hero-bg {
+  background-image: url("./assets/heroMobile_.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* border: 1px solid white; */
+  background-size: cover;
 }
 
 .intro {
@@ -102,77 +121,51 @@
   color: transparent;
 }
 
-.test {
-  background-image: url("./assets/heroMobile_.png");
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  /* border: 1px solid white; */
-  background-size: cover;
+
+.spin-text-container {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
 }
 
-.bar {
-  display: block;
-  width: 10px;
-  border-radius: 25%;
-  height: 2px;
-  /* margin: 5px auto; */
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
-
-.menu-open {
+.word {
   overflow: hidden;
 }
 
-.head.active {
-  z-index: 100;
-}
-
-.nav-menu {
-  position: fixed;
-  /* border: 2px solid red; */
-  right: -100%;
-  top: 6rem;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  height: 100vh;
-  transition: 0.3s;
-  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-}
-
-.ok {
-  transition:  0.2s ease-in-out;
-}
-
-.nav-menu.active {
-  right: 0;
-  /* top: 0; */
-  /* z-index: 40; */
-}
-
-.hamburger {
+.word span {
   display: block;
-  cursor: pointer;
+  height: 100%;
+  padding-left: 6px;
+  animation: 8s linear infinite spin_words;
+  animation-delay: 4s;
 }
 
-.hamburger.active {
-  left: 0;
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
 }
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  transform: translateY(0px) rotate(-45deg);
-}
-.hamburger.active .dd {
-  margin-bottom: 7px;
-  transition: ease-in-out 0,5s;
-}
-/* } */
 
 @media screen and (min-width: 780px) {
   .nav-menu {
@@ -182,7 +175,7 @@
     width: 20px;
     height: 2.3px;
   }
-  .test {
+  .hero-bg {
     background-image: url("./assets/heroDesktop.png");
     /* background-position: inherit; */
     /* background-attachment: fixed; */

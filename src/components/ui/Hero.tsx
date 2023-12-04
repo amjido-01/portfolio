@@ -8,31 +8,12 @@ import lgUnion from "@/assets/lgUnion.svg"
 // import { MdStars } from './MdStarts';
 // import { Start } from './Star';
 import { HamburgerMenu } from './HamburgerMenu';
-import {Test } from "./Test"
+import {Test } from "./Test";
 // import Star from "../../assets/Star.svg"
-// import Typed from "typed.js";
-// import { useEffect } from 'react';
 export const Hero: React.FunctionComponent  = () => {
-  //  useEffect(() => {
-  //   const options = {
-  //     strings: [
-  //       "Reality",
-  //       "Existence",
-  //       "Virtual Realm"
-  //     ],
-  //     typeSpeed: 50,
-  //     backSpeed: 50,
-  //     smartBackspace: true,
-  //     loop: true,
-  //   };
-  //   const typed = new Typed("#target", options);
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
   return (
     <div
-    className="hero test text-white pt-20 relative overflow-hidden">
+    className="hero hero-bg text-white pt-20 relative overflow-hidden">
       <HamburgerMenu />
       {/* <img src={union} className='absolute -top-[16rem] -right-24' alt="" /> */}
    <div>
@@ -59,20 +40,26 @@ export const Hero: React.FunctionComponent  = () => {
 
               <h1 className=' intro text-[1.5rem] md:text-[3.25rem] leading-[120%] uppercase'>Transforming Ideas</h1>
 
-            <div className='text-center wraps h-[30px] md:h-[60px] intro text-[1.5rem] md:text-[3.25rem] leading-[120%] uppercase'>
+            <div className='text-center spin-text-container h-[30px] md:h-[60px] intro text-[1.5rem] md:text-[3.25rem] leading-[120%] uppercase'>
               <h1 className=''>into Digital</h1>
-              <div className='word overflow-hidden'>
+              <div className='word text-start'>
                 <span
             className='gradient-text'>Reality
             </span>
                 <span 
-              id="target"
             className='gradient-text'>Experience
             </span>
+
                 <span 
-              id="target"
             className='gradient-text'>Solution
             </span>
+                <span 
+            className='gradient-text'>Excellence
+            </span>
+                <span 
+            className='gradient-text'>Innovation
+            </span>
+
               </div>
             </div>
 

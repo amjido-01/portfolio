@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
-import logo from "@/assets/logo.png"
-import smlogo from "@/assets/smlogo.png"
+import logo from "@/assets/logo.png";
+import smlogo from "@/assets/smlogo.png";
+import { Links } from './Links';
+import { useNavigate } from "react-router-dom";
 export const HamburgerMenu:React.FunctionComponent = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -25,7 +28,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`w-full head fixed top-0 left-0 z-20 px-2 sm:px-4 md:py-[rem] ${isMenuOpen ? 'active bg-[#141835] ok right-0' : "ok"}`}>
+    <header className={`w-full fixed top-0 left-0 z-20 px-2 sm:px-4 md:py-[rem] ${isMenuOpen ? 'active bg-[#141835] bg-collapse right-0' : "bg-collapse"}`}>
 
       <nav className="w-[95%] h-[6rem] md:w-[90%] flex justify-between items-center mx-auto">
         <div>
@@ -39,34 +42,67 @@ export const HamburgerMenu:React.FunctionComponent = () => {
           } `}
         >
           <ul
-            className="h-m"
+            className="flex border-2 flex-col justify-end md:p-4 w-[70%] md:w-[60%] mt-[400px] ml-[80px] md:mt-[90px] md:ml-[100px] md:mb-[100px"
           >
-            <li className="my-[2.5rem] ml-20 hover:text-[#086d57]">
-              <a href="#" className="" onClick={closeMenu}>
-                <i className="fa fa-home" style={{ marginRight: "4px" }}></i>
+            <li className="">
+             <Links to="/" handleRoute={(e) => {
+              e.preventDefault()
+              navigate("/")
+              toggleMenu()
+             }}>
                 Home
-              </a>
+              </Links>
             </li>
 
-            <li className="my-[2.5rem]">
-              <a href="#" className="" onClick={closeMenu}>
-                <i className="fa fa-group" style={{ marginRight: "4px" }}></i>
+            <li className="">
+              <Links
+                to="/projects"
+               handleRoute={(e) => {
+              e.preventDefault()
+              navigate("/projects")
+              toggleMenu()
+             }}
+              >
+                Projects
+              </Links>
+            </li>
+
+            <li className="">
+               <Links
+                to="/about"
+               handleRoute={(e) => {
+              e.preventDefault()
+              navigate("/about")
+              toggleMenu()
+             }}
+              >
                 About
-              </a>
+              </Links>
             </li>
 
-            <li className="my-[2.5rem]">
-              <a href="#" className="" onClick={closeMenu}>
-                <i className="fa fa-bell" style={{ marginRight: "4px" }}></i>
-                Notification
-              </a>
+            <li className="">
+                 <Links
+                to="/blogs"
+               handleRoute={(e) => {
+              e.preventDefault()
+              navigate("/blogs")
+              toggleMenu()
+             }}
+              >
+                Projects
+              </Links>
             </li>
-
-            <li className="my-[2.5rem]">
-              <a href="#" className="" onClick={closeMenu}>
-                <i className="fa fa-phone" style={{ marginRight: "4px" }}></i>
-                Contact
-              </a>
+            <li className="">
+                 <Links
+                to="/resume"
+               handleRoute={(e) => {
+              e.preventDefault()
+              navigate("/resume")
+              toggleMenu()
+             }}
+              >
+                Resume
+              </Links>
             </li>
           </ul>
         </div>

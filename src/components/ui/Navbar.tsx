@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
              className="close mt-8 right-16 block md:hidden cursor-pointer font-medium text-[40px] leading-5 not-italic absolute"/>
             </div>
           )}
-          <ul className="flex flex-col justify-end md:p-4 w-[70%] md:w-[60%] mt-[400px] ml-[80px] md:mt-[100px] md:ml-[100px] md:mb-[100px]">
+          <ul className="flex border-2 flex-col justify-end md:p-4 w-[70%] md:w-[60%] mt-[400px] ml-[80px] md:mt-[100px] md:ml-[100px] md:mb-[100px]">
             <li className="">
              <Links to="/" handleRoute={(e) => {
               e.preventDefault()
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
                 to="/blogs"
                handleRoute={(e) => {
                 e.preventDefault()
-                navigate("blogs")
+                navigate("/blogs")
                 setActive(false)
                }}
               >
@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
                 to="/resume"
                handleRoute={(e) => {
                 e.preventDefault()
-                navigate("resume")
+                navigate("/resume")
                 setActive(false)
                }}
               >
