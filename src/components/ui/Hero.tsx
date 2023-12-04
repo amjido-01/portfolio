@@ -19,7 +19,7 @@ export const Hero: React.FunctionComponent  = () => {
    <div>
        <img src={smUnion} alt="" className='absolute top-0 right-0 block sm:hidden'/>
    
-      <img src={lgUnion} className='absolute hidden sm:block -top-[4rem] -right-[14rem] md:-top-8 md:-right-[10rem] lg:right-0' />
+      <img src={lgUnion} className='absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-8 md:-right-[10rem] lg:right-0' />
       <div className=' md:w-[86%] mt-[60px] md:mt-[150px] mx-auto'>
         <div className="text-center mx-auto text-[#fff]">
           <div className='relative w-[20rem] md:w-[46.375rem] md:h-[7.8125rem] mx-auto'>

@@ -1,5 +1,8 @@
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .style {
@@ -24,10 +27,9 @@
   background: #192546;
 }
 
-
 .bar {
   display: block;
-  width: 10px;
+  width: 12px;
   border-radius: 25%;
   height: 2px;
   /* margin: 5px auto; */
@@ -125,7 +127,6 @@
   color: transparent;
 }
 
-
 .spin-text-container {
   box-sizing: content-box;
   display: flex;
@@ -184,6 +185,14 @@
   .bar {
     width: 20px;
     height: 2.3px;
+    border-radius: 25%;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateY(0px) rotate(-45deg);
   }
   .hero-bg {
     background-image: url("./assets/heroDesktop.png");
