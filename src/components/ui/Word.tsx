@@ -17,7 +17,7 @@ export const Word: React.FunctionComponent<wordProps> = ({value}) => {
 
   return (
     <h1
-     className='flex flex-wrap w-[70%] mx-auto md:mx-0 items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
+     className='flex flex-wrap w-[90%] mx-auto md:mx-0 items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
     ref={element}
     >{
         texts.map((text, index) => {

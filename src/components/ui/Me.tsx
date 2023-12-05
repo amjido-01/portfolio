@@ -22,7 +22,7 @@ export const Me: React.FunctionComponent = () => {
             {/* <p className='border-2 mx-auto md:mx-0 w-[19.25rem] md:w-[31.5rem]  text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'>a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility.  My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise.</p> */}
           </div>
           
-          <div className="footer flex mt-[1.875rem] gap-[1.875rem] w-[70%] mx-auto md:mx-0 border-2">
+          <div className="footer flex mt-[1.875rem] gap-[1.875rem] w-[90%] mx-auto md:mx-0 border-2">
              <Button size="lg" className='btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]'>Download CV</Button>
              <Button size="lg" variant="link" className='border-b-2 text-[#fff] border2 flex gap-4 py-[0.75rem] px-[2.5rem] rounded-none md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2rem]'><span>Read More</span> <ReadMore /> </Button>
           </div>
