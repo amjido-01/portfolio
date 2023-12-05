@@ -10,22 +10,22 @@ export const Word: React.FunctionComponent<wordProps> = ({value}) => {
     const element = useRef(null);
     const { scrollYProgress } = useScroll({
         target: element,
-        offset: ["start end", "start start"]
+        offset: ["start 0.5", "start start"]
     })
 
-    const kalma = value.split(" ");
+    const texts = value.split(" ");
 
   return (
     <h1
-     className='flex flex-wrap justify-center md:justify-start items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
+     className='flex flex-wrap w-[70%] mx-auto md:mx-0 items-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-bold style'
     ref={element}
     >{
-        kalma.map((kalmae, index) => {
-            const start = index / kalma.length;
-            const end = start + (1 / kalma.length);
+        texts.map((text, index) => {
+            const start = index / texts.length;
+            const end = start + (1 / texts.length);
             console.log([start, end]);
             
-            return <Words key={index} range={[start, end]} progress={scrollYProgress}>{kalmae}</Words>
+            return <Words key={index} range={[start, end]} progress={scrollYProgress}>{text}</Words>
         })
     }</h1>
   )
