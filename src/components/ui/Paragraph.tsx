@@ -14,7 +14,7 @@ export const Paragraph: React.FunctionComponent<paragraphProps> = ({value}) => {
 
 
   return (
-    <motion.p className='border-2 mx-auto md:mx-0 w-[90%] md:w-[90%] text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'
+    <motion.p className='border-2 mx-auto md:mx-0 w-full px-5 md:w-[90%] text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'
     ref={element}
     style={{opacity: scrollYProgress}}
     >{value}</motion.p>
