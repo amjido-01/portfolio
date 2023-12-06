@@ -99,8 +99,8 @@
 } */
 
 .hero-bg {
-  background-image: url("./assets/bg.png");
-  /* background-position-y: -300px; */
+  background-image: url("./assets/sm-bg.png");
+  background-position-y: -150px;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,8 +133,6 @@
 
 .spin-text-container {
   box-sizing: content-box;
-  display: flex;
-  justify-content: center;
 }
 
 .word {
@@ -147,6 +145,9 @@
   padding-left: 7px;
   animation: 8s linear infinite spin_words;
   animation-delay: 4s;
+   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 @keyframes spin_words {
