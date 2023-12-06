@@ -113,7 +113,7 @@
 }
 
 .sub-intro {
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -142,7 +142,7 @@
 .word span {
   display: block;
   height: 100%;
-  padding-left: 7px;
+  padding-left: 0px;
   animation: 8s linear infinite spin_words;
   animation-delay: 4s;
    font-family: "Montserrat", sans-serif;
@@ -203,7 +203,7 @@
     padding-left: 12px;
   }
   .hero-bg {
-    background-image: url("./assets/bg.png");
+    background-image: url("./assets/lg-bg.png");
     /* background-position: inherit; */
     /* background-attachment: fixed; */
     /* background-position-y: -90px; */
