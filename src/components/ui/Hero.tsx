@@ -2,21 +2,22 @@ import React from 'react';
 import {Button} from "./button";
 import { LgDownArrow } from './LgDownArrow';
 import { SmDownArrow } from './SmDownArrow';
-import smUnion from "@/assets/smUnion.svg";
-import lgUnion from "@/assets/lgUnion.svg"
+// import smUnion from "@/assets/smUnion.svg";
+// import lgUnion from "@/assets/lgUnion.svg"
 import { HamburgerMenu } from './HamburgerMenu';
 import { Intro } from './Intro';
 import { SubIntro } from './SubIntro';
+import { Me } from './Me';
 export const Hero: React.FunctionComponent  = () => {
   return (
     <div
-    className="hero hero-bg text-white pt-20 relative overflow-hidden">
+    className="hero hero-bg text-white pt-[20px] border2 relative overflow-hidden">
       <HamburgerMenu />
    <div>
-       <img src={smUnion} alt="" className='absolute top-0 right-0 block sm:hidden'/>
+       {/* <img src={smUnion} alt="" className='absolute -top-[4rem] right-0 block sm:hidden'/> */}
    
-      <img src={lgUnion} className='absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-8 md:-right-[10rem] lg:right-0' />
-      <div className=' md:w-[86%] mt-[60px] md:mt-[150px] mx-auto'>
+      {/* <img src={lgUnion} className='absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-[7rem] md:-right-[8rem] lg:-right-[10rem]' /> */}
+      <div className=' md:w-[86%] mt-[140px] mx-auto'>
         <Intro />
           <div className='text-center'>
             <SubIntro />
@@ -31,6 +32,8 @@ export const Hero: React.FunctionComponent  = () => {
         </div>
       </div>
    </div>
+
+   <Me />
     </div>
   )
 }

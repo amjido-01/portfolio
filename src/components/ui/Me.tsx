@@ -2,24 +2,20 @@ import React from 'react';
 import ala from "@/assets/ala.png";
 import {Button} from "./button";
 import { ReadMore } from './ReadMore';
-import { Paragraph } from './Paragraph';
-import { Word } from './Word';
 
 export const Me: React.FunctionComponent = () => {
   return (
-    <section className='bg-[#0d1226] h-[30re border-2 mb-20 pt-10 md:pt-20 overflow-hidden border2'>
-        <div className='md:w-[80rem] border2 mx-auto block md:flex justify-between items-center'>
+    <section className='bg[#0d1226] border-2 h-[30re mt-[15rem] overflow-hidden border2'>
+        <div className='border-2 border-red-500 mx-auto block md:flex justify-center gap-[7.5rem] items-center'>
 
-       <div className='w-full md:w-1/2'>
-         <img src={ala} className='w-[18.625rem] h-[18.625rem] border2 md:w-[30rem] md:h-[30rem] mx-auto' alt="" />
+       <div className='w-full md:w-[30.00006rem] border-2'>
+         <img src={ala} className='border2 mx-auto' alt="" />
        </div>
 
-        <div className='border2 w-full md:w-1/2 mt-20 border-2'>
+        <div className='border2 w-full md:w-[31.5rem] mt-20 border-2'>
           <div className="content border2 capitalize leading-normal">
-            <Word value='Hi there, I’m Ala jido'/>
-            <Paragraph  value="Frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. Let's build something extraordinary – your vision, my expertise."/>
-             {/* <Word value="a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise."/> */}
-            {/* <p className='border-2 mx-auto md:mx-0 w-[19.25rem] md:w-[31.5rem]  text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'>a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility.  My dedication to innovation and commitment to excellence are the cornerstones of my approach,  Proficient in solving complex interface challenges. Let's build something extraordinary together – your vision, my expertise.</p> */}
+           
+            <p className='border2 text-[#ccc] text-[0.875rem] md:text-[1.25rem] font-normal'>a frontend developer with 2+ years' experience and a Computer Science student. Specializing in ReactJS, I'm dedicated to creating modern, user-friendly interfaces with a focus on accessibility. Let's build something extraordinary together – your vision, my expertise.</p>
           </div>
           
           <div className="footer flex mt-[1.875rem] gap-[1.875rem] w-[95%] mx-auto md:mx-0 border-2">

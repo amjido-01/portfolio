@@ -94,15 +94,15 @@
   bottom: 230px;
 } */
 
-.hero {
-  height: 100svh;
-}
+/* .hero {
+  height: 100dvh;
+} */
 
 .hero-bg {
-  background-image: url("./assets/heroMobile_.png");
-  /* background-position: center; */
+  background-image: url("./assets/bg.png");
+  /* background-position-y: -300px; */
+  background-position-x: center;
   background-repeat: no-repeat;
-  /* border: 1px solid white; */
   background-size: cover;
 }
 
@@ -201,17 +201,15 @@
   .word span {
     padding-left: 12px;
   }
-  .hero {
-  height: 100svh;
-}
   .hero-bg {
-    background-image: url("./assets/heroDesktop.png");
+    background-image: url("./assets/bg.png");
     /* background-position: inherit; */
     /* background-attachment: fixed; */
     /* background-position-y: -90px; */
 
     /* background-position: 50% 50%;  */
     /* background-repeat: no-repeat; */
+    background-position: center;
     background-size: cover;
   }
 }
