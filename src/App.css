@@ -183,6 +183,12 @@
   }
 } */
 
+@media screen and (min-width: 640px) {
+  .word span {
+    padding-left: 13px;
+  }
+}
+
 @media screen and (min-width: 780px) {
   .nav-menu {
     top: 6rem;

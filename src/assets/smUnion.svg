@@ -1,7 +1,15 @@
-   <svg width="233" height="274" viewBox="0 0 233 274" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="Union" d="M153.007 272.21C233.266 272.21 298.33 202.496 298.33 116.5C298.33 30.5036 233.266 -39.2102 153.007 -39.2102C77.6828 -39.2102 15.7437 22.1928 8.41035 100.831C11.9669 101.382 14.6993 104.662 14.6993 108.625C14.6993 112.974 11.4088 116.5 7.34967 116.5C3.29056 116.5 0 112.974 0 108.625C0 104.497 2.96436 101.111 6.73664 100.777C14.1 21.1742 76.7769 -41 153.007 -41C234.189 -41 300 29.5151 300 116.5C300 203.485 234.189 274 153.007 274C131.119 274 110.349 268.874 91.6841 259.682H95.8006C113.357 267.745 132.695 272.21 153.007 272.21Z" fill="url(#paint0_linear_260_23)"/>
+<svg width="224" height="279" viewBox="0 0 224 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Subtract">
+<path d="M62.4394 0C31.8798 25.7539 11.2008 63.2821 7.07348 105.777C3.11258 106.111 0 109.497 0 113.625C0 117.974 3.45509 121.5 7.71715 121.5C11.9792 121.5 15.4343 117.974 15.4343 113.625C15.4343 109.662 12.5652 106.382 8.83086 105.831C13.0145 63.1048 34.124 25.4663 65.2173 0H62.4394Z" fill="url(#paint0_linear_717_561)"/>
+<path d="M160.657 277.21C183.255 277.21 204.706 272.197 224 263.202V265.167C204.673 274.055 183.231 279 160.657 279C137.675 279 115.866 273.874 96.2683 264.682H100.591C119.025 272.745 139.33 277.21 160.657 277.21Z" fill="url(#paint1_linear_717_561)"/>
+</g>
 <defs>
-<linearGradient id="paint0_linear_260_23" x1="8.68597" y1="92.517" x2="-40.7006" y2="194.478" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_717_561" x1="9.12027" y1="97.517" x2="-38.7604" y2="201.312" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.627298" stop-color="white" stop-opacity="0.5"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_717_561" x1="9.12027" y1="97.517" x2="-38.7604" y2="201.312" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="0.627298" stop-color="white" stop-opacity="0.5"/>
 <stop offset="1" stop-color="white" stop-opacity="0"/>
