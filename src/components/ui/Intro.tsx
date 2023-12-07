@@ -3,7 +3,7 @@ import React from 'react';
 export const Intro: React.FunctionComponent = () => {
   return (
     <div className="mx-auto text-[#fff]">
-          <div className='relative w-[24rem] border2 md:w-[48.625rem] bord md:h-[7.8125rem] mx-auto uppercase'>
+          <div className='relative w-[20rem] border-2  md:w-[48.625rem] bord md:h-[7.8125rem] mx-auto uppercase'>
             
               <h1 className='intro borde text-[2rem] md:text-[3.25rem] leading-[120%] textcenter md:text-start'>Transforming Ideas <span className='md:hidden intro'>into Digital</span></h1>
 
