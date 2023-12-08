@@ -6,11 +6,15 @@
 }
 
 .montserrat {
-   font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .style {
   font-style: normal;
+}
+
+.balance {
+  text-wrap: balance;
 }
 
 ::-webkit-scrollbar {
@@ -114,7 +118,7 @@
 }
 
 .sub-intro {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -146,7 +150,7 @@
   padding-left: 0px;
   /* animation: 8s linear infinite spin_words; */
   animation-delay: 4s;
-   font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
@@ -184,12 +188,6 @@
   }
 } */
 
-@media screen and (min-width: 1000px) {
-  .word span {
-    padding-left: 13px;
-  }
-}
-
 @media screen and (min-width: 780px) {
   .nav-menu {
     top: 6rem;
@@ -217,5 +215,11 @@
     /* background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .word span {
+    padding-left: 13px;
   }
 }
