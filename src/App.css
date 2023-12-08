@@ -148,7 +148,7 @@
   display: block;
   height: 100%;
   padding-left: 0px;
-  /* animation: 8s linear infinite spin_words; */
+  animation: 8s linear infinite spin_words;
   animation-delay: 4s;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;

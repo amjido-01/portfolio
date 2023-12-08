@@ -3,8 +3,8 @@ import { SubIntro } from './SubIntro';
 
 export const Intro: React.FunctionComponent = () => {
   return (
-    <div className="mx-auto text-[#fff] md:border2 border-red-500">
-          <div className='relative w-[20rem] sm:w-[30rem] md:border2 md:w-[46.625rem] lg:w-[48rem] bord md:h-[7.8125rem] mx-auto uppercase'>
+    <div className="mxauto text-[#fff]">
+          <div className='relative w-[20rem] sm:w-[30rem] border2 md:w-[46.625rem] lg:w-[48rem] md:h-[7.8125rem] mx-auto uppercase'>
             
               <h1 className='intro text-[2rem] md:text-[3.25rem] leading-[120%] textcenter md:text-start'>Transforming Ideas <span className='lg:hidden intro'>into Digital</span></h1>
 
