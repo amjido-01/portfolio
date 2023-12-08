@@ -110,6 +110,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-style: normal;
+  text-wrap: balance;
 }
 
 .sub-intro {
@@ -143,7 +144,7 @@
   display: block;
   height: 100%;
   padding-left: 0px;
-  animation: 8s linear infinite spin_words;
+  /* animation: 8s linear infinite spin_words; */
   animation-delay: 4s;
    font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -183,7 +184,7 @@
   }
 } */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1000px) {
   .word span {
     padding-left: 13px;
   }
@@ -205,9 +206,7 @@
   .hamburger.active .bar:nth-child(2) {
     transform: translateY(0px) rotate(-45deg);
   }
-  .word span {
-    padding-left: 12px;
-  }
+
   .hero-bg {
     background-image: url("./assets/lg-bg.png");
     /* background-position: inherit; */
