@@ -5,7 +5,7 @@ import { ReadMore } from './ReadMore';
 
 export const Me: React.FunctionComponent = () => {
   return (
-    <section className='bg[#0d1226] border-2 h-[30re md:mt-[15rem] overflow-hidden border2'>
+    <section className='bg[#0d1226] border-2 h-[30re mt-[8rem] md:mt-[15rem] overflow-hidden border2'>
         <div className='border-2 border-red-500 mx-auto block md:flex justify-center gap-[7.5rem] items-center'>
 
        <div className='w-full md:w-[30.00006rem] border-2'>
