@@ -7,7 +7,7 @@ export const Me: React.FunctionComponent = () => {
   return (
     <section className='border-2 h-[30re mt-[10rem] md:mt-[15rem] overflow-hidden'>
 
-        <div className='mx-auto w-[90%] lg:w-[85%] flex flex-col sm:flex-col gap-[7.5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center border-2'>
+        <div className='mx-auto w-[90%] lg:w-[85%] flex flex-col sm:flex-col gap-[5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center border-2'>
 
         <div className='w-[90%] md:w-[85%] lg:w-[30.00006rem]'>
           <img src={ala} className='mx-auto' alt="my pic" />
