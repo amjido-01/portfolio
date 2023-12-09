@@ -104,7 +104,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
         </div>
 
         <div
-          className={`hamburger flex justify-center w-[1.575rem] h-[1.575rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[12px] md:p-[8px] border-[1.5px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
+          className={`hamburger flex justify-center w-[1.575rem] h-[1.575rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[12px] md:p-[8px] border-[2.75px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
          <div className="borde flex flex-col gap-1 justify-center items-center dd">
