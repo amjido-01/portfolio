@@ -9,7 +9,7 @@ export const Me: React.FunctionComponent = () => {
 
         <div className='mx-auto w-[90%] lg:w-[85%] flex flex-col sm:flex-col gap-[5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center border2'>
 
-        <div className='w-[90%] md:w-[85%] lg:w-[30.00006rem]'>
+        <div className='w-[95%] sm:w-[90%] md:w-[85%] lg:w-[30.00006rem]'>
           <img src={ala} className='mx-auto' alt="my pic" />
         </div>
 
