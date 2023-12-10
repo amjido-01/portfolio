@@ -22,7 +22,7 @@ export const Me: React.FunctionComponent = () => {
             
             <div className="footer border2 flex mt-[1.875rem] justify-between items-end md:justify-normal md:gap-[1.875rem] w-full mx-auto md:mx-0 border2">
               <Button size="lg" className='btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]'>Download CV</Button>
-              <Button size="lg" variant="link" className='border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[1rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2rem]'><span>Read More</span> <ReadMore /> </Button>
+              <Button size="lg" variant="link" className='border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[1.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2.2rem]'><span>Read More</span> <ReadMore /> </Button>
             </div>
           </div>
 
