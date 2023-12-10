@@ -24,7 +24,7 @@ export const HamburgerMenu:React.FunctionComponent = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`w-full absolute top-0 left-0 z-20 px-2 sm:px-4 py-[1.5rem] md:py-[2rem] ${isMenuOpen ? 'active bg-[#141835] bg-collapse right-0' : "bg-collapse"}`}>
+    <header className={`w-full absolute top-0 left-0 z-20 px-2 sm:px-4 py-[1.5rem] md:py-[2rem] ${isMenuOpen ? 'active bg-[141835] bg-collapse right-0' : "bg-collapse"}`}>
 
       <nav className="w-[95%] h-[6rem] md:w-[87%] flex justify-between items-center mx-auto">
         <div>
@@ -33,12 +33,12 @@ export const HamburgerMenu:React.FunctionComponent = () => {
         </div>
 
         <div
-          className={`nav-menu h-screen md:mt-2 bg-[#141835] text-[18px] font-normal text-black overflow-hidden list-none z-10 ${
+          className={`nav-menu h-screen mdmt-2 bg-[#141835] text-[18px] font-normal text-black overflow-hidden list-none z-10 ${
             isMenuOpen ? "active" : ""
           } `}
         >
           <ul
-            className="flex nav-list absolute bottom-[230px] sm:bottom-[110px] flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
+            className="flex nav-list mt-2 border-2 absolute bottom-20 md:bottom-10 flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
           >
             <li className="">
              <Links to="/" handleRoute={(e) => {
