@@ -9,7 +9,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .Poppins {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .style {
@@ -42,7 +42,7 @@
   display: block;
   width: 12px;
   border-radius: 25%;
-   height: 2.75px;
+  height: 2.75px;
   /* margin: 5px auto; */
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
