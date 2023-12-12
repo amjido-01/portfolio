@@ -50,11 +50,11 @@ export const Works: React.FunctionComponent = () => {
             {projectInfor.map((item, index) => (
               <div
                 key={item.id}
-                className={`progress-bar-segment flex-1 w-[0.1875rem] bg-white ${
-                  index === selectedProject ? 'bg-[#FFFFFF] rounded-[10px] w-[0.5rem] md:mr-5' : ''
+                className={`progress-bar-segment flex-1 w-[0.1875rem] h-[5rem] justify-center items-center bg-white ${
+                  index === selectedProject ? 'bg-[#FFFFFF] rounded-[10px] h-[5rem] w-[0.5rem] md:mr-5 mx-auto' : ''
                 }`}
                     >
-              <span className="rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] transform -translate-x-1/2 text-white flex pl items-center justify-center">{index + 1}.</span>
+              <span className="rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] transform -translate-x-1/2 text-white flex items-center justify-center">{index + 1}.</span>
               </div>
             ))}
           </div>

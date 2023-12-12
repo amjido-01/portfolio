@@ -6,7 +6,6 @@ import smUnion from "@/assets/smUnion.svg";
 import lgUnion from "@/assets/lgUnion.svg";
 import { HamburgerMenu } from './HamburgerMenu';
 import { Intro } from './Intro';
-// import { SubIntro } from './SubIntro';
 import { Me } from './Me';
 export const Hero: React.FunctionComponent  = () => {
   return (
