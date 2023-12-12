@@ -97,7 +97,6 @@
   transition: ease-in-out 0.5s;
 }
 
-
 .hero-bg {
   background-image: url("./assets/sm-bg.png");
   background-position-y: -40px;
@@ -149,6 +148,17 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+.track {
+  background: linear-gradient(116deg, #D41FE3 -6.73%, #399AFD 141.95%);;
+}
+
+.more {
+  background: linear-gradient(92deg, #cf60d1 0.1%, #399afd 105.71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes spin_words {
