@@ -54,7 +54,7 @@ export const Works: React.FunctionComponent = () => {
                   index === selectedProject ? 'bg-[#FFFFFF] rounded-[10px] w-[0.5rem] md:mr-5' : ''
                 }`}
                     >
-              <span className="rounded-full bg-red-500 w-6 h-6 transform -translate-x-1/2 text-white flex pl items-center justify-center">{index + 1}</span>
+              <span className="rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] transform -translate-x-1/2 text-white flex pl items-center justify-center">{index + 1}.</span>
               </div>
             ))}
           </div>

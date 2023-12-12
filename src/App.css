@@ -161,6 +161,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.bullet {
+  background:  linear-gradient(116deg, #D41FE3 -6.73%, #399AFD 141.95%);
+}
+
 @keyframes spin_words {
   10% {
     transform: translateY(-112%);
