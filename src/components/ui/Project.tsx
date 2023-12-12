@@ -9,10 +9,10 @@ type projectProps = {
 }
 export const Project: React.FunctionComponent<projectProps> = ({title, description, handleClick}) => {
   return (
-    <div className='border-2 border-red-500 w-full'>
-                <div className=' cursor-pointer border-2' onClick={handleClick}>
+    <div className='border2 border-red-500 w-full'>
+                <div className=' cursor-pointer border2' onClick={handleClick}>
                     <h2 className='text-[0.875rem] text-[#fff] montserrat md:text-[1.25rem] style font-bold leading-[120%] capitalize'>{title}</h2>
-                <p className='Poppins my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%]  capitalize md:w-[25.6875rem] md:h-[3.8125rem]'>{description}</p>
+                <p className='Poppins my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%]  capitalize w-[15.375rem] md:w-[25.6875rem] md:h-[3.8125rem]'>{description}</p>
                 </div>
                 <div className='flex gap-[1.36rem] md:gap-[2rem]'>
                   <Button variant="link" className='more Poppins text-[0.625rem] md:text-[0.875rem] hover:no-underline style font-bold leading-[120%]'>More Details</Button>
