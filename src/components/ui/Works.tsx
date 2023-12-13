@@ -44,17 +44,17 @@ export const Works: React.FunctionComponent = () => {
   };
 
   return (
-    <div className='mt-[12rem] md:mt-[15.75rem] mb-20'>
-      <div className='w-[85%] mx-auto'>
+    <div className='mt-[12rem] md:mt-[15.75rem] mb-20 border-2'>
+      <div className='w-[85%] mx-auto h-[100%] border-2'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
-          className='flex flex-col gap-[2.06rem] justify-center itemscenter lg:flex-row'
+          className='flex flex-col border-2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
           // animate={controls}
         >
           <motion.div
             key={selectedProject}
-            className='w-full lg:w-[45%]'
+            className='w-full lg:w-[45%] h-[35.875rem] md:h-[30rem]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
