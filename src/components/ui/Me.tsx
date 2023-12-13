@@ -2,6 +2,9 @@ import React from 'react';
 import ala from "@/assets/ala.png";
 import {Button} from "./button";
 import { ReadMore } from './ReadMore';
+// import AOS from "aos";
+// import 'aos/dist/aos.css';
+// AOS.init();
 
 export const Me: React.FunctionComponent = () => {
   return (
