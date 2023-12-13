@@ -85,9 +85,6 @@
   left: 0;
 }
 
-.prety {
-  text-wrap: balance;
-}
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);

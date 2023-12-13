@@ -5,6 +5,7 @@ import project01 from "@/assets/project01.png";
 import project03 from "@/assets/project03.png";
 import { Project } from './Project';
 import { useState } from 'react';
+import { ImageComponent } from './ImageComponent';
 
 const projectInfor = [
   {
@@ -55,14 +56,28 @@ export const Works: React.FunctionComponent = () => {
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
             {selectedProject !== null && (
-              <motion.img
-                className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
-                src={projectInfor[selectedProject].img}
-                alt='project'
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                 transition={{ ease: 'easeOut', duration: 0.3 }}
+              <motion.div
+               initial={{ opacity: 0.5 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: 'easeOut', duration: 0.3 }}
+               className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
+              >
+                <ImageComponent 
+              src={projectInfor[selectedProject].img} 
+              alt='project thumbnail'
+                imageWidth="100%" // Set your desired width
+                imageHeight="100%" // Set your desired height
               />
+              </motion.div>
+              // <motion.img
+              // loading='lazy'
+              //   className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
+              //   src={projectInfor[selectedProject].img}
+              //   alt='project'
+              //   initial={{ opacity: 0.5 }}
+              //   animate={{ opacity: 1 }}
+              //    transition={{ ease: 'easeOut', duration: 0.3 }}
+              // />
             )}
           </motion.div>
 
