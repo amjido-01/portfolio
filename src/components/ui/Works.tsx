@@ -12,19 +12,22 @@ const projectInfor = [
     id: 0,
     title: "KUSTBoolets",
     description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project01
+    img: project01,
+    hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]"
   },
   {
     id: 1,
     title: "Bookbay",
     description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project02
+    img: project02,
+    hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7"
   },
   {
     id: 2,
     title: "Lamuni",
     description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project03
+    img: project03,
+    hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof"
   }
 ];
 
@@ -65,6 +68,7 @@ export const Works: React.FunctionComponent = () => {
                 <ImageComponent 
               src={projectInfor[selectedProject].img} 
               alt='project thumbnail'
+              hash={projectInfor[selectedProject].hash}
                 imageWidth="100%" // Set your desired width
                 imageHeight="100%" // Set your desired height
               />

@@ -6,8 +6,9 @@ type imgProps = {
   alt: string
   imageWidth: string
   imageHeight: string
+  hash: string
 }
-export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, imageWidth, imageHeight}) => {
+export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, imageWidth, imageHeight, hash}) => {
  const [imageLoaded, setImageLoaded] = useState(false);
 
  useEffect(() => {
@@ -22,7 +23,7 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, ima
      <div style={{display: imageLoaded ? "none" : "inline", width: '100%', height: '100%', borderRadius: '1.5rem' }}>
        <Blurhash 
         className='w-full h-full object-cover rounded-[1.5rem]'
-        hash='LZOy@c%2TJVs9t?wT0adK6wcrWx]'
+        hash={hash}
         width={imageWidth}
         height={imageHeight}
         resolutionX={32}
@@ -33,6 +34,7 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, ima
      </div>
 
      <img
+     loading='lazy'
      className='w-full h-full object-cover rounded-[1.5rem]'
       src={src} 
       alt={alt} 
