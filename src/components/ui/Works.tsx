@@ -40,7 +40,7 @@ export const Works: React.FunctionComponent = () => {
   };
 
   return (
-    <div className='mt-[15.75rem] mb-20'>
+    <div className='mt-[12rem] md:mt-[15.75rem] mb-20'>
       <div className='w-[85%] mx-auto'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
