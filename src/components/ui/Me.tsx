@@ -8,7 +8,7 @@ import { ReadMore } from './ReadMore';
 
 export const Me: React.FunctionComponent = () => {
   return (
-    <section className='border2 h-[30re mt-[10rem] md:mt-[15rem] overflow-hidden'>
+    <section className='h-[30re mt-[10rem] md:mt-[15rem] overflow-hidden'>
 
         <div className='mx-auto w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center'>
 
@@ -17,10 +17,10 @@ export const Me: React.FunctionComponent = () => {
         </div>
 
           <div className='w-full md:w-[85%] lg:w-[30.00006rem]'>
-            <div className="content capitalize leading-normal border2 pl-2 md:pl-0">
+            <div className="content capitalize leading-normal pl-2 md:pl-0">
               <h1 className='montserrat border2 text-[#fff] text-[1.5rem] md:text-[2.25rem] style font-black leading-normal capitalize'>Hi there, I’m Ala jido </h1>
 
-              <p className='border2 Poppins text-[#ccc] text-[0.875rem] md:text-[1.25rem] style md:my-[1.88rem] font-normal normal-case'>Frontend Developer and Computer Science Student with over 2 years of experience. Specializing in ReactJS, I'm committed to crafting cutting-edge, user-centric interfaces, prioritizing accessibility. Let's collaborate to bring your vision to life – your goals, my expertise.</p>
+              <p className='prety Poppins text-[#ccc] text-[0.875rem] md:text-[1.25rem] style md:my-[1.88rem] font-normal normal-case'>Frontend Developer and Computer Science Student with over 2 years of experience. Specializing in ReactJS, I'm committed to crafting cutting-edge, user-centric interfaces, prioritizing accessibility. Let's collaborate to bring your vision to life – your goals, my expertise.</p>
             </div>
             
             <div className="footer flex mt-[2rem] justify-between px-2 md:p-0 sm:justify-normal sm:gap-[4rem]  md:justify-between items-end md:w-full mx-auto md:mx-0">
