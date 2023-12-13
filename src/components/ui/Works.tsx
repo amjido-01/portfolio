@@ -40,8 +40,8 @@ export const Works: React.FunctionComponent = () => {
   };
 
   return (
-    <div className='mt-[10.06rem] mb-20'>
-      <div className='w-[85%] border2 mx-auto'>
+    <div className='mt-[15.75rem] mb-20'>
+      <div className='w-[85%] mx-auto'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
@@ -50,13 +50,13 @@ export const Works: React.FunctionComponent = () => {
         >
           <motion.div
             key={selectedProject}
-            className='border2 w-full lg:w-[45%]'
+            className='w-full lg:w-[45%]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
             {selectedProject !== null && (
               <motion.img
-                className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] mxauto lg:w-[28rem] xl:w-[30rem] lg:h-[32rem]'
+                className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
                 src={projectInfor[selectedProject].img}
                 alt='project'
                 initial={{ opacity: 0.5 }}
@@ -67,7 +67,7 @@ export const Works: React.FunctionComponent = () => {
           </motion.div>
 
           <div
-            className='gap-4 w-full md:w-[95%] md:mx-auto border2 lg:w-[55%] flex mt[2.06rem] h-[90%]'
+            className='gap-4 w-full md:w-[95%] md:mx-auto lg:w-[55%] flex mt[2.06rem] h-[90%]'
            
           >
             <div
@@ -76,20 +76,20 @@ export const Works: React.FunctionComponent = () => {
               {projectInfor.map((item, index) => (
                 <motion.div
                   key={item.id}
-                  className={`border-2 progress-bar-segment flex-1 w-[0.1875rem] h-[5rem] justify-center items-center bg-white ${
-                    index === selectedProject ? 'rounded-[10px] w-[0.5rem] bb mx-auto' : ''
+                  className={`progress-bar-segment flx-auto w-[0.1875rem] justify-between h-full items-center bg-white ${
+                    index === selectedProject ? 'rounded-[10px] w-[0.5rem] mx-auto' : ''
                   }`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.3 } }}
                 >
-                  <span className='rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] mx-auto transform -translate-x-[50%] text-white flex items-center justify-center'>
+                  <span className='rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] mx-auto transform -translate-x-[49%] md:-translate-x-[50%] text-white flex items-center justify-center -translate-y-[2px]'>
                     {index + 1}.
                   </span>
                 </motion.div>
               ))}
             </div>
 
-            <div className='flex flex-col gap-8 w-[95%] md:w-full lg:w-[85%] border-2 md:ml-10'>
+            <div className='flex flex-col gap-8 w-[95%] md:w-full lg:w-[85%] md:ml-10'>
               {projectInfor.map((item) => {
                 return <Project key={item.id} title={item.title} description={item.description} handleClick={() => handleClick(item.id)} />;
               })}
