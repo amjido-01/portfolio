@@ -44,17 +44,17 @@ export const Works: React.FunctionComponent = () => {
   };
 
   return (
-    <div className='mt-[12rem] md:mt-[15.75rem] mb-20 border-2'>
-      <div className='w-[85%] mx-auto h-[100%] border-2'>
+    <div className='mt-[12rem] md:mt-[8.75rem] mb-20 border-2'>
+      <div className='w-[85%] mx-auto h-[67rem] border2'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
-          className='flex flex-col border-2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
+          className='flex flex-col border2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
           // animate={controls}
         >
           <motion.div
             key={selectedProject}
-            className='w-full lg:w-[45%] h-[35.875rem] md:h-[30rem]'
+            className='w-full lg:w-[45%] h-[17.375rem] border-2 md:h-[30rem]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -63,31 +63,21 @@ export const Works: React.FunctionComponent = () => {
                initial={{ opacity: 0.5 }}
               animate={{ opacity: 1 }}
               transition={{ ease: 'easeOut', duration: 0.3 }}
-               className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
+               className='mx-auto rounded-[1.5rem] border2'
               >
                 <ImageComponent 
               src={projectInfor[selectedProject].img} 
               alt='project thumbnail'
               hash={projectInfor[selectedProject].hash}
-                imageWidth="100%" // Set your desired width
-                imageHeight="100%" // Set your desired height
+                imageWidth="100%"
+                imageHeight="100%"
               />
               </motion.div>
-              // <motion.img
-              // loading='lazy'
-              //   className='mx-auto object-cover rounded-[1.5rem] w-full md:w-[95%] lg:w-[28rem] xl:w-[30rem] lg:h-[30.3rem]'
-              //   src={projectInfor[selectedProject].img}
-              //   alt='project'
-              //   initial={{ opacity: 0.5 }}
-              //   animate={{ opacity: 1 }}
-              //    transition={{ ease: 'easeOut', duration: 0.3 }}
-              // />
             )}
           </motion.div>
 
           <div
-            className='gap-4 w-full md:w-[95%] md:mx-auto lg:w-[55%] flex mt[2.06rem] h-[90%]'
-           
+            className='gap-4 w-full h-[27.375rem] md:w-[95%] border-2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
           >
             <div
               className='progress-bar flex flex-col items-center justify-center'
