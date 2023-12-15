@@ -45,16 +45,16 @@ export const Works: React.FunctionComponent = () => {
 
   return (
     <div className='mt-[12rem] md:mt-[8.75rem] mb-20 border-2'>
-      <div className='w-[85%] mx-auto border2'>
+      <div className='w-[85%] mx-auto border-2'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
-          className='flex flex-col border2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
+          className='flex flex-col border-2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
           // animate={controls}
         >
           <motion.div
             key={selectedProject}
-            className='w-full lg:w-[45%] h[17.375rem] border-2'
+            className='w-full lg:w-[45%] h-[26.875rem] md:h-[31rem]  border2'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -63,7 +63,7 @@ export const Works: React.FunctionComponent = () => {
                initial={{ opacity: 0.5 }}
               animate={{ opacity: 1 }}
               transition={{ ease: 'easeOut', duration: 0.3 }}
-               className='mx-auto rounded-[1.5rem] border2'
+               className='rounded-[1.5rem] border2 border-red-500 flex justify-center items-center'
               >
                 <ImageComponent 
               src={projectInfor[selectedProject].img} 
@@ -77,7 +77,7 @@ export const Works: React.FunctionComponent = () => {
           </motion.div>
 
           <div
-            className='gap-4 w-full h[27.375rem] md:w-[95%] border-2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
+            className='gap-4 lg:gap-10 w-full h-[27.375rem] md:h-[30rem] md:w-[95%] border2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
           >
             <div
               className='progress-bar flex flex-col items-center justify-center'
