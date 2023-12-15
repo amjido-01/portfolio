@@ -45,7 +45,7 @@ export const Works: React.FunctionComponent = () => {
 
   return (
     <div className='mt-[12rem] md:mt-[8.75rem] mb-20 border-2'>
-      <div className='w-[85%] mx-auto h-[67rem] border2'>
+      <div className='w-[85%] mx-auto border2'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
@@ -54,7 +54,7 @@ export const Works: React.FunctionComponent = () => {
         >
           <motion.div
             key={selectedProject}
-            className='w-full lg:w-[45%] h-[17.375rem] border-2 md:h-[30rem]'
+            className='w-full lg:w-[45%] h[17.375rem] border-2'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -77,7 +77,7 @@ export const Works: React.FunctionComponent = () => {
           </motion.div>
 
           <div
-            className='gap-4 w-full h-[27.375rem] md:w-[95%] border-2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
+            className='gap-4 w-full h[27.375rem] md:w-[95%] border-2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
           >
             <div
               className='progress-bar flex flex-col items-center justify-center'

@@ -22,7 +22,7 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, ima
     <>
      <div style={{display: imageLoaded ? "none" : "inline", width: '100%', height: '100%', borderRadius: '1.5rem' }}>
        <Blurhash 
-        className='w-full h-full object-cover rounded-[1.5rem]'
+        className='w-full h-full objectcover rounded-[1.5rem]'
         hash={hash}
         width={imageWidth}
         height={imageHeight}
@@ -35,7 +35,7 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({src, alt, ima
 
      <img
      loading='lazy'
-     className='w-full h-full rounded-[1.5rem]'
+     className='w-full rounded-[1.5rem]'
       src={src} 
       alt={alt} 
       style={{display : !imageLoaded ? "none" : "inline", width: '100%', height: '100%', borderRadius: "1.5rem"}}
