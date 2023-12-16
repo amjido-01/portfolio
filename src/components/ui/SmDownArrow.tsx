@@ -9,7 +9,7 @@ export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={22} cy={22} r={21.313} stroke="#fff" strokeWidth={1.375} />
     <motion.g
     initial={{ y: 0 }}
-      animate={{ y: [ -12, 12, -12] }} // Bouncing animation along the y-axis
+      animate={{ y: [ -8, 8, -8] }} // Bouncing animation along the y-axis
       transition={{
         duration: 5,
         stiffness: 50,

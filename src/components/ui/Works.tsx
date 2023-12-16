@@ -1,35 +1,9 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import project02 from "@/assets/project02.png";
-import project01 from "@/assets/project01.png";
-import project03 from "@/assets/project03.png";
 import { Project } from './Project';
 import { useState } from 'react';
 import { ImageComponent } from './ImageComponent';
-
-const projectInfor = [
-  {
-    id: 0,
-    title: "KUSTBoolets",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project01,
-    hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]"
-  },
-  {
-    id: 1,
-    title: "Bookbay",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project02,
-    hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7"
-  },
-  {
-    id: 2,
-    title: "Lamuni",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
-    img: project03,
-    hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof"
-  }
-];
+import { ProjectInfor } from '@/ProjectInfor';
 
 export const Works: React.FunctionComponent = () => {
   const [selectedProject, setSelectedProject] = useState<number>(0);
@@ -44,17 +18,17 @@ export const Works: React.FunctionComponent = () => {
   };
 
   return (
-    <div className='mt-[12rem] md:mt-[8.75rem] mb-20 border-2'>
-      <div className='w-[85%] mx-auto border-2'>
+    <div className='mt-[12rem] md:mt-[8.75rem] mb-20 border2'>
+      <div className='w-[85%] mx-auto border2'>
         <h1 className='text-center montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]'>My works</h1>
 
         <div
-          className='flex flex-col border-2 gap-[2.06rem] justify-center itemscenter lg:flex-row'
+          className='flex flex-col border2 gap-[2.06rem] sm:gap-[10rem] md:gap-[2.06rem]  justify-center itemscenter lg:flex-row'
           // animate={controls}
         >
           <motion.div
             key={selectedProject}
-            className='w-full lg:w-[45%] h-[26.875rem] md:h-[31rem]  border2'
+            className='w-full lg:w-[45%] h-[26.875rem] md:h-[32rem]  border2'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -66,9 +40,9 @@ export const Works: React.FunctionComponent = () => {
                className='rounded-[1.5rem] border2 border-red-500 flex justify-center items-center'
               >
                 <ImageComponent 
-              src={projectInfor[selectedProject].img} 
+              src={ProjectInfor[selectedProject].img} 
               alt='project thumbnail'
-              hash={projectInfor[selectedProject].hash}
+              hash={ProjectInfor[selectedProject].hash}
                 imageWidth="100%"
                 imageHeight="100%"
               />
@@ -77,12 +51,12 @@ export const Works: React.FunctionComponent = () => {
           </motion.div>
 
           <div
-            className='gap-4 lg:gap-10 w-full h-[27.375rem] md:h-[30rem] md:w-[95%] border2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
+            className='gap-4 lg:gap-10 w-full h-[27.375rem] md:h-[32rem] md:w-[95%] border2 border-red-500 md:mx-auto lg:w-[55%] flex mt[2.06rem]'
           >
             <div
               className='progress-bar flex flex-col items-center justify-center'
             >
-              {projectInfor.map((item, index) => (
+              {ProjectInfor.map((item, index) => (
                 <motion.div
                   key={item.id}
                   className={`progress-bar-segment flx-auto w-[0.1875rem] justify-between h-full items-center bg-white ${
@@ -98,8 +72,8 @@ export const Works: React.FunctionComponent = () => {
               ))}
             </div>
 
-            <div className='flex flex-col gap-8 w-[95%] md:w-full lg:w-[85%] md:ml-10'>
-              {projectInfor.map((item) => {
+            <div className='flex flex-col gap-8 md:gap-[3rem] w-[95%] md:w-full lg:w-[85%] md:ml-10'>
+              {ProjectInfor.map((item) => {
                 return <Project key={item.id} title={item.title} description={item.description} handleClick={() => handleClick(item.id)} />;
               })}
             </div>
