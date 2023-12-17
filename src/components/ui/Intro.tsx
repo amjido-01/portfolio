@@ -41,9 +41,9 @@ export const Intro: React.FunctionComponent = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="word text-start"
           >
+            { /* Animated gradient text */ }
             <span className="gradient-text">Reality</span>
             <span className="gradient-text">Experience</span>
-
             <span className="gradient-text">Revolution</span>
             <span className="gradient-text">Excellence</span>
             <span className="gradient-text">Innovation</span>

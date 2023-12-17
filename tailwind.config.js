@@ -33,7 +33,7 @@ module.exports = {
     },
   },
   plugins: [
-    // require tail
+    'prettier-plugin-tailwindcss',
     require("tailwindcss-animate")
   ],
 }

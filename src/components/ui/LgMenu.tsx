@@ -25,7 +25,6 @@ export const LgMenu = (props: SVGProps<SVGSVGElement>) => {
   >
    <g id="Group">
    <motion.g
-      // whileHover={{ rotate: [360, 0]}}
         whileHover={{ rotate: isHovered ? [180, 0] : 0, transition: { duration: 1 } }}
       whileTap={{ rotate: 0 }}
       onHoverStart={handleHoverStart}

@@ -31,7 +31,7 @@ export const HamburgerMenu: React.FunctionComponent = () => {
     // Header section
     <header className={`w-full absolute top-0 left-0 z-20 px-2 sm:px-4 py-[1.5rem] md:py-[2rem] ${isMenuOpen ? 'active bg-[141835] bg-collapse right-0' : "bg-collapse"}`}>
       {/* nav bar  section */}
-      <nav className="w-[95%] h-[6rem] md:w-[87%] flex justify-between items-center mx-auto">
+      <nav className="w-[95%] h-[6rem] md:w-[87%]  flex justify-between items-center mx-auto">
         <div>
              <img src={smlogo} alt="logo" className="block md:hidden w-[3.1875rem] h-[1.77081rem]"/>
             <img src={logo} className="hidden md:block w-[5.0625rem] h-[2.8125rem]" alt="Logo" />
