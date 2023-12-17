@@ -24,7 +24,7 @@ export const Blogs: React.FunctionComponent = () => {
 
   // Render
   return (
-    <main className="mt-[12rem] hidden lg:block md:mt-[8.75rem] mb-20 border2">
+    <main className="mt-[12rem] md:mt-[8.75rem] hidden lg:block mb-20 border2">
       {/* Heading section*/}
       <div className="w-[85%] mx-auto border2">
         {/* Heading title*/}
