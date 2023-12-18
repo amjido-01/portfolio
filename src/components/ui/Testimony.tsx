@@ -1,3 +1,10 @@
+/**
+ * Testimony component displays a carousel of client testimonial cards.
+ *
+ * Imports the HorizontalScrollCarousel component and defines a cards array
+ * with testimonial data to pass to it. Renders a page section with heading
+ * and the carousel component.
+ */
 import { HorizontalScrollCarousel } from "@/components/ui/HorizontalScrollCarousel";
 const cards = [
   {
@@ -37,19 +44,17 @@ const cards = [
   },
 ];
 
-
 export const Testimony: React.FunctionComponent = () => {
   return (
     <main className="bg-neutral-800 mt-[12rem] md:mt-[8.75rem]">
-      
-     <div className="">
+      <div className="">
         <h1 className="montserrat text-[#fff] text-center text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]">
-        Clients testimonials
+          Clients testimonials
         </h1>
-     </div>
-     <div className="">
-       <HorizontalScrollCarousel cards={cards} />
-     </div>
+      </div>
+      <div className="">
+        <HorizontalScrollCarousel cards={cards} />
+      </div>
     </main>
   );
 };

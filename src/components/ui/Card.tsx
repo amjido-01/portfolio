@@ -1,3 +1,8 @@
+/**
+ * Card component renders a card with background image, title and hover effect.
+ * It takes a card object with id, url and title properties.
+ * Renders a main div with background image, title text and zoom in transition on hover.
+*/
 export const Card = ({card}) => {
   return (
     <main
@@ -13,7 +18,7 @@ export const Card = ({card}) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="p-8 text-6xl font-black text-white uppercase bg-gradient-to-br from-white/20 to-white/0 backdrop-blur-lg">
           {card.title}
         </p>
       </div>
