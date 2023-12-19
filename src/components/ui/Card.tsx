@@ -3,7 +3,15 @@
  * It takes a card object with id, url and title properties.
  * Renders a main div with background image, title text and zoom in transition on hover.
 */
-export const Card = ({card}) => {
+interface CardProps {
+  card: {
+    id: number;
+    url: string;
+    title: string;
+  }
+}
+
+export const Card: React.FunctionComponent<CardProps> = ({card}) => {
   return (
     <main
       key={card.id}

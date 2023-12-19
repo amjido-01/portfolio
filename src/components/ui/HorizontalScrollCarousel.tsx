@@ -16,8 +16,14 @@
 import { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { Card } from "@/components/ui/Card";
-
-export const HorizontalScrollCarousel = ({ cards }) => {
+interface CarouselProps {
+  cards: {
+    url: string;
+    id: number;
+    title: string;
+  }[];
+}
+export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = ({ cards }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
