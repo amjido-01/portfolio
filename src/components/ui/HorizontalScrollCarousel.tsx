@@ -21,10 +21,11 @@ import { Card } from "@/components/ui/Card";
 interface CarouselProps {
   cards: {
     id: number;
-    title: string;
-    pic: string;
-    content: string;
-    alt: string
+    title: string | null;
+    name: string | null;
+    pic: string | null;
+    content: string | null;
+    alt: string| null
   }[];
 }
 export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = ({ cards }) => {

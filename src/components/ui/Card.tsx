@@ -8,10 +8,11 @@ import React from "react";
 interface CardProps {
   card: {
     id: number;
-    title: string;
-     pic: string;
-  alt: string;
-  content: string
+    title: string | null;
+     pic: string | null;
+     name: string | null;
+    alt: string | null;
+    content: string | null
   }
 }
 
@@ -28,7 +29,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
       ></div>
       {card.pic ?  <div className="absolute flex h-full border-2 gap-[4.56rem]">
        <div className="aside w-[18rem] h-full bullet">
-         <img src={card.pic} alt={card.alt} className='absolute md:w-[6.28488rem] h-[6.28488rem] object-cover left-4 z-10'/>
+         <img src={card.pic} alt='testimony pic' className='absolute md:w-[6.28488rem] h-[6.28488rem] object-cover left-4 z-10'/>
        </div>
        
        <div className="content p-[3.23rm] border-2">
