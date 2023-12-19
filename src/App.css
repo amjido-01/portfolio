@@ -167,6 +167,13 @@
   background:  linear-gradient(116deg, #D41FE3 -6.73%, #399AFD 141.95%);
 }
 
+.testimony {
+  background-image: url("./assets/lgTstmyBg.png");
+  background-repeat: inherit;
+  background-position: center;
+  /* background-size: cover; */
+}
+
 @keyframes spin_words {
   10% {
     transform: translateY(-112%);
@@ -193,6 +200,22 @@
     transform: translateY(-400%);
   }
 }
+
+@media screen and (min-width: 400px) {
+    .hero-bg {
+    background-image: url("./assets/lg-bg.png");
+    /* background-position: inherit; */
+    /* background-attachment: fixed; */
+    /* background-position-y: -90px; */
+
+    /* background-position: 50% 50%;  */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position-x: center;
+    /* background-size: 50%; */
+  }
+}
+
 
 @media screen and (min-width: 780px) {
   .nav-menu {

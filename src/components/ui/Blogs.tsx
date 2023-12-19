@@ -19,26 +19,38 @@ export const Blogs: React.FunctionComponent = () => {
 
   // Handler to manage expanded image
   const handleExpand = (id: number) => {
-    setExpandedImageId((prevId) => (prevId === id ? null : id));
+    if (expandedImageId === id) return;
+    setExpandedImageId(id);
   };
 
   // Render
   return (
-    <main className="mt-[12rem] md:mt-[8.75rem] hidden lg:block mb-20 border2">
+    <main className="mt-[12rem] md:mt-[8.75rem] mb-20">
       {/* Heading section*/}
-      <div className="w-[85%] mx-auto border2">
+      <div className="w-[85%] mx-auto">
         {/* Heading title*/}
         <h1 className="montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] font-black leading-normal capitalize my-[1.38rem] md:my-[4rem]">
           My Blogs
         </h1>
         {/* Heading description*/}
-        <article className="flex gap-[1.5rem] border2 justify-center">
+        <article className="hidden lg:flex gap-[1rem] border-2 justify-center">
           {ImageData.map((img: Image) => (
             <img
               key={img.id}
               className={`${
-                expandedImageId === img.id ? "w-1/2" : "w-[22%]"
-              } rounded-[1.5rem] h-[30rem] cursor-pointer object-cover`}
+                expandedImageId === img.id ? "w-[38rem]" : "w-[18rem]"
+              } rounded-[1.5rem] h-[35rem] cursor-pointer object-content`}
+              src={img.src}
+              alt={img.alt}
+              onClick={() => handleExpand(img.id)}
+            />
+          ))}
+        </article>
+        <article className="flex flex-col lg:hidden gap-[2.88rem] border-2 justify-center">
+          {ImageData.map((img: Image) => (
+            <img
+              key={img.id}
+              className={`w-[18.75rem] h-[29.25rem] md:w-[38rem] md:h-[55rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
               src={img.src}
               alt={img.alt}
               onClick={() => handleExpand(img.id)}
