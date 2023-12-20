@@ -33,7 +33,7 @@ export const Blogs: React.FunctionComponent = () => {
           My Blogs
         </h1>
         {/* Heading description*/}
-        <article className="hidden lg:flex gap-[1rem] border-2 justify-center">
+        <article className="hidden lg:flex gap-[1rem] justify-center">
           {ImageData.map((img: Image) => (
             <img
               key={img.id}
@@ -46,7 +46,7 @@ export const Blogs: React.FunctionComponent = () => {
             />
           ))}
         </article>
-        <article className="flex flex-col lg:hidden gap-[2.88rem] border-2 justify-center">
+        <article className="flex flex-col lg:hidden gap-[1.5rem] justify-center">
           {ImageData.map((img: Image) => (
             <img
               key={img.id}
