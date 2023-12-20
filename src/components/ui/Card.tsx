@@ -33,7 +33,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
           </div>
         </div>
       ) : (
-        <div className="absolute flex h-full gap-[4.56rem]">
+        <div className="absolute flex h-full gap-[3rem] md:gap-[4.56rem]">
           <div className="aside w-[4rem] h-full bullet">
             <img
               src={card?.pic}
@@ -43,12 +43,12 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
           </div>
 
           <div className="content p-[3.23rm]">
-            <div className="mt-[2.14rem] md:mt-[3rem] mb-[1.94rem] md:mb-[2.75rem]">
+            <div className="mt-[3rem] md:mt-[3rem] mb-[1.94rem] md:mb-[2.75rem]">
               <h3 className="text-[#fff] montserrat text-[1.04838rem] md:text-[1.5rem] font-bold leading-normal capitalize">{card?.name}</h3>
               <p className="text-[#CCCCCC] montserrat text-[0.69888rem] md:text-[1rem ] style font-normal capitalize">product designer</p>
             </div>
 
-            <div className="body w-[22.45619rem]">
+            <div className="body w-[15.69475rem] md:w-[22.45619rem]">
               <p className="text-[#fff] poppins text-[0.78625rem] md:text-[1.125rem] style font-normal leading-[160%] capitalize">{card.content}</p>
             </div>
           </div>
