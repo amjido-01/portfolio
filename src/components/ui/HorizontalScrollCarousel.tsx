@@ -21,11 +21,11 @@ import { Card } from "@/components/ui/Card";
 interface CarouselProps {
   cards: {
     id: number;
-    title: string | null;
-    name: string | null;
-    pic: string | null;
-    content: string | null;
-    alt: string| null
+    title: string;
+    name: string;
+    pic: string;
+    content: string;
+    alt: string
   }[];
 }
 
