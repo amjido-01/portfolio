@@ -21,7 +21,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
   return (
     <main
       key={card.id}
-      className={` ${card.pic ? 'bg-[#0F172D]' : "bg-transparent w-[12rem]"} relative rounded-[1.5rem] w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] overflow-hidden
+      className={` ${card.pic ? 'bg-[#0F172D]' : "bg-transparent w-[12rem] border-2"} relative rounded-[1.5rem] w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] overflow-hidden
   `}>
       {/* <div
         className="absolute inset-0 z-0 transition-transform duration-300 border-2 border-red-500 group-hover:scale-110"
