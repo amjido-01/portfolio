@@ -28,6 +28,8 @@ interface CarouselProps {
     alt: string| null
   }[];
 }
+
+
 export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = ({ cards }) => {
   // Create a reference to the main container element.
   const targetRef = useRef(null);
@@ -40,10 +42,11 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
   return (
     <main
       ref={targetRef}
-      className="testimony relative border-2 h-[150vh]"
+      className="testimony relative h-[150vh] md:h-[150vh]"
     >
       <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4 border-2">
+        <motion.div style={{ x }} className="flex gap-4">
+          {/* Render the cards in a carousel component. */}
           {cards.map((card) => (
             <Card card={card} key={card.id} />
           ))}

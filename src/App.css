@@ -168,7 +168,7 @@
 }
 
 .testimony {
-  background-image: url("./assets/lgTstmyBg.png");
+  background-image: url("./assets/smTesmy.png");
   background-repeat: inherit;
   background-position: center;
   /* background-size: cover; */
@@ -244,6 +244,13 @@
     background-position: center;
     background-size: cover;
   }
+
+  .testimony {
+  background-image: url("./assets/lgTstmyBg.png");
+  background-repeat: inherit;
+  background-position: center;
+  /* background-size: cover; */
+}
 }
 
 @media screen and (min-width: 1000px) {
