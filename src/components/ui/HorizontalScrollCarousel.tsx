@@ -25,6 +25,7 @@ interface CarouselProps {
     name: string;
     pic: string;
     content: string;
+    role: string;
     alt: string
   }[];
 }

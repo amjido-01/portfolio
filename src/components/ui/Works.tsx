@@ -23,8 +23,8 @@ export const Works: React.FunctionComponent = () => {
 
   // Render
   return (
-    <div className="my-[12rem] md:my-[8.75rem] mb-20 border2">
-      <div className="w-[85%] mx-auto border2">
+    <div className="my-[12rem] md:my-[8.75rem] mb-20">
+      <div className="w-[85%] mx-auto">
         {/* Section*/}
         <h1 className="capitalize montserrat text-center text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] my-[1.38rem] md:my-[4rem]">
           My works
@@ -34,7 +34,7 @@ export const Works: React.FunctionComponent = () => {
           {/* Image list */}
           <motion.div
             key={selectedProject}
-            className="lg:w-[45%] h-[26.875rem] md:h-[32rem] border2 w-full"
+            className="lg:w-[45%] h-[26.875rem] md:h-[32rem] w-full"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -58,7 +58,7 @@ export const Works: React.FunctionComponent = () => {
           {/* Description list */}
           <div className="lg:w-[55%] md:mx-auto md:w-[95%] gap-4 lg:gap-10 w-full h-[24.375rem] md:h-[32rem]  flex mt[2.06rem]">
             {/* Description */}
-            <div className="flex flex-col items-center justify-center progress-bar border-2">
+            <div className="flex flex-col items-center justify-center progress-bar">
               {ProjectInfor.map((item, index) => (
                 <motion.div
                   key={item.id}
