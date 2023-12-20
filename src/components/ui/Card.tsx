@@ -22,7 +22,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
   return (
     <main
       key={card.id}
-      className={` ${isFirstCard ? 'bg-transparent w-[12rem] md:w-[34.25rem] md:h-[25rem]' : "bg-[#0F172D] border-2  w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] "} relative rounded-[1.5rem] overflow-hidden
+      className={` ${isFirstCard ? 'bg-transparent w-[12rem] md:w-[28rem] md:h-[25rem]' : "bg-[#0F172D] border-2  w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] "} relative rounded-[1.5rem] overflow-hidden
   `}>
       {isFirstCard ? (
         <div className="absolute flex items-center w-full h-full md:h-full md:w-full">
@@ -34,22 +34,22 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
         </div>
       ) : (
         <div className="absolute flex h-full gap-[4.56rem]">
-          <div className="aside w-[18rem] border-2 h-full bullet">
+          <div className="aside w-[4rem] border-2 h-full bullet">
             <img
               src={card?.pic}
               alt="testimony pic"
-              className="absolute md:w-[6.28488rem] h-[6.28488rem] object-cover left-4 z-10"
+              className="absolute md:w-[6.28488rem] h-[6.28488rem] top-[1.22rem] left-[0.66rem] md:top-[1.75rem] md:left-[0.88rem] z-10"
             />
           </div>
 
           <div className="content p-[3.23rm]">
-            <div>
-              <h3 className="text-[#fff]">{card?.name}</h3>
-              <p className="text-[#CCCCCC]">product designer</p>
+            <div className="mt-[2.14rem] md:mt-[3rem] mb-[1.94rem] md:mb-[2.75rem]">
+              <h3 className="text-[#fff] montserrat text-[1.04838rem] md:text-[1.5rem] font-bold leading-normal capitalize">{card?.name}</h3>
+              <p className="text-[#CCCCCC] montserrat text-[0.69888rem] md:text-[1rem ] style font-normal capitalize">product designer</p>
             </div>
 
-            <div className="body">
-              <p>{card.content}</p>
+            <div className="body w-[22.45619rem] border-2 border-yellow-300">
+              <p className="text-[#fff] poppins text-[0.78625rem] md:text-[1.125rem] style font-normal leading-[160%] capitalize">{card.content}</p>
             </div>
           </div>
         </div>
