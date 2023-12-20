@@ -25,9 +25,9 @@ export const Project: React.FunctionComponent<projectProps> = ({
 }) => {
   // component renders
   return (
-    <main className="border2 border-red-500 w-full">
+    <main className="w-full">
       {/** Project title and description div*/}
-      <div className=" cursor-pointer border2" onClick={handleClick}>
+      <div className=" cursor-pointer" onClick={handleClick}>
         {/** Project title heading*/}
         <h2 className="text-[0.875rem] text-[#fff] montserrat md:text-[1.25rem] style font-bold leading-[120%] capitalize">
           {title}
@@ -47,7 +47,7 @@ export const Project: React.FunctionComponent<projectProps> = ({
         </Button>
         <Button
           variant="link"
-          className="border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[1.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2.2rem] style hover:no-underline"
+          className="border-b-2 text-[#fff] flex justify-center gap-4 py-[0.75rem] px-[1.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2.2rem] style hover:no-underline"
         >
           Live view <GoLive />
         </Button>

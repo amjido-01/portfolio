@@ -43,7 +43,7 @@ export const Works: React.FunctionComponent = () => {
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 0.3 }}
-                className="flex justify-center items-center rounded-[1.5rem] border2 border-red-500"
+                className="flex justify-center items-center rounded-[1.5rem]"
               >
                 <ImageComponent
                   src={ProjectInfor[selectedProject].img}
@@ -56,9 +56,9 @@ export const Works: React.FunctionComponent = () => {
             )}
           </motion.div>
           {/* Description list */}
-          <div className="lg:w-[55%] md:mx-auto md:w-[95%] gap-4 lg:gap-10 w-full h-[27.375rem] md:h-[32rem] border2 border-red-500 flex mt[2.06rem]">
+          <div className="lg:w-[55%] md:mx-auto md:w-[95%] gap-4 lg:gap-10 w-full h-[24.375rem] md:h-[32rem]  flex mt[2.06rem]">
             {/* Description */}
-            <div className="flex flex-col items-center justify-center progress-bar">
+            <div className="flex flex-col items-center justify-center progress-bar border-2">
               {ProjectInfor.map((item, index) => (
                 <motion.div
                   key={item.id}
@@ -78,7 +78,7 @@ export const Works: React.FunctionComponent = () => {
               ))}
             </div>
             {/* List */}
-            <div className="gap-8 md:gap-[3rem] w-[95%] md:w-full lg:w-[85%] md:ml-10 flex flex-col">
+            <div className="gap-[1.7rem] md:gap-[3rem] w-[95%] md:w-full lg:w-[85%] md:ml-10 flex flex-col">
               {ProjectInfor.map((item) => {
                 return (
                   <Project
