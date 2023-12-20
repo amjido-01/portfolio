@@ -11,7 +11,7 @@ import { testimonyCards } from "@/testimonyData";
 export const Testimony: React.FunctionComponent = () => {
   // Render the testimonial cards in a carousel component.
   return (
-    <main className="border-2 border-yellow-300 mt-[2.94rem] md:mt-[6.88rem] mb-[20rem]">
+    <main className="mt-[2.94rem] md:mt-[6.88rem] mb-[20rem]">
       {/* Heading for the testimonials section. */}
       <div className="">
         <HorizontalScrollCarousel cards={testimonyCards} />

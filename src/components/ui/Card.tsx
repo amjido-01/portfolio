@@ -22,7 +22,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
   return (
     <main
       key={card.id}
-      className={` ${isFirstCard ? 'bg-transparent w-[12rem] md:w-[28rem] md:h-[25rem]' : "bg-[#0F172D] border-2  w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] "} relative rounded-[1.5rem] overflow-hidden
+      className={` ${isFirstCard ? 'bg-transparent w-[12rem] md:w-[28rem] md:h-[25rem]' : "bg-[#0F172D] w-[23.9375rem] h-[17.47263rem] md:h-[25rem] md:w-[34.25rem] "} relative rounded-[1.5rem] overflow-hidden
   `}>
       {isFirstCard ? (
         <div className="absolute flex items-center w-full h-full md:h-full md:w-full">
@@ -34,7 +34,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
         </div>
       ) : (
         <div className="absolute flex h-full gap-[4.56rem]">
-          <div className="aside w-[4rem] border-2 h-full bullet">
+          <div className="aside w-[4rem] h-full bullet">
             <img
               src={card?.pic}
               alt="testimony pic"
@@ -48,7 +48,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
               <p className="text-[#CCCCCC] montserrat text-[0.69888rem] md:text-[1rem ] style font-normal capitalize">product designer</p>
             </div>
 
-            <div className="body w-[22.45619rem] border-2 border-yellow-300">
+            <div className="body w-[22.45619rem]">
               <p className="text-[#fff] poppins text-[0.78625rem] md:text-[1.125rem] style font-normal leading-[160%] capitalize">{card.content}</p>
             </div>
           </div>
