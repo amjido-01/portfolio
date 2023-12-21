@@ -1,12 +1,17 @@
 import niima from '@/assets/niima.png';
+/**
+ * Interface for testimony data props.
+ * Defines the shape of objects representing testimony data.
+ * Includes id, title, name, pic, alt, content and role fields.
+ */
 interface dataProps {
-    id: number;
-    title: string;
-     pic: string;
-     name: string;
-      alt: string;
-      content: string;
-      role: string;
+  id: number;
+  title: string;
+  pic: string;
+  name: string;
+  alt: string;
+  content: string;
+  role: string;
 }
 export const testimonyCards: dataProps[] = [
   {

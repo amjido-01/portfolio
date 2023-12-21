@@ -4,7 +4,7 @@
  * Renders a main div with background image, title text and zoom in transition on hover.
 */
 import React from "react";
-// the props interface for the Card component
+// the interface for the Card component expecting to receive a card object with id, title and url properties as props.
 interface CardProps {
   card: {
     id: number;

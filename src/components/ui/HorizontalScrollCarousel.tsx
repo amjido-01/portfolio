@@ -17,7 +17,7 @@ import { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { Card } from "@/components/ui/Card";
 
-// The props interface for the HorizontalScrollCarousel component.
+// The interface for the HorizontalScrollCarousel component as expected to be passed to it as props.
 interface CarouselProps {
   cards: {
     id: number;
@@ -39,12 +39,16 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
   // Use the useTransform hook to map the scroll progress to a CSS transform value.
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
+  console.log(cards);
+  
+
   // Render the cards in a flex container with horizontal scrolling overflow.
   return (
     <main
       ref={targetRef}
       className="testimon relative h-[150vh] md:h-[160vh]"
     >
+      {/** The sticky container element. */}
       <div className="sticky top-0 flex items-center h-screen overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {/* Render the cards in a carousel component. */}
