@@ -9,6 +9,8 @@ import React from "react";
 import { SubIntro } from "./SubIntro";
 import { motion } from "framer-motion";
 
+
+
 // intro component summary
 export const Intro: React.FunctionComponent = () => {
   // intro component code

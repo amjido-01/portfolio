@@ -1,18 +1,18 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import {Navbar} from "./components/ui/Navbar"
 import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
 import { Resume } from "./pages/Resume";
 import { Home } from "./pages/Home";
-// import { HamburgerMenu } from './components/ui/HamburgerMenu';
+import CustomCursor from "./components/ui/CustomCursor";
+// import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <BrowserRouter>
        <div className='bg-[#0B1121] min-h-screen'>
-        {/* <Navbar /> */}
-        {/* <HamburgerMenu /> */}
+       {/* <AnimatedCursor/> */}
+       <CustomCursor />
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>

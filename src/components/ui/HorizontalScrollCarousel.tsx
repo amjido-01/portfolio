@@ -60,3 +60,17 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
     </main>
   );
 };
+
+
+
+// So in summary:
+
+// testimonyData.ts provides the testimonial data
+// Testimony passes the data to HorizontalScrollCarousel as a prop
+// HorizontalScrollCarousel maps over the data and renders Card components
+// Each Card component displays a single testimonial
+// This allows the data to flow from the testimonyData source, through the parent components, and down to the reusable Card component for rendering.
+
+// The interfaces help enforce the shape of the data at each step.
+
+// Together these components allow displaying a scrolling carousel of card data fetched from a reusable data source.

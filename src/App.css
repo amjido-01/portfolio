@@ -38,6 +38,28 @@
   background: #192546;
 }
 
+/* src/CustomCursor.css */
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: #cf60d1;
+  /*background: linear-gradient(93deg, #cf60d1 10.33%, #2c91ef 99.93%); /* Customize the color as needed */
+  border-radius: 50%;
+  pointer-events: none; /* Allows the cursor to pass through and interact with elements behind it */
+  mix-blend-mode: difference; /* Enhances visibility on different backgrounds */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+/* .cursor-text:hover {
+  color: red;
+} */
+
+/* Add this to your CSS file */
+/* .cursor-letter {
+  display: inline-block;
+} */
+
+
 .bar {
   display: block;
   width: 12px;
