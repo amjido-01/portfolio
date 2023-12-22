@@ -10,7 +10,7 @@ export const Organizations: React.FunctionComponent<OrganizationsProps> =({direc
   return (
     <div>
         <div>
-            <Marquee direction={direction} pauseOnHover={true} speed={30}>
+            <Marquee direction={direction} pauseOnHover={true} speed={40}>
             {logos.map((logo,index) => (
                 <Institude key={index} image={logo} />
             ))}

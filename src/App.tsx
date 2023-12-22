@@ -11,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
        <div className='bg-[#0B1121] min-h-screen'>
-       {/* <AnimatedCursor/> */}
        <CustomCursor />
         <Routes>
           <Route path="/" element={<Home />}/>
