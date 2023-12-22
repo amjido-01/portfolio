@@ -8,12 +8,14 @@ type OrganizationsProps = {
 }
 export const Organizations: React.FunctionComponent<OrganizationsProps> =({direction, logos}) => {
   return (
-    <div className='border-2'>
-        <Marquee direction={direction} className=''>
+    <div>
+        <div>
+            <Marquee direction={direction} pauseOnHover={true} speed={30}>
             {logos.map((logo,index) => (
                 <Institude key={index} image={logo} />
             ))}
         </Marquee>
+        </div>
     </div>
   )
 }

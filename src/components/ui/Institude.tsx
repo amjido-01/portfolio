@@ -6,6 +6,6 @@ type institudeProps = {
 
 export const Institude: React.FunctionComponent<institudeProps> = ({image}) => {
   return (
-    <img src={image} alt="" className='px-10' />
+    <img src={image} alt="" className='pl-[2.39056rem] md:pl-[4rem] h-[1.875rem] md:h-[3.125rem]' />
   )
 }

@@ -44,7 +44,7 @@ export const HamburgerMenu: React.FunctionComponent = () => {
         >
           {/* Links section */}
           <ul
-            className="flex nav-list mt-2 border-2 absolute bottom-20 md:bottom-10 flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
+            className="flex nav-list mt-2 absolute bottom-20 md:bottom-10 flex-col justify-end md:p-4 w-[70%] md:w-[60%] ml-[70px] md:ml-[100px] md:mb-[100px"
           >
             <li className="">
              <Links to="/" handleRoute={(e) => {
