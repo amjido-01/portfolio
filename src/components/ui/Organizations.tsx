@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import { Institude } from './Institude';
 
 type OrganizationsProps = {
-    direction: string;
+    direction: "left" | "right" | "up" | "down";
     logos: string[];
 }
 export const Organizations: React.FunctionComponent<OrganizationsProps> =({direction, logos}) => {
