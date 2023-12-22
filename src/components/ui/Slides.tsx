@@ -1,12 +1,13 @@
 import React from 'react'
 import { Organizations } from '@/components/ui/Organizations';
-import kust from '@/assets/kust.png'
-import gdsc from '@/assets/gdsc.png'
-import stem from '@/assets/stem.png'
-import bench from '@/assets/bench.png'
-import arewa from '@/assets/arewa.png'
-import asibiti from '@/assets/asibiti.png'
-import gdg from '@/assets/gdg.png'
+import kust from '@/assets/kust.png';
+import gdsc from '@/assets/gdsc.png';
+import stem from '@/assets/stem.png';
+import bench from '@/assets/bench.png';
+import arewa from '@/assets/arewa.png';
+import asibiti from '@/assets/asibiti.png';
+import gdg from '@/assets/gdg.png';
+import sauraro from '@/assets/Sauraro.png'
 // import sauraro from '@/assets/sauraro.png'
 
 const logos = [ 
@@ -20,6 +21,7 @@ const logos2 = [
   arewa,
   asibiti,
   gdg,
+  sauraro,
 //   sauraro,
    gdsc,
 ]
