@@ -7,7 +7,7 @@ import bench from '@/assets/bench.png'
 import arewa from '@/assets/arewa.png'
 import asibiti from '@/assets/asibiti.png'
 import gdg from '@/assets/gdg.png'
-import sauraro from '@/assets/sauraro.png'
+// import sauraro from '@/assets/sauraro.png'
 
 const logos = [ 
     kust,
@@ -20,7 +20,7 @@ const logos2 = [
   arewa,
   asibiti,
   gdg,
-  sauraro,
+//   sauraro,
    gdsc,
 ]
 export const Slides: React.FunctionComponent = () => {
