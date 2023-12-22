@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
+
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -41,9 +43,9 @@
 /* src/CustomCursor.css */
 .custom-cursor {
   position: fixed;
-  width: 30px;
-  height: 30px;
-  background: #cf60d1;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255);
   /*background: linear-gradient(93deg, #cf60d1 10.33%, #2c91ef 99.93%); /* Customize the color as needed */
   border-radius: 50%;
   pointer-events: none; /* Allows the cursor to pass through and interact with elements behind it */

@@ -114,9 +114,9 @@ export const HamburgerMenu: React.FunctionComponent = () => {
           onClick={toggleMenu}
         >
           {/* hamburger menu lines section*/}
-         <div className="flex flex-col items-center justify-center gap-1 borde dd">
+         <div className="flex mn flex-col items-center justify-center gap-1 borde dd">
              <span className="bar" style={{ backgroundColor: "white" }}></span>
-          <span className="bar" style={{ backgroundColor: "white" }}></span>
+             <span className="bar" style={{ backgroundColor: "white" }}></span>
          </div>
         </div>
       </nav>

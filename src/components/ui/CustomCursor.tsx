@@ -1,4 +1,3 @@
-// src/CustomCursor.js
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -26,19 +25,15 @@ const CustomCursor = () => {
 
     document.addEventListener('mousemove', updateCursorPosition);
 
-    // Add event listeners for the elements you want to track
     const trackedElements = document.querySelectorAll('p, h1, span');
 
     trackedElements.forEach((element) => {
       element.addEventListener('mouseenter', handleElementHover);
       element.addEventListener('mouseleave', handleElementLeave);
-      element.classList.add('cursor-text');
     });
 
     return () => {
       document.removeEventListener('mousemove', updateCursorPosition);
-
-      // Remove event listeners when the component unmounts
       trackedElements.forEach((element) => {
         element.removeEventListener('mouseenter', handleElementHover);
         element.removeEventListener('mouseleave', handleElementLeave);
@@ -50,10 +45,14 @@ const CustomCursor = () => {
     <motion.div
       className={`custom-cursor ${isHovered ? 'hovered' : ''}`}
       initial={{ opacity: 0, scale: 0.2 }}
-      animate={{ opacity: 1, scale: isHovered ? 6 : 1 }}
+      animate={{ opacity: 1, scale: isHovered ? 5 : 1 }}
       exit={{ opacity: 0, scale: 0.2 }}
       transition={{ duration: 0.3 }}
-      style={{ left: `${position.x}px`, top: `${position.y}px`, color: `${isHovered? '#ff0000' : '#ff0000'}` }}
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+        backgroundColor: isHovered ? '#F3F6FB' : 'rgba(255, 255, 255)',
+      }}
     >
       {/* You can customize the cursor content here */}
     </motion.div>
