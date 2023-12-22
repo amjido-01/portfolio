@@ -22,7 +22,6 @@ const logos2 = [
   asibiti,
   gdg,
   sauraro,
-//   sauraro,
    gdsc,
 ]
 export const Slides: React.FunctionComponent = () => {

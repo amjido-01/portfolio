@@ -43,6 +43,7 @@
 /* src/CustomCursor.css */
 .custom-cursor {
   position: fixed;
+  display: none;
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255);
@@ -280,5 +281,8 @@
 @media screen and (min-width: 1000px) {
   .word span {
     padding-left: 13px;
+  }
+  .custom-cursor {
+    display: block;
   }
 }
