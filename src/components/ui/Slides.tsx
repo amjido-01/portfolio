@@ -26,7 +26,7 @@ const logos2 = [
 ]
 export const Slides: React.FunctionComponent = () => {
   return (
-    <div className='mb-24'>
+    <div className='mt-[2.94rem] md:mt-[6.88rem] mb-24'>
         <h1 className='text-[#fff] text-[1rem] font-black montserrat style capitalize text-center md:text-[1.5rem]'>institutes I've work with </h1>
        <div className='mt-[2.68rem] md:mt-[4.5rem] flex flex-col gap-[2.61rem] md:gap-[4rem]'>
          <Organizations direction='right' logos={logos}/>
