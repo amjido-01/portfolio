@@ -25,7 +25,7 @@ const CustomCursor = () => {
 
     document.addEventListener('mousemove', updateCursorPosition);
 
-    const trackedElements = document.querySelectorAll('p, h1, span');
+    const trackedElements = document.querySelectorAll('p, h1, h2, span');
 
     trackedElements.forEach((element) => {
       element.addEventListener('mouseenter', handleElementHover);
@@ -51,7 +51,7 @@ const CustomCursor = () => {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        backgroundColor: isHovered ? '#F3F6FB' : 'rgba(255, 255, 255)',
+        backgroundColor: isHovered ? 'rgb(250, 250, 200)' : '',
       }}
     >
       {/* You can customize the cursor content here */}

@@ -6,7 +6,6 @@
   cursor: none;
 }
 
-
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -46,12 +45,12 @@
   display: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255);
-  /*background: linear-gradient(93deg, #cf60d1 10.33%, #2c91ef 99.93%); /* Customize the color as needed */
+  background: rgb(255, 255, 255, 0.5);
+  /* background: linear-gradient(93deg, #cf60d1 10.33%, #2c91ef 99.93%);  */
   border-radius: 50%;
-  pointer-events: none; /* Allows the cursor to pass through and interact with elements behind it */
-  mix-blend-mode: difference; /* Enhances visibility on different backgrounds */
-  z-index: 9999; /* Ensure it's above other elements */
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
 }
 /* .cursor-text:hover {
   color: red;
@@ -61,7 +60,6 @@
 /* .cursor-letter {
   display: inline-block;
 } */
-
 
 .bar {
   display: block;
@@ -109,7 +107,6 @@
 .hamburger.active {
   left: 0;
 }
-
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
@@ -178,7 +175,7 @@
 }
 
 .track {
-  background: linear-gradient(116deg, #D41FE3 -6.73%, #399AFD 141.95%);;
+  background: linear-gradient(116deg, #d41fe3 -6.73%, #399afd 141.95%);
 }
 
 .more {
@@ -189,7 +186,7 @@
 }
 
 .bullet {
-  background:  linear-gradient(116deg, #D41FE3 -6.73%, #399AFD 141.95%);
+  background: linear-gradient(116deg, #d41fe3 -6.73%, #399afd 141.95%);
 }
 
 .testimony {
@@ -227,7 +224,7 @@
 }
 
 @media screen and (min-width: 400px) {
-    .hero-bg {
+  .hero-bg {
     background-image: url("./assets/lg-bg.png");
     /* background-position: inherit; */
     /* background-attachment: fixed; */
@@ -240,7 +237,6 @@
     /* background-size: 50%; */
   }
 }
-
 
 @media screen and (min-width: 780px) {
   .nav-menu {
@@ -271,11 +267,11 @@
   }
 
   .testimony {
-  background-image: url("./assets/lgTstmyBg.png");
-  background-repeat: inherit;
-  background-position: center;
-  /* background-size: cover; */
-}
+    background-image: url("./assets/lgTstmyBg.png");
+    background-repeat: inherit;
+    background-position: center;
+    /* background-size: cover; */
+  }
 }
 
 @media screen and (min-width: 1000px) {
