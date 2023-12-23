@@ -4,6 +4,7 @@ import { Works } from '@/components/ui/Works';
 import { Blogs } from '@/components/ui/Blogs';
 import {Testimony} from '@/components/ui/Testimony';
 import { Slides } from '@/components/ui/Slides';
+import { Contact } from '@/components/ui/Contact';
 export const Home: React.FC = () => {
   return (
     <section className="bg-[#0B1121] h-scree">
@@ -12,6 +13,7 @@ export const Home: React.FC = () => {
       <Blogs />
       <Testimony />
       <Slides />
+      <Contact />
     </section>
   );
 };

@@ -13,7 +13,7 @@ export const Testimony: React.FunctionComponent = () => {
   return (
     <main className="mt-[2.94rem] md:mt-[6.88rem]">
       {/* Heading for the testimonials section. */}
-      <div className="">
+      <div>
         { /* horizontal scroll carousel component that displays testimonial cards and receives props from testimonyData.ts */ }
         <HorizontalScrollCarousel cards={testimonyCards} />
       </div>
