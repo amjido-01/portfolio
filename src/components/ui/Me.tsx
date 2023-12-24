@@ -14,7 +14,7 @@ import { ReadMore } from "./ReadMore";
 export const Me: React.FunctionComponent = () => {
   // component code
   return (
-    <main className="border-2 mt-[10rem] md:mt-[15rem]">
+    <main className="mt-[10rem] md:mt-[15rem]">
       {/* section 1: intro text and photo*/}
       <div className="mx-auto w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center">
         { /* photo*/}

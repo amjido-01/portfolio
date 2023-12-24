@@ -13,6 +13,12 @@ export const Contact = () => {
 
         <div>
             <h3 className='text-[#eee] montserrat text-[1rem] md:text-[1.90494rem] style font-bold capitalize'>leave a message</h3>
+
+            <div>
+                <form>
+
+                </form>
+            </div>
         </div>
     </div>
     </div>
