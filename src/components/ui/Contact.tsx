@@ -6,7 +6,7 @@ import { Textarea } from './textarea';
 import { Button } from './button';
 export const Contact: React.FunctionComponent = () => {
   return (
-    <div className=" md:mt-[13.52rem]">
+    <div className="mt-[10.36rem] md:mt-[14.42rem]">
          <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[12.5rem] mx-auto w-[90%] lg:w-[85%] ">
 
         <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.14306rem] style font-black capitalize">

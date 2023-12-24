@@ -8,7 +8,7 @@ import { Contact } from '@/components/ui/Contact';
 import { Footer } from '@/components/ui/Footer';
 export const Home: React.FC = () => {
   return (
-    <section className="bg-[#0B1121] relative">
+    <section className="bg-[#0B1121]">
       <Hero />
       <Works />
       <Blogs />
