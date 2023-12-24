@@ -4,10 +4,10 @@ import { Input } from './input';
 import { Label } from './label';
 import { Textarea } from './textarea';
 import { Button } from './button';
-export const Contact = () => {
+export const Contact: React.FunctionComponent = () => {
   return (
-    <div className="border-2 md:mt-[13.52rem]">
-         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[12.5rem] mx-auto w-[90%] lg:w-[85%] border-2">
+    <div className=" md:mt-[13.52rem]">
+         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[12.5rem] mx-auto w-[90%] lg:w-[85%] ">
 
         <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.14306rem] style font-black capitalize">
             <h2>want to collaborate <br/> or <span className="gradient-text">hire me.</span></h2>
@@ -15,24 +15,25 @@ export const Contact = () => {
             <img src={mdHireArrow} className='hidden md:block mt-[4.29rem]' alt="arrow" />
         </div>
 
-        <div className='border-2 md:w-[37.02706rem]'>
+        <div className=' md:w-[37.02706rem]'>
             <h3 className='text-[#eee] montserrat text-[1rem] md:text-[1.90494rem] style font-bold capitalize'>leave a message</h3>
 
             <div>
                 <form className='mt-[1.62rem]'>
-                    <div className='border-2'>
+                    <div className=''>
                         <Label htmlFor='email' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Email</Label>
                         <Input type="email" id='email' placeholder="example@gmail.com" />
                     </div>
-                    <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
+                    <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                         <Label htmlFor='name' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Name</Label>
                         <Input type="text" id='name' placeholder="muhammad ni’imatullahi" />
                     </div>
-                    <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
+                    <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                         <Label htmlFor='message' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Message</Label>
                         <Textarea id='message' placeholder="write your message here" />
                     </div>
-                    <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
+
+                    <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                           <Button
                         size="lg"
                         className="btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"

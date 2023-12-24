@@ -5,15 +5,17 @@ import { Blogs } from '@/components/ui/Blogs';
 import {Testimony} from '@/components/ui/Testimony';
 import { Slides } from '@/components/ui/Slides';
 import { Contact } from '@/components/ui/Contact';
+import { Footer } from '@/components/ui/Footer';
 export const Home: React.FC = () => {
   return (
-    <section className="bg-[#0B1121] h-scree">
+    <section className="bg-[#0B1121] relative">
       <Hero />
       <Works />
       <Blogs />
       <Testimony />
       <Slides />
       <Contact />
+      <Footer />
     </section>
   );
 };
