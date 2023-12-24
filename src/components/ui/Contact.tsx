@@ -2,6 +2,8 @@ import mdHireArrow from '@/assets/mdHireArrow.svg';
 import smHireArrow from '@/assets/smHireArrow.svg';
 import { Input } from './input';
 import { Label } from './label';
+import { Textarea } from './textarea';
+import { Button } from './button';
 export const Contact = () => {
   return (
     <div className="border-2 md:mt-[13.52rem]">
@@ -25,6 +27,18 @@ export const Contact = () => {
                     <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
                         <Label htmlFor='name' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Name</Label>
                         <Input type="text" id='name' placeholder="muhammad ni’imatullahi" />
+                    </div>
+                    <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
+                        <Label htmlFor='message' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Message</Label>
+                        <Textarea id='message' placeholder="write your message here" />
+                    </div>
+                    <div className='border-2 mt-[1.25rem] md:mt-[1.62rem]'>
+                          <Button
+                        size="lg"
+                        className="btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
+                    >
+                    send
+                    </Button>
                     </div>
                 </form>
             </div>
