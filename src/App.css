@@ -13,6 +13,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
 .style {
   font-style: normal;
 }
@@ -52,14 +56,6 @@
   mix-blend-mode: difference;
   z-index: 9999;
 }
-/* .cursor-text:hover {
-  color: red;
-} */
-
-/* Add this to your CSS file */
-/* .cursor-letter {
-  display: inline-block;
-} */
 
 .bar {
   display: block;

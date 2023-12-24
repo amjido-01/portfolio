@@ -1,5 +1,7 @@
 import mdHireArrow from '@/assets/mdHireArrow.svg';
 import smHireArrow from '@/assets/smHireArrow.svg';
+import { Input } from './input';
+import { Label } from './label';
 export const Contact = () => {
   return (
     <div className="border-2 md:mt-[13.52rem]">
@@ -11,12 +13,15 @@ export const Contact = () => {
             <img src={mdHireArrow} className='hidden md:block mt-[4.29rem]' alt="arrow" />
         </div>
 
-        <div>
+        <div className='border-2 md:w-[37.02706rem]'>
             <h3 className='text-[#eee] montserrat text-[1rem] md:text-[1.90494rem] style font-bold capitalize'>leave a message</h3>
 
             <div>
-                <form>
-
+                <form className='mt-[1.62rem]'>
+                    <div>
+                        <Label htmlFor='email' className='text-[#696969] montserrat text-[0.71438rem] style font-normal'>Email</Label>
+                        <Input type="email" id='email' className=' placeholder:text-[#696969] placeholder:lato placeholder:text-[0.5rem] placeholder:md:text-[0.71438rem] font-normal lowercase bg-transparent' placeholder="example@gmail.com" />
+                    </div>
                 </form>
             </div>
         </div>
