@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 
 export const Footer: React.FunctionComponent = () => {
   return (
-<footer className="bg-[#0E162A] mt-[6.14rem] h-[70vh] md:h-[82vh] w-full">
+<footer className="bg-[#0E162A] pt-[4rem] px-[2rem] md:p-[6rem] mt-[6.14rem] h-[70vh] md:h-[82vh] w-full relative bottom-0 left-0 right-0">
 
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div className="w-full max-w-screen-xl mx-auto">
 
         <div className='flex justify-center items-center'>
 
