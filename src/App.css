@@ -6,6 +6,13 @@
   cursor: none;
 }
 
+
+#icon {
+  object-fit: contain;
+  width: 10px;
+  height: 10px;
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
