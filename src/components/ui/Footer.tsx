@@ -19,7 +19,7 @@ export const Footer: React.FunctionComponent = () => {
             <div className="flex flex-col gap-[2.19rem] md:gap-[4rem]">
                 
             <div className="w-full flex justify-center items-center">
-                <img src={footerlogo} className='w-[10.125rem] h-[5.625rem]' alt="logo" />
+                <img src={footerlogo} className='w-[6.75rem] h-[3.75rem] md:w-[10.125rem] md:h-[5.625rem]' alt="logo" />
             </div>
 
           <div>
