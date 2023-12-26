@@ -33,17 +33,17 @@ export const Hero: React.FunctionComponent = () => {
         className="absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-[1rem] md:-right-[14rem] lg:-right-[2rem]"
       />
       {/* hero section */}
-      <div className="h-[100vh]">
+      <div className="h-[100vh] border-2">
         <div className="flex justify-center mx-auto ">
           <div className="w-[85%] mt-[8.87rem] md:mt-[15rem]">
             { /* intro text and call to action button*/}
             <Intro />
           </div>
         </div>
-        <div className="mt-[3.8rem] md:mt-[8rem] lg:mt-[4rem] justify-center items-center flex">
+        <div className="mt-[3.8rem] md:mt-[8rem] lg:mt-[4rem] justify-center items-center flex border-2">
           <Button
             size="lg"
-            className="btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
+            className="btn z-[2] text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
           >
             Projects
           </Button>
