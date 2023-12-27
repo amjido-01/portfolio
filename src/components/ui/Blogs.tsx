@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Import ImageData array and Image interface
-import { ImageData, Image } from '../../ImageData';
+// import { ImageData, Image } from '../../ImageData';
 
 // Component summary 
 /**
