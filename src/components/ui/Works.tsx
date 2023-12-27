@@ -71,9 +71,9 @@ export const Works: React.FunctionComponent = () => {
                   animate={{ opacity: 1, transition: { duration: 0.3 } }}
                 >
                   {/* Progress bar segment */}
-                  <span className="rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] mx-auto transform -translate-x-[49%] md:-translate-x-[50%] text-white flex items-center justify-center -translate-y-[2px]">
+                  {/* <span className="rounded-full bullet w-[1.44181rem] h-[1.44181rem] md:w-[2.125rem] md:h-[2.125rem] mx-auto transform -translate-x-[49%] md:-translate-x-[50%] text-white flex items-center justify-center -translate-y-[2px]">
                     {index + 1}.
-                  </span>
+                  </span> */}
                 </motion.div>
               ))}
             </div>
