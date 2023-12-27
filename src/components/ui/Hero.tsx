@@ -47,7 +47,7 @@ export const Hero: React.FunctionComponent = () => {
           <Button
             onClick={() => {navigate("/projects")}}
             size="lg"
-            className="btn z-[2] text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
+            className="btn z-[2] text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
           >
             Projects
           </Button>
