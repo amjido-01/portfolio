@@ -60,28 +60,16 @@ export const Blogs: React.FunctionComponent = () => {
             <Component />
           </div>
         ))}
-          {/* {ImageData.map((img: Image) => (
-            <img
-              key={img.id}
-              className={`${
-                expandedImageId === img.id ? "w-[38rem]" : "w-[18rem]"
-              } rounded-[1.5rem] border-2 h-[35rem] cursor-pointer object-content`}
-              // src={img.src}
-              alt={img.alt}
-              onClick={() => handleExpand(img.id)}
-            />
-          ))} */}
         </article>
         <article className="flex flex-col lg:hidden gap-[1.5rem] justify-center">
-          {ImageData.map((img: Image) => (
-            <img
-              key={img.id}
-              className={`w-[18.75rem] h-[29.25rem] md:w-[38rem] md:h-[55rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
-              src={img.src}
-              alt={img.alt}
-              onClick={() => handleExpand(img.id)}
-            />
-          ))}
+           {componentList.map((Component, index) => (
+          <div
+            key={index}
+              className={`w-[18.75rem] border-2 h-[29.25rem] md:w-[38rem] md:h-[55rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
+          >
+            <Component />
+          </div>
+        ))}
         </article>
       </div>
     </main>
