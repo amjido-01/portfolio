@@ -46,7 +46,7 @@ export const Me: React.FunctionComponent = () => {
             <Button
               size="lg"
               variant="link"
-              className="border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[0.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] hover:no-underline md:px-[1.5rem] style"
+              className="border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.65rem] px-[0.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] hover:no-underline md:px-[1.5rem] style"
             >
               Read More <ReadMore />{" "}
             </Button>

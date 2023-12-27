@@ -7,9 +7,9 @@ import { Button } from './button';
 export const Contact: React.FunctionComponent = () => {
   return (
     <div className="mt-[10.36rem] md:mt-[14.42rem]">
-         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[12.5rem] mx-auto w-[90%] lg:w-[85%] px-2 md:px-0">
+         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[11.5rem] mx-auto w-[90%] lg:w-[85%] px-2 md:px-0">
 
-        <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.25rem] border-2 style font-black capitalize">
+        <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize">
             <h2>want to collaborate <br/> or <span className="gradient-text">hire me.</span></h2>
             <img src={smHireArrow} alt="arrow" className='block md:hidden mt-[2.81rem]'/>
             <img src={mdHireArrow} className='hidden md:block mt-[4.29rem]' alt="arrow" />
@@ -36,7 +36,7 @@ export const Contact: React.FunctionComponent = () => {
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                           <Button
                         size="lg"
-                        className="btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2.5rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
+                        className="btn text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
                     >
                     send
                     </Button>

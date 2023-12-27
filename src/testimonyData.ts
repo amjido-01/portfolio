@@ -1,5 +1,6 @@
 import niima from '@/assets/niima.png';
-// import bk from '@/assets/bk.jpeg';
+import bk from '@/assets/bk.png';
+import sj from '@/assets/sj.png'
 /**
  * Interface for testimony data props.
  * Defines the shape of objects representing testimony data.
@@ -37,7 +38,7 @@ export const testimonyCards: dataProps[] = [
      id: 3,
     title: "Title 3",
     name: "Bukhari Auwal",
-    pic: niima,
+    pic: bk,
     content: "“Lorem ipsum dolor sit amet consectetur. Fermentum convallis semper integer adipiscing adipiscing nibh eget. Posuere neque semper gravida massa cursus turpis vulputate. Mi maecenas.”",
      alt: 'testimony',
      role: 'software engineer'
@@ -46,7 +47,7 @@ export const testimonyCards: dataProps[] = [
      id: 4,
     title: "Title 4",
     name: "Suraj wizard",
-    pic: niima,
+    pic: sj,
     content: "“Lorem ipsum dolor sit amet consectetur. Fermentum convallis semper integer adipiscing adipiscing nibh eget. Posuere neque semper gravida massa cursus turpis vulputate. Mi maecenas.”",
      alt: 'testimony',
      role: 'software engineer'
