@@ -50,7 +50,7 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
     >
       {/** The sticky container element. */}
       <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
+        <motion.div style={{ x }} className="flex gap-8">
           {/* Render the cards in a carousel component. */}
           {cards.map((card) => (
             <Card card={card} key={card.id} />

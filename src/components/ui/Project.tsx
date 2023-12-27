@@ -47,7 +47,7 @@ export const Project: React.FunctionComponent<projectProps> = ({
         </Button>
         <Button
           variant="link"
-          className="border-b-2 text-[#fff] flex justify-center gap-4 py-[0.75rem] px-[1.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[2.2rem] style hover:no-underline"
+          className="border-b-2 text-[#fff] flex justify-center gap-4 py-[0.75rem] px-[1.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[1.5rem] style hover:no-underline"
         >
           Live view <GoLive />
         </Button>

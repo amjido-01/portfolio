@@ -50,7 +50,7 @@
   display: none;
   width: 20px;
   height: 20px;
-  background: rgb(255, 255, 255, 0.5);
+  background: white;
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: difference;
@@ -89,7 +89,6 @@
 .bg-collapse {
   /* transition: 0.3s ease-in-out; */
 }
-
 .nav-menu.active {
   right: 0;
 }
@@ -182,7 +181,7 @@
 }
 
 .bullet {
-  background: linear-gradient(116deg, #d41fe3 -6.73%, #399afd 141.95%);
+  background: linear-gradient(178deg, #CF60D1 0%, #358EED 100%);
 }
 
 .testimony {

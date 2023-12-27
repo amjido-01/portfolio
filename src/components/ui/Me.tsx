@@ -36,7 +36,7 @@ export const Me: React.FunctionComponent = () => {
             </p>
           </div>
           { /* call to action buttons*/}
-          <div className="footer flex mt-[2rem] justify-between px-2 md:p-0 sm:justify-normal sm:gap-[4rem]  md:justify-between items-end md:w-full mx-auto md:mx-0">
+          <div className="footer flex mt-[2rem] justify-between px-2 md:p-0 sm:justify-normal sm:gap-[4rem] items-end md:w-full mx-auto md:mx-0">
             <Button
               size="lg"
               className="btn text-[#fff] py-[0.75rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] style md:px-[4rem]"
@@ -46,7 +46,7 @@ export const Me: React.FunctionComponent = () => {
             <Button
               size="lg"
               variant="link"
-              className="border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[1rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] hover:no-underline md:px-[2.2rem] style"
+              className="border-b-2 text-[#fff] border2 flex justify-center gap-4 py-[0.75rem] px-[1rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] hover:no-underline md:px-[1.5rem] style"
             >
               Read More <ReadMore />{" "}
             </Button>

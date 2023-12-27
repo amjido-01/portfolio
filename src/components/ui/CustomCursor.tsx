@@ -51,7 +51,7 @@ const CustomCursor = () => {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        backgroundColor: isHovered ? 'rgb(250, 250, 200)' : '',
+        backgroundColor: isHovered ? '#f4f4f4' : '',
       }}
     >
       {/* You can customize the cursor content here */}

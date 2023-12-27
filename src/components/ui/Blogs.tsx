@@ -33,13 +33,13 @@ export const Blogs: React.FunctionComponent = () => {
           My Blogs
         </h1>
         {/* Heading description*/}
-        <article className="hidden lg:flex gap-[1rem] justify-center">
+        <article className="hidden border-2 lg:flex gap-[1rem] justify-center">
           {ImageData.map((img: Image) => (
             <img
               key={img.id}
               className={`${
                 expandedImageId === img.id ? "w-[38rem]" : "w-[18rem]"
-              } rounded-[1.5rem] h-[35rem] cursor-pointer object-content`}
+              } rounded-[1.5rem] h-[40rem] cursor-pointer object-cover`}
               src={img.src}
               alt={img.alt}
               onClick={() => handleExpand(img.id)}

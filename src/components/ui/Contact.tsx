@@ -9,7 +9,7 @@ export const Contact: React.FunctionComponent = () => {
     <div className="mt-[10.36rem] md:mt-[14.42rem]">
          <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[12.5rem] mx-auto w-[90%] lg:w-[85%] px-2 md:px-0">
 
-        <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.14306rem] style font-black capitalize">
+        <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.25rem] border-2 style font-black capitalize">
             <h2>want to collaborate <br/> or <span className="gradient-text">hire me.</span></h2>
             <img src={smHireArrow} alt="arrow" className='block md:hidden mt-[2.81rem]'/>
             <img src={mdHireArrow} className='hidden md:block mt-[4.29rem]' alt="arrow" />

@@ -6,7 +6,7 @@ import ArrowSm from '@/assets/ArrowSm.svg';
 import gdsc from '@/assets/gdsc.png';
 import stem from '@/assets/stem.png';
 import bench from '@/assets/bench.png';
-import arewa from '@/assets/arewa.png';
+import earewa from '@/assets/earewa.png';
 import asibiti from '@/assets/asibiti.png';
 import gdg from '@/assets/gdg.png';
 import sauraro from '@/assets/Sauraro.png'
@@ -20,7 +20,7 @@ const logos = [
     asibiti,
 ]
 const logos2 = [
-  arewa,
+  earewa,
   asibiti,
   gdg,
   sauraro,

@@ -9,7 +9,7 @@ export const LgDownArrow = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={32} cy={32} r={31} stroke="#fff" strokeWidth={2} />
     <motion.g
       initial={{ y: 0 }}
-      animate={{ y: [-16, 16, -16] }} // Bouncing animation along the y-axis
+      animate={{ y: [-10, 10, -10] }} // Bouncing animation along the y-axis
       transition={{
         duration: 5,
         stiffness: 50,
