@@ -39,7 +39,6 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
   // Use the useTransform hook to map the scroll progress to a CSS transform value.
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
-  console.log(cards);
   
 
   // Render the cards in a flex container with horizontal scrolling overflow.

@@ -11,18 +11,33 @@ import { ImageData, Image } from '../../ImageData';
  * - Image grid with expand handler
  */
 
+interface ComponentProps {
+  // Define any props here if needed
+}
+
+const FirstBlog: React.FunctionComponent<ComponentProps> = () => {
+  return <div className='text-white text-4xl'>Hello from blog one</div>
+}
+const SecondBlog: React.FunctionComponent<ComponentProps> = () => {
+  return <div>Hello from blog two</div>
+}
+const ThirdBlog: React.FunctionComponent = () => {
+  return <div>Hello from blog three</div>
+}
+
 export const Blogs: React.FunctionComponent = () => {
+   const componentList: React.FC<ComponentProps>[] = [FirstBlog, SecondBlog, ThirdBlog]
+
   // State to manage expanded image
-  const [expandedImageId, setExpandedImageId] = useState<number | null>(
-    ImageData[0].id
-  );
+  const [expandedImageId, setExpandedImageId] = useState<number | null>(0);
 
   // Handler to manage expanded image
-  const handleExpand = (id: number) => {
-    if (expandedImageId === id) return;
-    setExpandedImageId(id);
+  const handleExpand = (index: number) => {
+    if (expandedImageId === index) return;
+    setExpandedImageId(index);
   };
 
+ 
   // Render
   return (
     <main className="mt-[7.88rem] md:mt-[7.94rem]">
@@ -33,18 +48,29 @@ export const Blogs: React.FunctionComponent = () => {
           My Blogs
         </h1>
         {/* Heading description*/}
-        <article className="hidden border-2 lg:flex gap-[1rem] justify-center">
-          {ImageData.map((img: Image) => (
+        <article className="hidden lg:flex gap-[1rem] justify-center">
+           {componentList.map((Component, index) => (
+          <div
+            key={index}
+            className={`${
+              expandedImageId === index ? "w-[38rem]" : "w-[18rem]"
+            } rounded-[1.5rem] border-2 h-[35rem] cursor-pointer object-content`}
+              onClick={() => handleExpand(index)}
+          >
+            <Component />
+          </div>
+        ))}
+          {/* {ImageData.map((img: Image) => (
             <img
               key={img.id}
               className={`${
                 expandedImageId === img.id ? "w-[38rem]" : "w-[18rem]"
-              } rounded-[1.5rem] h-[40rem] cursor-pointer object-cover`}
-              src={img.src}
+              } rounded-[1.5rem] border-2 h-[35rem] cursor-pointer object-content`}
+              // src={img.src}
               alt={img.alt}
               onClick={() => handleExpand(img.id)}
             />
-          ))}
+          ))} */}
         </article>
         <article className="flex flex-col lg:hidden gap-[1.5rem] justify-center">
           {ImageData.map((img: Image) => (
