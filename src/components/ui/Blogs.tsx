@@ -16,7 +16,9 @@ interface ComponentProps {
 }
 
 const FirstBlog: React.FunctionComponent<ComponentProps> = () => {
-  return <div className='text-white text-4xl'>Hello from blog one</div>
+  return <div className='bg-[#5D8FBD]'>
+
+  </div>
 }
 const SecondBlog: React.FunctionComponent<ComponentProps> = () => {
   return <div>Hello from blog two</div>
