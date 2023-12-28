@@ -24,14 +24,14 @@ const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
     <div className=''>
       <span className='circle bg-[#D9D9D9] w-[2.625rem] h-[2.625rem] rounded-[50%] border-2 block'></span>
 
-      <h2 className={`${expanded === 0 ? 'text-red-600 w-[24.8125rem]' : 'w-[13.5625rem]'} text-[#0B1121] montserrat style font-black capitalize text-[2.25rem] `}
+      <h2 className={`${expanded === 0 ? 'text-red-600 lg:w-[20rem]' : 'w-[18rem] lg:w-[15.8125rem]'} text-[#0B1121] montserrat style font-black capitalize text-[2.25rem] border-2 `}
        
       >Blogs title come in here</h2>
     </div>
 
     <div className={`${expanded === 0 ? 'mt-[4rem]' : 'mt-[1.9rem]'} flex gap-[3.34rem] relative`}>
-      <Button className={`${expanded === 0 ? 'block' : 'hidden'}`}>Read More</Button>
-      <img className={`${expanded === 0 ? 'w-[18.91406rem]' : ' w-[14.5rem] h-[19rem] absolute -right-12'}`} src={blog1} alt="" />
+      <Button className={`${expanded === 0 ? 'block' : 'lg:hidden'}`}>Read More</Button>
+      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-[33.625rem]' : ' w-[14.5rem] h-[19rem] absolute -right-4 md:-right-12'}`} src={blog1} alt="" />
     </div>
   </div>
 }
@@ -65,13 +65,13 @@ export const Blogs: React.FunctionComponent = () => {
           My Blogs
         </h1>
         {/* Heading description*/}
-        <article className="hidden lg:flex gap-[1rem] justify-center">
+        <article className="hidden lg:flex h-[38rem] gap-[1rem] justify-center">
            {componentList.map((Component, index) => (
           <div
             key={index}
             className={`${
               expandedImageId === index ? "w-[38rem]" : "w-[18rem]"
-            } border-2 h-[35rem] cursor-pointer`}
+            } border-2 cursor-pointer`}
               onClick={() => handleExpand(index)}
           >
             <Component expanded={expandedImageId}/>
@@ -82,7 +82,7 @@ export const Blogs: React.FunctionComponent = () => {
            {componentList.map((Component, index) => (
           <div
             key={index}
-              className={`w-[18.75rem] border-2 h-[29.25rem] md:w-[38rem] md:h-[55rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
+              className={`w-[90%] sm:w-[25rem]  border-2 h-[34.25rem] md:w-[38rem] sm:h-[50rem] md:h-[48rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
           >
             <Component expanded={expandedImageId}/>
           </div>
