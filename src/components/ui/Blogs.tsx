@@ -19,19 +19,19 @@ interface ComponentProps {
 }
 // style={{ whiteSpace: expanded === 0 ? 'normal' : 'nowrap' }}
 const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
-  return <div className={`${expanded === 0 && 'pt-[2.37rem] pl-[3.12rem]'} bg-[#5D8FBD] h-full rounded-[1.5rem] pt-[2rem]`}>
+  return <div className={`${expanded === 0 && 'pt-[2.47rem] pl-[3.12rem]'} bg-[#5D8FBD] h-full rounded-[1.5rem] pt-[2rem] pl-[2rem] overflow-hidden`}>
 
-    <div className='border-2'>
+    <div className=''>
       <span className='circle bg-[#D9D9D9] w-[2.625rem] h-[2.625rem] rounded-[50%] border-2 block'></span>
 
-      <h2 className={`${expanded === 0 ? 'text-red-600 w-[24.8125rem]' : 'w-[13.5625rem]'} text-[#0B1121] montserrat style font-black capitalize border-2 text-[2.25rem] `}
+      <h2 className={`${expanded === 0 ? 'text-red-600 w-[24.8125rem]' : 'w-[13.5625rem]'} text-[#0B1121] montserrat style font-black capitalize text-[2.25rem] `}
        
       >Blogs title come in here</h2>
     </div>
 
-    <div className='flex gap-[3.34rem] border-2 border-red-500 mt-[0.4rem]'>
+    <div className={`${expanded === 0 ? 'mt-[4rem]' : 'mt-[1.9rem]'} flex gap-[3.34rem] relative`}>
       <Button className={`${expanded === 0 ? 'block' : 'hidden'}`}>Read More</Button>
-      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-fit' : ' w-[15.74813rem]'} object-scale-down`} src={blog1} alt="" />
+      <img className={`${expanded === 0 ? 'w-[18.91406rem]' : ' w-[14.5rem] h-[19rem] absolute -right-12'}`} src={blog1} alt="" />
     </div>
   </div>
 }
@@ -84,7 +84,7 @@ export const Blogs: React.FunctionComponent = () => {
             key={index}
               className={`w-[18.75rem] border-2 h-[29.25rem] md:w-[38rem] md:h-[55rem] rounded-[1.5rem] cursor-pointer mx-auto object-cover`}
           >
-            <Component />
+            <Component expanded={expandedImageId}/>
           </div>
         ))}
         </article>
