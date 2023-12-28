@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from './button';
 // Import ImageData array and Image interface
 // import { ImageData, Image } from '../../ImageData';
 
@@ -15,14 +16,18 @@ interface ComponentProps {
   // Define any props here if needed
   expanded: number | null
 }
-
+// style={{ whiteSpace: expanded === 0 ? 'normal' : 'nowrap' }}
 const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
-  return <div className='bg-[#5D8FBD] h-full rounded-[1.5rem]'>
+  return <div className={`${expanded === 0 && 'pt-[2.37rem]'} bg-[#5D8FBD] h-full rounded-[1.5rem] pt-[2rem]`}>
+
     <div className='border-2'>
       <span className='circle bg-[#D9D9D9] w-[2.625rem] h-[2.625rem] rounded-[50%] border-2 block'></span>
 
-      <h2 className={`${expanded === 0 && 'text-red-600'} text-[#0B1121] text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize w-[13.5625rem] md:w-[24.8125rem]`}>Blogs title come in here for better communication</h2>
+      <h2 className={`${expanded === 0 ? 'text-red-600 w-[24.8125rem]' : 'w-[13.5625rem]'} text-[#0B1121] montserrat style font-black capitalize border-2 text-[2.25rem] `}
+       
+      >Blogs title come in here</h2>
     </div>
+
     <div></div>
   </div>
 }
