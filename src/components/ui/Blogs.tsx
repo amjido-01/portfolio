@@ -13,11 +13,17 @@ import React, { useState } from 'react';
 
 interface ComponentProps {
   // Define any props here if needed
+  expanded: number | null
 }
 
-const FirstBlog: React.FunctionComponent<ComponentProps> = () => {
-  return <div className='bg-[#5D8FBD]'>
+const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
+  return <div className='bg-[#5D8FBD] h-full rounded-[1.5rem]'>
+    <div className='border-2'>
+      <span className='circle bg-[#D9D9D9] w-[2.625rem] h-[2.625rem] rounded-[50%] border-2 block'></span>
 
+      <h2 className={`${expanded === 0 && 'text-red-600'} text-[#0B1121] text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize w-[13.5625rem] md:w-[24.8125rem]`}>Blogs title come in here for better communication</h2>
+    </div>
+    <div></div>
   </div>
 }
 const SecondBlog: React.FunctionComponent<ComponentProps> = () => {
@@ -56,10 +62,10 @@ export const Blogs: React.FunctionComponent = () => {
             key={index}
             className={`${
               expandedImageId === index ? "w-[38rem]" : "w-[18rem]"
-            } rounded-[1.5rem] border-2 h-[35rem] cursor-pointer object-content`}
+            } border-2 h-[35rem] cursor-pointer`}
               onClick={() => handleExpand(index)}
           >
-            <Component />
+            <Component expanded={expandedImageId}/>
           </div>
         ))}
         </article>
