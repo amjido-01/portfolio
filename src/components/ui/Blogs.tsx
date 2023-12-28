@@ -29,9 +29,9 @@ const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
       >Blogs title come in here</h2>
     </div>
 
-    <div className={`${expanded === 0 ? 'mt-[4rem]' : 'mt-[1.9rem]'} flex gap-[3.34rem] relative`}>
+    <div className={`${expanded === 0 ? 'mt-[4rem]' : 'mt-[1.9rem]'} flex gap-[3rem] md:gap-[3.34rem] relative border-2`}>
       <Button className={`${expanded === 0 ? 'block' : 'lg:hidden'}`}>Read More</Button>
-      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-[33.625rem]' : ' w-[14.5rem] h-[19rem] absolute -right-4 md:-right-12'}`} src={blog1} alt="" />
+      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-[33.625rem]' : ' w-[14.5rem] h-[19rem] absolute -right-4 md:-right-12'} object-scaledown`} src={blog1} alt="" />
     </div>
   </div>
 }
