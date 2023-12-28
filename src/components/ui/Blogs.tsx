@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './button';
+import blog1 from '@/assets/blog1.png'
 // Import ImageData array and Image interface
 // import { ImageData, Image } from '../../ImageData';
 
@@ -18,7 +19,7 @@ interface ComponentProps {
 }
 // style={{ whiteSpace: expanded === 0 ? 'normal' : 'nowrap' }}
 const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
-  return <div className={`${expanded === 0 && 'pt-[2.37rem]'} bg-[#5D8FBD] h-full rounded-[1.5rem] pt-[2rem]`}>
+  return <div className={`${expanded === 0 && 'pt-[2.37rem] pl-[3.12rem]'} bg-[#5D8FBD] h-full rounded-[1.5rem] pt-[2rem]`}>
 
     <div className='border-2'>
       <span className='circle bg-[#D9D9D9] w-[2.625rem] h-[2.625rem] rounded-[50%] border-2 block'></span>
@@ -28,7 +29,10 @@ const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
       >Blogs title come in here</h2>
     </div>
 
-    <div></div>
+    <div className='flex gap-[3.34rem] border-2 border-red-500 mt-[0.4rem]'>
+      <Button className={`${expanded === 0 ? 'block' : 'hidden'}`}>Read More</Button>
+      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-fit' : ' w-[15.74813rem]'} object-scale-down`} src={blog1} alt="" />
+    </div>
   </div>
 }
 const SecondBlog: React.FunctionComponent<ComponentProps> = () => {
