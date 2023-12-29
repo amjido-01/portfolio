@@ -5,7 +5,9 @@
   box-sizing: border-box;
   cursor: none;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -15,7 +17,7 @@
 }
 
 .lato {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .style {
@@ -117,10 +119,7 @@
 
 .hero-bg {
   background-image: url("./assets/sm-bg.png");
-  /* background-position-y: -40px; */
-  /* background-position-x: center; */
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: auto;
 }
 
@@ -144,7 +143,7 @@
 }
 
 .gradient-text {
- background: linear-gradient(93deg, #9147FB 19.29%, #328DEF 52.09%);
+  background: linear-gradient(93deg, #9147fb 19.29%, #328def 52.09%);
   background-clip: text;
   -webkit-background-clip: text; /* For Safari */
   color: transparent;
@@ -181,7 +180,7 @@
 }
 
 .bullet {
-  background: linear-gradient(178deg, #CF60D1 0%, #358EED 100%);
+  background: linear-gradient(178deg, #cf60d1 0%, #358eed 100%);
 }
 
 .testimony {
@@ -218,18 +217,52 @@
   }
 }
 
+
+.blog-container {
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.swiper-slide {
+  width: 17.64294rem !important;
+  height: 23.90863rem !important;
+  position: relative;
+  border: 1px solid red;
+}
+
+  .swiper_container {
+    height: 23.90863rem;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 400px) {
   .hero-bg {
     background-image: url("./assets/lg-bg.png");
-    /* background-position: inherit; */
-    /* background-attachment: fixed; */
-    /* background-position-y: -90px; */
-
-    /* background-position: 50% 50%;  */
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-position-x: center;
-    /* background-size: 50%; */
   }
 }
 
@@ -251,15 +284,30 @@
 
   .hero-bg {
     background-image: url("./assets/lg-bg.png");
-    /* background-position: inherit; */
-    /* background-attachment: fixed; */
-    /* background-position-y: -90px; */
-
-    /* background-position: 50% 50%;  */
-    /* background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
   }
+  .swiper_container {
+  height: 34.89488rem;
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  border: 2px solid blue;
+}
+    .swiper-slide {
+    width: 28rem !important;
+    height: 32rem !important;
+    border: 2px solid greenyellow;
+    
+  } 
+
+  .swiper-slide img {
+  border-radius: 2rem;
+  height: 32rem;
+  width: 28rem;
+  object-fit: cover;
+}
+
 
   .testimony {
     background-image: url("./assets/lgTstmyBg.png");
