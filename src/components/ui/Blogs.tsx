@@ -4,14 +4,6 @@ import blog1 from '@/assets/blog1.png'
 // Import ImageData array and Image interface
 // import { ImageData, Image } from '../../ImageData';
 
-// Component summary 
-/**
- * Blogs component renders a list of blog images.
- * It manages an expanded image state to enlarge image on click.
- * Renders main content:
- * - Page heading
- * - Image grid with expand handler
- */
 
 interface ComponentProps {
   // Define any props here if needed
@@ -31,7 +23,7 @@ const FirstBlog: React.FunctionComponent<ComponentProps> = ({expanded}) => {
 
     <div className={`${expanded === 0 ? 'mt-[4rem]' : 'mt-[1.9rem]'} flex gap-[3rem] md:gap-[3.34rem] relative border-2`}>
       <Button className={`${expanded === 0 ? 'block' : 'lg:hidden'}`}>Read More</Button>
-      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-[33.625rem]' : ' w-[14.5rem] h-[19rem] absolute -right-4 md:-right-12'} object-scaledown`} src={blog1} alt="" />
+      <img className={`${expanded === 0 ? 'w-[18.91406rem] h-[33.625rem]' : ' w-[14.5rem] h-[19rem] absolute -right-4 mt-8 md:-right-12'} object-scaledown`} src={blog1} alt="" />
     </div>
   </div>
 }
@@ -54,6 +46,8 @@ export const Blogs: React.FunctionComponent = () => {
     setExpandedImageId(index);
   };
 
+// write a code to add numbers of an array
+  
  
   // Render
   return (
