@@ -4,16 +4,18 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+// import { BlogCard } from "./BlogCard";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import test from '@/assets/test.jpg';
+import test2 from '@/assets/test2.jpg';
+import test3 from '@/assets/test3.jpg';
+import test4 from '@/assets/test4.jpg';
+import test1 from '@/assets/test1.jpg';
+import test5 from '@/assets/test5.jpg';
+import test6 from '@/assets/test6.jpg';
+import test7 from '@/assets/test7.jpg';
 
-import img_1 from '@/assets/img_1.jpg'
-import img_2 from '@/assets/img_2.jpg'
-import img_3 from '@/assets/img_3.jpg'
-import img_4 from '@/assets/img_4.jpg'
-import img_5 from '@/assets/img_5.jpg'
-import img_6 from '@/assets/img_6.jpg'
-import img_7 from '@/assets/img_7.jpg'
 
 export const Testing: React.FunctionComponent = () => {
   return (
@@ -25,7 +27,15 @@ export const Testing: React.FunctionComponent = () => {
         loop={true}
         slidesPerView={"auto"}
         // spaceBetween={80}
-        
+        breakpoints={{
+            200: {
+                spaceBetween: 50
+            },
+
+            740: {
+                spaceBetween: 80
+            }
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -36,25 +46,29 @@ export const Testing: React.FunctionComponent = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={img_1} alt="slide_image" />
+          <img src={test} alt="slide_image" />
+          {/* <BlogCard src={blogcard}/> */}
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_2} alt="slide_image" />
+          <img src={test2} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_3} alt="slide_image" />
+          <img src={test3} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_4} alt="slide_image" />
+          <img src={test4} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_5} alt="slide_image" />
+          <img src={test1} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_6} alt="slide_image" />
+          <img src={test5} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img_7} alt="slide_image" />
+          <img src={test6} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={test7} alt="slide_image" />
         </SwiperSlide>
       </Swiper>
     </div>
