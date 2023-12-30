@@ -296,14 +296,14 @@ html {
 }
     .swiper-slide {
     width: 28rem !important;
-    height: 32rem !important;
+    height: 34.89488rem !important;
     border: 2px solid greenyellow;
-    
+    border-radius: 1.5rem;
   } 
 
   .swiper-slide img {
   border-radius: 2rem;
-  height: 32rem;
+  /* height: 32rem; */
   width: 28rem;
   object-fit: cover;
 }

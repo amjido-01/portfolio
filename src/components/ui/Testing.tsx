@@ -4,10 +4,11 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-// import { BlogCard } from "./BlogCard";
+import { BlogCard } from "./BlogCard";
+import blogcard from '@/assets/blogcard.png'
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import test from '@/assets/test.jpg';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
+// import test from '@/assets/test.jpg';
 import test2 from '@/assets/test2.jpg';
 import test3 from '@/assets/test3.jpg';
 import test4 from '@/assets/test4.jpg';
@@ -22,6 +23,10 @@ export const Testing: React.FunctionComponent = () => {
    <div className="blog-container border-2">
       <Swiper
         effect={"coverflow"}
+        //  autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
@@ -42,12 +47,12 @@ export const Testing: React.FunctionComponent = () => {
           depth: 100,
           modifier: 2.5,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={test} alt="slide_image" />
-          {/* <BlogCard src={blogcard}/> */}
+          {/* <img src={test} alt="slide_image" /> */}
+          <BlogCard src={blogcard}/>
         </SwiperSlide>
         <SwiperSlide>
           <img src={test2} alt="slide_image" />
