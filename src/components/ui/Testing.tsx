@@ -20,13 +20,13 @@ import test7 from '@/assets/test7.jpg';
 
 export const Testing: React.FunctionComponent = () => {
   return (
-   <div className="blog-container border-2">
+   <div className="border-2 blog-container">
       <Swiper
         effect={"coverflow"}
-        //  autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+         autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
