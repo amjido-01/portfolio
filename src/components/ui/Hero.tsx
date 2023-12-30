@@ -36,7 +36,7 @@ export const Hero: React.FunctionComponent = () => {
         className="absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-[1rem] md:-right-[14rem] lg:-right-[2rem]"
       />
       {/* hero section */}
-      <div className="h-[100vh]">
+      <div className="h-[90vh]">
         <div className="flex justify-center mx-auto ">
           <div className="w-[85%] mt-[8.87rem] md:mt-[15rem]">
             { /* intro text and call to action button*/}

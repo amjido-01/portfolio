@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import { BlogCard } from "./BlogCard";
 import blogcard from '@/assets/blogcard.png'
 
+
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
 // import test from '@/assets/test.jpg';
 import test2 from '@/assets/test2.jpg';
@@ -18,9 +19,23 @@ import test6 from '@/assets/test6.jpg';
 import test7 from '@/assets/test7.jpg';
 
 
+interface blogcardprops {
+   card: {
+     id: number;
+    pic: string;
+    alt: string
+    title: string;
+    content: string
+   }
+}
+
+
 export const Testing: React.FunctionComponent = () => {
   return (
    <div className="border-2 blog-container">
+     <h1 className="capitalize montserrat text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] my-[1.38rem] md:my-[4rem]">
+          My Blogs
+        </h1>
       <Swiper
         effect={"coverflow"}
          autoplay={{
@@ -50,6 +65,7 @@ export const Testing: React.FunctionComponent = () => {
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="swiper_container"
       >
+        {}
         <SwiperSlide>
           {/* <img src={test} alt="slide_image" /> */}
           <BlogCard src={blogcard}/>

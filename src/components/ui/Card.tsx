@@ -54,9 +54,7 @@ export const Card: React.FunctionComponent<CardProps> = ({card}) => {
             </div>
           </div>
         </div>
-      )}
-     
-      
+      )} 
     </main>
   );
 }
