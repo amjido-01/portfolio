@@ -19,15 +19,15 @@ import test6 from '@/assets/test6.jpg';
 import test7 from '@/assets/test7.jpg';
 
 
-interface blogcardprops {
-   card: {
-     id: number;
-    pic: string;
-    alt: string
-    title: string;
-    content: string
-   }
-}
+// interface blogcardprops {
+//    card: {
+//      id: number;
+//     pic: string;
+//     alt: string
+//     title: string;
+//     content: string
+//    }
+// }
 
 
 export const Testing: React.FunctionComponent = () => {

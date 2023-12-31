@@ -108,13 +108,14 @@ export const HamburgerMenu: React.FunctionComponent = () => {
             </li>
           </ul>
         </div>
+        
         {/* hamburger menu section */}
         <div
           className={`hamburger flex justify-center w-[1.575rem] h-[1.575rem] md:h-[2.75rem] md:w-[2.75rem] items-center p-[12px] md:p-[14px] border-[2.75px] md:border-[3px] rounded-full ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
           {/* hamburger menu lines section*/}
-         <div className="flex mn flex-col items-center justify-center gap-1 borde dd">
+         <div className="flex flex-col items-center justify-center gap-1 mn borde dd">
              <span className="bar" style={{ backgroundColor: "white" }}></span>
              <span className="bar" style={{ backgroundColor: "white" }}></span>
          </div>
