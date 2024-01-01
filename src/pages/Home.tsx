@@ -6,14 +6,14 @@ import {Testimony} from '@/components/ui/Testimony';
 import { Slides } from '@/components/ui/Slides';
 import { Contact } from '@/components/ui/Contact';
 import { Footer } from '@/components/ui/Footer';
-import {Testing} from '@/components/ui/Testing'
+import {BlogSlides} from '@/components/ui/BlogSlides'
 export const Home: React.FC = () => {
   return (
     <section className="bg-[#0B1121]">
       <Hero />
       <Works />
       {/* <Blogs /> */}
-      <Testing />
+      <BlogSlides />
       <Testimony />
       <Slides />
       <Contact />

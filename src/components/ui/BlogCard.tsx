@@ -2,11 +2,13 @@ import React from 'react';
 import { Button } from './button';
 import { ReadMore } from './ReadMore';
 
-type blogcardprops = {
-    src: string
+interface blogcardprops {
+    src: string;
+    title: string;
+    content: string;
 }
 
-export const BlogCard: React.FunctionComponent<blogcardprops> = ({src}) => {
+export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, content}) => {
   return (
     <div className='bg-[#fff] h-full rounded-[1.5rem]'>
         <div>
@@ -16,9 +18,13 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src}) => {
         <div className='border-2 flex justify-center items-center mt-[2.5rem]'>
         <div>
          <h3 className='text-[#000] style font-black leading-normal capitalize md:w-[19.56675rem] border-2 montserrat md:text-[1.43169rem]'>
-          blog title come here for better clarification
+          {/* blog title come here for better clarification */}
+          {title}
         </h3>
-        <p className='md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins text-[0.83519rem] style font-medium capitalize border-2'>blog title come here for better clarification</p>
+        <p className='md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins text-[0.83519rem] style font-medium capitalize border-2'>
+          {/* blog title come here for better clarification */}
+          {content}
+          </p>
 
         <Button
               size="lg"
