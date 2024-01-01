@@ -5,21 +5,21 @@ export const ProjectInfor = [
   {
     id: 0,
     title: "KUSTBoolets",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
+    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu.",
     img: project01,
     hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]"
   },
   {
     id: 1,
     title: "Bookbay",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
+    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu.",
     img: project02,
     hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7"
   },
   {
     id: 2,
     title: "Lamuni",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu.",
+    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu.",
     img: project03,
     hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof"
   }

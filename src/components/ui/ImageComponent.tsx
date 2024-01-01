@@ -54,7 +54,7 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({
 
       <img
         loading="lazy"
-        className="w-[90%] sm:w-[80%] md:w-[75%] object-cover lg:w-[75%] rounded-[1.5rem] h-[26.875rem] sm:h-[35rem] md:h-[34rem]"
+        className="w-[90%] sm:w-[80%] md:w-[75%] object-cover lg:w-[75%] rounded-[1.5rem] h-[26.875rem] sm:h-[35rem] md:h-[34rem] lg:h-[32rem]"
         src={src}
         alt={alt}
         style={{

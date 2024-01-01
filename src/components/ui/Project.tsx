@@ -25,7 +25,7 @@ export const Project: React.FunctionComponent<projectProps> = ({
 }) => {
   // component renders
   return (
-    <main className="w-[95%] border-2 md:w-[90%] lg:w-full">
+    <main className="w-[95%] md:w-[90%] lg:w-full">
       {/** Project title and description div*/}
       <div className=" cursor-pointer lg:pl-3 py-[4px] pro" onClick={handleClick}>
         {/** Project title heading*/}
@@ -33,12 +33,12 @@ export const Project: React.FunctionComponent<projectProps> = ({
           {title}
         </h2>
         {/** Project description text*/}
-        <p className="Poppins prety my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%]  capitalize w-[15.375rem] md:w-[25.6875rem] md:h-[3.8125rem]">
+        <p className="Poppins prety my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%] capitalize w-[15.375rem] sm:w-[17rem] md:w-[25.6875rem] md:h-[3.8125rem]">
           {description}
         </p>
       </div>
       {/** More details and live view buttons*/}
-      <div className="flex gap-[1.36rem] md:gap-[2rem]">
+      <div className="flex gap-[1.36rem] sm:gap-[2rem] md:gap-[2rem]">
         <Button
           variant="link"
           className="more Poppins text-[0.625rem] md:text-[0.875rem] hover:no-underline style font-bold leading-[120%]"
