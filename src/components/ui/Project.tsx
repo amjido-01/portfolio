@@ -33,7 +33,7 @@ export const Project: React.FunctionComponent<projectProps> = ({
           {title}
         </h2>
         {/** Project description text*/}
-        <p className="Poppins prety my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%] capitalize w-[15.375rem] sm:w-[17rem] md:w-[25.6875rem] md:h-[3.8125rem]">
+        <p className="Poppins prety exclude cursor-pointer my-[0.44rem] text-[0.625rem] text-[#fff] md:text-[1rem] style font-normal leading-[120%] capitalize w-[15.375rem] sm:w-[17rem] md:w-[25.6875rem] md:h-[3.8125rem]">
           {description}
         </p>
       </div>
