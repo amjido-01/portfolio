@@ -45,7 +45,7 @@ export const BlogSlides: React.FunctionComponent = () => {
       >
         {blogCardData.map((blog) => (
           <SwiperSlide key={blog.id}>
-            <BlogCard src={blog.pic} title={blog.title} content={blog.content} />
+            <BlogCard id={blog.id} src={blog.pic} title={blog.title} content={blog.content} />
           </SwiperSlide>
         ))}
       </Swiper>
