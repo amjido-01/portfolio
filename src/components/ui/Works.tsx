@@ -56,7 +56,7 @@ export const Works: React.FunctionComponent = () => {
             )}
           </motion.div>
           {/* Description list */}
-          <div className="w-[95%] lg:w-[55%] border2 ml2 md:ml-0 md:mx-auto md:w-[95%] gap-3 lg:gap-10 h-[24.375rem] md:h-[32rem]  flex mt[2.06rem]">
+          <div className="w-[95%]  lg:w-[55%] md:ml-0 lg:mx-auto sm:w-[90%] md:w-[80%] gap-3 md:gap-8 lg:gap-10 h-[24.375rem] md:h-[32rem]  flex mt[2.06rem]">
             {/* Description */}
             <div className="flex flex-col items-center justify-center progress-bar">
               {ProjectInfor.map((item, index) => (
@@ -78,7 +78,7 @@ export const Works: React.FunctionComponent = () => {
               ))}
             </div>
             {/* List */}
-            <div className="gap-[1.7rem] pl-2 md:pl-0 md:gap-[3rem] w-[95%] md:w-full lg:w-[85%] md:ml-10 flex flex-col">
+            <div className="gap-[1.7rem] border2 pl-2 md:pl-0 md:gap-[3rem] w-[95%] md:w-full lg:w-[85%] lg:ml-10 flex flex-col">
               {ProjectInfor.map((item) => {
                 return (
                   <Project

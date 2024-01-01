@@ -29,7 +29,7 @@ export const Me: React.FunctionComponent = () => {
             </h1>
           { /* bio text*/}
             <p className="prety Poppins text-[#ccc] text-[0.875rem] md:text-[1.25rem] style mt-[1rem] md:my-[1.88rem] font-normal normal-case">
-              Aspiring computer scientist with 2+ years of experience crafting
+              Computer scientist with 2+ years of experience crafting
               user-centric interfaces in ReactJS. Prioritizing accessibility,
               I'm passionate about collaborating on projects that make a
               difference.

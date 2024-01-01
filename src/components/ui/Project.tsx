@@ -25,9 +25,9 @@ export const Project: React.FunctionComponent<projectProps> = ({
 }) => {
   // component renders
   return (
-    <main className="w-full">
+    <main className="w-full md:w-[90%] lg:w-full">
       {/** Project title and description div*/}
-      <div className=" cursor-pointer" onClick={handleClick}>
+      <div className=" cursor-pointer border-2 lg:pl-3 py-[4px] pro" onClick={handleClick}>
         {/** Project title heading*/}
         <h2 className="text-[0.875rem] text-[#fff] montserrat md:text-[1.25rem] style font-bold leading-[120%] capitalize">
           {title}
