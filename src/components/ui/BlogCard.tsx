@@ -14,8 +14,7 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
   return (
     <div className='bg-[#fff] h-full rounded-[1.5rem]'>
       {isEven ? (<div className=''>
-
-        <div className='border-2 flex justify-center items-center'>
+        <div className='border-2 flex justify-center items-center pt-[2.75rem]'>
         <div>
          <h3 className='text-[#000] style font-black leading-normal capitalize md:w-[19.56675rem] border-2 montserrat md:text-[1.43169rem]'>
           {title}
@@ -34,7 +33,7 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
         </div>
         </div>
 
-        <div className='mt-[2.5rem]'>
+        <div className='mt-[1.2rem]'>
            <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[50%]' />
         </div>
 
@@ -45,7 +44,7 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
             <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[50%]' />
           </div>
 
-          <div className='border-2 flex justify-center items-center mt-[2.5rem]'>
+          <div className='border-2 flex justify-center items-center mt-[1.2rem]'>
           <div>
           <h3 className='text-[#000] style font-black leading-normal capitalize md:w-[19.56675rem] border-2 montserrat md:text-[1.43169rem]'>
             {title}

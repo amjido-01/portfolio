@@ -16,10 +16,10 @@ export const BlogSlides: React.FunctionComponent = () => {
         </h1>
       <Swiper
         effect={"coverflow"}
-         autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        //  autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
