@@ -71,7 +71,6 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
           </div>
         </div>
       )}
-      
     </div>
   )
 }

@@ -248,12 +248,12 @@ html {
   width: 17.64294rem !important;
   height: 24.90863rem !important;
   position: relative;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
   .swiper-slide img {
     object-fit: cover;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
   }
 
 
