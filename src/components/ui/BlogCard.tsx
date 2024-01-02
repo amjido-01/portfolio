@@ -7,19 +7,26 @@ interface blogcardprops {
     src: string;
     title: string;
     content: string;
+    background: string;
+    shadow: string;
+    active: boolean;
 }
 
-export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, content, id}) => {
+export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, content, id, background, shadow, active}) => {
+
+  const boxShadow = active ? shadow: 'none';
   const isEven = id % 2 === 0;
   return (
-    <div className='bg-[#fff] h-full rounded-[1.5rem]'>
-      {isEven ? (<div className=''>
-        <div className='border-2 flex justify-center items-center pt-[2.75rem]'>
+    <div className={`h-full rounded-[1.9rem]`} style={{background: background}}>
+      {isEven ? (
+      <div className='rounded-t-[1.9rem]'>
+        
+        <div className='flex justify-center items-center pt-[2.75rem]'>
         <div>
-         <h3 className='text-[#000] style font-black leading-normal capitalize md:w-[19.56675rem] border-2 montserrat md:text-[1.43169rem]'>
+         <h3 className='text-[#000] style font-black leading-normal capitalize w-[13.40638rem] border-2 md:w-[19.56675rem] montserrat text-[0.98094rem] md:text-[1.43169rem]'>
           {title}
         </h3>
-        <p className='md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins text-[0.83519rem] style font-medium capitalize border-2'>
+        <p className='w-[11.85319rem] text-[0.57225rem] md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins md:text-[0.83519rem] style font-normal md:font-medium capitalize'>
           {content}
           </p>
 
@@ -33,23 +40,23 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
         </div>
         </div>
 
-        <div className='mt-[1.2rem]'>
+        <div className='mt-[3.4rem]'>
            <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[50%]' />
         </div>
 
       </div>
       ) : (
-        <div>
+        <div className=''>
           <div>
             <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[50%]' />
           </div>
 
-          <div className='border-2 flex justify-center items-center mt-[1.2rem]'>
+          <div className='flex justify-center items-center mt-[1.2rem]'>
           <div>
-          <h3 className='text-[#000] style font-black leading-normal capitalize md:w-[19.56675rem] border-2 montserrat md:text-[1.43169rem]'>
+          <h3 className='text-[#000] style font-black leading-normal capitalize w-[13.40638rem] border-2 md:w-[19.56675rem] montserrat text-[0.98094rem] md:text-[1.43169rem]'>
             {title}
           </h3>
-          <p className='md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins text-[0.83519rem] style font-medium capitalize border-2'>
+          <p className='w-[11.85319rem] text-[0.57225rem] md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins md:text-[0.83519rem] style font-normal md:font-medium capitalize'>
             {content}
             </p>
 
