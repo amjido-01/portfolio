@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { BlogCard } from "./BlogCard";
 import { blogCardData } from "@/blogCardData";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const BlogSlides: React.FunctionComponent = () => {
   //   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -58,7 +58,7 @@ export const BlogSlides: React.FunctionComponent = () => {
               title={blog.title} 
               content={blog.content} 
               background={blog.background} 
-              shadow={blog.shadow} 
+              // shadow={blog.shadow} 
               // active={activeIndex === blog.id}
             />
           </SwiperSlide>
