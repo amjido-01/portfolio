@@ -17,15 +17,15 @@ export const BlogSlides: React.FunctionComponent = () => {
   // };
   return (
    <div className="blog-container">
-     <h1 className="capitalize montserrat text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] my-[1.38rem] md:my-[4rem]">
+     <h1 className="capitalize montserrat px-[1.5rem] md:px-[2.5rem] text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] my-[1.38rem] md:my-[4rem]">
           My Blogs
         </h1>
       <Swiper
         effect={"coverflow"}
-        //  autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+         autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         centeredSlides={true}
         loop={true}

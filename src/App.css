@@ -238,20 +238,22 @@ html {
   text-align: center;
 }
 
+
+  .swiper_container {
+    height: 27.90863rem;
+    position: relative;
+  }
+
 .swiper-slide {
   width: 17.64294rem !important;
   height: 24.90863rem !important;
   position: relative;
+  border: 2px solid red;
 }
-
-  .swiper_container {
-    height: 27.90863rem;
-    border: 2px solid wheat;
-    position: relative;
-  }
 
   .swiper-slide img {
     object-fit: cover;
+    border: 2px solid yellow;
   }
 
 
@@ -296,7 +298,6 @@ html {
     background-size: cover;
   }
   .swiper_container {
-  border: 1px solid red;
   height: 38.89488rem;
   padding: 2rem 0 2rem 0 !important;
   position: relative;

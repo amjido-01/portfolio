@@ -41,7 +41,7 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
         </div>
 
         <div className='mt-[3.4rem]'>
-           <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[50%] rounded-b-[1.5rem]' />
+           <img src={src} alt="blog" className='w-[26rem] h-[50%] md:h-[30%] rounded-b-[1.5rem]' />
         </div>
 
       </div>
