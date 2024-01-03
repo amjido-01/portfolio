@@ -17,7 +17,7 @@ export const Me: React.FunctionComponent = () => {
   return (
     <main className="mt-[10rem] md:mt-[15rem]">
       {/* section 1: intro text and photo*/}
-      <div className="mx-auto w-[85%] sm:w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center lg:gap-[7.5rem] items-center lg:h-[30.0006rem]">
+      <div className="mx-auto w-[85%] sm:w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center lg:gap-[7.5rem] items-center lg:h-[31.0006rem]">
         { /* photo*/}
         <div className="w-[90%] sm:w-[90%] md:w-[78%] lg:w-[26.00006rem]">
            <TiltEffect>
