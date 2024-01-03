@@ -47,6 +47,7 @@ export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children 
 
   return (
     <div
+     className="tilt"
       ref={tiltRef}
       onMouseMove={handleMove}
       onMouseOut={handleMouseOut}
