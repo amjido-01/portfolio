@@ -9,6 +9,7 @@ import React from "react";
 import ala from "@/assets/ala.png";
 import { Button } from "./button";
 import { ReadMore } from "./ReadMore";
+import { TiltEffect} from './TiltEffect'
 
 // component summary
 export const Me: React.FunctionComponent = () => {
@@ -16,10 +17,12 @@ export const Me: React.FunctionComponent = () => {
   return (
     <main className="mt-[10rem] md:mt-[15rem]">
       {/* section 1: intro text and photo*/}
-      <div className="mx-auto w-[85%] sm:w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center  lg:gap-[7.5rem] items-center">
+      <div className="mx-auto w-[85%] sm:w-[90%] lg:w-[85%] flex flex-col gap-[5rem] lg:flex-row justify-center lg:gap-[7.5rem] items-center">
         { /* photo*/}
-        <div className="w-[90%] sm:w-[90%] md:w-[78%] lg:w-[26.00006rem]">
-          <img src={ala} className="mx-auto" alt="my pic" />
+        <div className="w-[90%] border-2 sm:w-[90%] md:w-[78%] lg:w-[26.00006rem]">
+           <TiltEffect>
+            <img src={ala} className="mx-auto" alt="my pic" />
+          </TiltEffect>
         </div>
         { /* intro text*/}
         <div className="w-full md:w-[85%] lg:w-[30.00006rem] sm:text-start">
