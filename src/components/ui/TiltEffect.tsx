@@ -18,7 +18,7 @@ export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children 
       const xRotation = 20 * ((clientX - offsetWidth / 2) / offsetWidth);
       const yRotation = -20 * ((clientY - offsetHeight / 2) / offsetHeight);
 
-      const scale = 1.0;
+      const scale = 1;
 
       const transformString = `perspective(500px) scale(${scale}) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
       tiltRef.current.style.transform = transformString;
@@ -41,7 +41,7 @@ export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children 
   const handleMouseUp = () => {
     setIsMouseDown(false);
     if (tiltRef.current) {
-      tiltRef.current.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)';
+      tiltRef.current.style.transform = 'perspective(500px) scale(1.0) rotateX(0) rotateY(0)';
     }
   };
 
