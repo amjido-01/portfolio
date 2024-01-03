@@ -21,7 +21,7 @@ export const Me: React.FunctionComponent = () => {
         { /* photo*/}
         <div className="w-[90%] sm:w-[90%] md:w-[78%] lg:w-[26.00006rem]">
            <TiltEffect>
-            <img src={ala} className="mx-auto" alt="my pic" />
+            <img src={ala} className="mx-auto cursor-pointer" alt="my pic" />
           </TiltEffect>
         </div>
         { /* intro text*/}
