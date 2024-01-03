@@ -33,7 +33,7 @@ export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children 
 
   const handleMouseDown = () => {
     setIsMouseDown(true);
-    console.log(isMouseDown);
+    console.log(isMouseDown, 'see');
     if (tiltRef.current) {
       tiltRef.current.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)';
     }
