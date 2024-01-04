@@ -4,7 +4,19 @@ import { Input } from './input';
 import { Label } from './label';
 import { Textarea } from './textarea';
 import { Button } from './button';
+import { useState } from 'react';
+
 export const Contact: React.FunctionComponent = () => {
+    const [email, setEmail] = useState<string>("");
+    // const [storedText, setStoredText] = useState<string>([]);
+
+    const handleEmail = (event:React.FormEvent<HTMLInputElement>) => {
+        setEmail(event.target.value)
+        console.log(email.length, email);
+        
+      
+        
+    }
   return (
     <div className="mt-[10.36rem] md:mt-[14.42rem]">
          <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[11.5rem] mx-auto w-[90%] lg:w-[85%] px-2 md:px-0">
@@ -26,7 +38,7 @@ export const Contact: React.FunctionComponent = () => {
                     </div>
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                         <Label htmlFor='name' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Name</Label>
-                        <Input type="text" id='name' placeholder="muhammad ni’imatullahi" />
+                        <Input type="text" value={email} onChange={handleEmail} id='name' placeholder="muhammad ni’imatullahi" />
                     </div>
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
                         <Label htmlFor='message' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Message</Label>

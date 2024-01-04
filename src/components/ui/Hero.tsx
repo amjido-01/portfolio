@@ -37,7 +37,7 @@ export const Hero: React.FunctionComponent = () => {
       />
       {/* hero section */}
       <div className="h-[90vh]">
-        <div className="flex justify-center mx-auto ">
+        <div className="flex justify-center mx-auto">
           <div className="w-[85%] mt-[8.87rem] md:mt-[15rem]">
             { /* intro text and call to action button*/}
             <Intro />
