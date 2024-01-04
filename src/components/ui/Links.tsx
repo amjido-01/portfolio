@@ -123,13 +123,7 @@ export const Links: React.FunctionComponent<LinksProps> = ({
         className="relative z-10 p-1 md:p-4"
       >
         {/*
-         * Arrow icon component
-         *
-         * It uses Framer Motion to animate the icon on hover
-         *
-         * The icon is positioned using absolute positioning and
-         * transform: translate(-50%, -50%) to position the icon
-         * in the center of the parent element
+         Arrow icon component
          */
         }
         <FiArrowRight className="text-[3rem] text-neutral-50" />
