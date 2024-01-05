@@ -26,7 +26,7 @@ const CustomCursor = () => {
     document.addEventListener('mousemove', updateCursorPosition);
 
     const trackedElements = document.querySelectorAll('p:not(.exclude), h1, h2, h3, span');
-    console.log(trackedElements);
+    // console.log(trackedElements);
     
 
     trackedElements.forEach((element) => {
