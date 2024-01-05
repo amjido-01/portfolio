@@ -12,7 +12,7 @@ import { blogCardData } from '@/blogCardData';
 export const BlogSlides: React.FunctionComponent = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
 
-  const handleSlideChange = (swiper: Swiper) => {
+  const handleSlideChange = (swiper: any) => {
     setActiveSlideIndex(swiper.realIndex);
   };
 
@@ -57,6 +57,7 @@ export const BlogSlides: React.FunctionComponent = () => {
               title={blog.title}
               content={blog.content}
               background={blog.background}
+              shadow={blog.shadow}
               active={activeSlideIndex === index}
             />
           </SwiperSlide>
