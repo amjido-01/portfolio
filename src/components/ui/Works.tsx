@@ -23,7 +23,7 @@ export const Works: React.FunctionComponent = () => {
 
   // Render
   return (
-    <div className="my-[12rem] md:my-[8.75rem] mb-20">
+    <div className="my-[12rem] md:my-[8.75rem] mb-[7rem]">
       <div className="w-[85%] mx-auto">
         {/* Section*/}
         <h1 className="capitalize montserrat text-center text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] my-[1.38rem] md:my-[4rem]">
