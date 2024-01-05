@@ -6,18 +6,18 @@ import { Textarea } from './textarea';
 import { Button } from './button';
 
 export const Contact: React.FunctionComponent = () => {
-   
+
   return (
     <div className="mt-[10.36rem] md:mt-[14.42rem]">
-         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[11.5rem] mx-auto w-[90%] lg:w-[85%] px-2 md:px-0">
+         <div className="flex flex-col md:flex-row gap-[3rem] md:items-center md:gap-[8rem] mx-auto w-[90%] lg:w-[85%] px-4 md:px-0">
 
-        <div className="text-[#fff] text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize">
-            <h2>want to collaborate <br/> or <span className="gradient-text">hire me.</span></h2>
+        <div className='md:w-[26.1875rem]'>
+            <h2 className="text-[#fff] text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize">want to collaborate <br/> or <span className="gradient-text text-[1.5rem] montserrat md:text-[2.25rem] style font-black capitalize">hire me.</span></h2>
             <img src={smHireArrow} alt="arrow" className='block md:hidden mt-[2.81rem]'/>
             <img src={mdHireArrow} className='hidden md:block mt-[4.29rem]' alt="arrow" />
         </div>
 
-        <div className=' md:w-[37.02706rem]'>
+        <div className='md:w-[39.02704rem]'>
             <h3 className='text-[#eee] montserrat text-[1rem] md:text-[1.90494rem] style font-bold capitalize'>leave a message</h3>
 
             <div>
