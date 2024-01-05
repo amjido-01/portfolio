@@ -45,27 +45,27 @@ export const Footer: React.FunctionComponent = () => {
           <div>
             <ul className='flex justify-center gap-[2rem] md:gap-[2.75rem]'>
                 <li>
-                    <a href="https://github.com/sahil143">
+                    <a href="/">
                         <img src={github} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="github" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/sahil-shah-7019051a5>">
+                    <a href="/">
                         <img src={twitter} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/sahil-shah-7019051a5>">
+                    <a href="/">
                         <img src={facebook} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/sahil-shah-7019051a5>">
+                    <a href="/">
                         <img src={whatsapp} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/sahil-shah-7019051a5>">
+                    <a href="/">
                         <img src={linkedin} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
