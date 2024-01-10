@@ -23,16 +23,16 @@ export const Contact: React.FunctionComponent = () => {
             <div>
                 <form className='mt-[1.62rem]'>
                     <div className=''>
-                        <Label htmlFor='email' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Email</Label>
-                        <Input type="email" id='email' placeholder="example@gmail.com" />
+                        <Label htmlFor='email' className='montserrat text-[0.71438rem] style font-normal poppins md:text-[1.19056rem] style leading-normal capitalize text-[#fff]'>Email</Label>
+                        <Input type="email" id='email' placeholder="example@gmail.com" className='poppins ' />
                     </div>
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
-                        <Label htmlFor='name' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Name</Label>
-                        <Input type="text" id='name' placeholder="muhammad ni’imatullahi" />
+                        <Label htmlFor='name' className='montserrat text-[0.71438rem] style font-normal md:text-[1.19056rem] style leading-normal capitalize text-[#fff]'>Name</Label>
+                        <Input type="text" id='name' className=" placeholder:capitalize" placeholder="muhammad ni’imatullahi" />
                     </div>
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
-                        <Label htmlFor='message' className='montserrat text-[0.71438rem] style font-norma lato md:text-[1.19056rem] style font-semibold leading-normal capitalize text-[#fff]'>Message</Label>
-                        <Textarea id='message' placeholder="write your message here" />
+                        <Label htmlFor='message' className='montserrat text-[0.71438rem] style font-normal md:text-[1.19056rem] style leading-normal capitalize text-[#fff]'>Message</Label>
+                        <Textarea id='message' className=" placeholder:capitalize"  placeholder="write your message here" />
                     </div>
 
                     <div className=' mt-[1.25rem] md:mt-[1.62rem]'>
