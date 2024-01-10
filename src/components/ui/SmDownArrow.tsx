@@ -8,8 +8,8 @@ import { SVGProps } from "react";
 import { motion } from "framer-motion";
 // component code summary
 export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => {
-    const cx = 36; // Set the desired center x-coordinate of the circle
-  const cy = 36; // Set the desired center y-coordinate of the circle
+    const cx = 36; 
+  const cy = 36;
   const r = 35; 
  return  <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
     <circle cx={cx} cy={cy} r={r} stroke="#fff" strokeWidth={1.375} />
