@@ -7,13 +7,16 @@
 import { SVGProps } from "react";
 import { motion } from "framer-motion";
 // component code summary
-export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
-    <circle cx={22} cy={22} r={21.313} stroke="#fff" strokeWidth={1.375} />
+export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => {
+    const cx = 36; // Set the desired center x-coordinate of the circle
+  const cy = 36; // Set the desired center y-coordinate of the circle
+  const r = 35; 
+ return  <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
+    <circle cx={cx} cy={cy} r={r} stroke="#fff" strokeWidth={1.375} />
     { /* Animated arrow path */ }
     <motion.g
       initial={{ y: 0 }}
-      animate={{ y: [-8, 8, -8] }} // Bouncing animation along the y-axis
+      animate={{ y: [-8, 32, -8] }} // Bouncing animation along the y-axis
       transition={{
         duration: 5,
         stiffness: 50,
@@ -26,7 +29,8 @@ export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => (
       <path
         fill="#fff"
         d="M21.514 27.299a.687.687 0 0 0 .972 0l4.375-4.376a.688.688 0 0 0-.972-.972L22 25.841l-3.89-3.89a.688.688 0 0 0-.971.972l4.375 4.376ZM21.313 16.5v10.313h1.375V16.5h-1.375Z"
+        transform={`translate(${cx - 22}, ${cy - 35})`}
       />
     </motion.g>
   </svg>
-);
+};

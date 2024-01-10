@@ -53,9 +53,9 @@ export const Hero: React.FunctionComponent = () => {
           </Button>
         </div>
         {/* down arrow */}
-        <div className="down w-[85%] mx-auto border-2">
-          <SmDownArrow className=" w-[3.2rem] h-[3.2rem] pl-[1px] mx-auto mt-[7rem] block md:hidden" />
-          <LgDownArrow className="hidden md:flex justify-center border-2 w-[6rem] h-[6rem] mt-[7rem] lg:mt-0" />
+        <div className="down w-[85%] mx-auto">
+          <SmDownArrow className=" w-[5rem] h-[5rem] border2 pl-[1px] mx-auto mt-[7rem] block md:hidden" />
+          <LgDownArrow className="hidden md:flex justify-center w-[6rem] h-[6rem] mt-[7rem] lg:mt-0" />
         </div>
       </div>
       {/* avatar/bio */}

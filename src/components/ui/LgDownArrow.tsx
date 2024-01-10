@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const LgDownArrow = (props: SVGProps<SVGSVGElement>) => {
     const cx = 40; // Set the desired center x-coordinate of the circle
   const cy = 40; // Set the desired center y-coordinate of the circle
-  const r = 40;  // Set the desired radius of the circle
+  const r = 38;  // Set the desired radius of the circle
  return  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80" {...props}>
     {/* SVG circle with a rounded border */}
     <circle cx={cx} cy={cy} r={r} stroke="#fff" strokeWidth={2} />
