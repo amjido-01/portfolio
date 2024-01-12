@@ -16,7 +16,7 @@ export const SmDownArrow = (props: SVGProps<SVGSVGElement>) => {
     { /* Animated arrow path */ }
     <motion.g
       initial={{ y: 0 }}
-      animate={{ y: [-8, 32, -8] }} // Bouncing animation along the y-axis
+      animate={{ y: [4, 18, -14] }} // Bouncing animation along the y-axis
       transition={{
         duration: 5,
         stiffness: 50,

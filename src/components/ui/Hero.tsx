@@ -36,7 +36,7 @@ export const Hero: React.FunctionComponent = () => {
         className="absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-[1rem] md:-right-[14rem] lg:-right-[2rem]"
       />
       {/* hero section */}
-      <div className="h-[90vh]">
+      <div className="h-[90vh] border-2 border-red-500">
         <div className="flex justify-center mx-auto">
           <div className="w-[85%] mt-[8.87rem] md:mt-[15rem]">
             { /* intro text and call to action button*/}
@@ -54,7 +54,7 @@ export const Hero: React.FunctionComponent = () => {
         </div>
         {/* down arrow */}
         <div className="down w-[85%] mx-auto">
-          <SmDownArrow className=" w-[5rem] h-[5rem] border2 pl-[1px] mx-auto mt-[7rem] block md:hidden" />
+          <SmDownArrow className=" w-[5rem] h-[5rem] border2 pl-[1px] mx-auto mt-[5rem] block md:hidden" />
           <LgDownArrow className="hidden md:flex justify-center w-[6rem] h-[6rem] mt-[7rem] lg:mt-0" />
         </div>
       </div>
