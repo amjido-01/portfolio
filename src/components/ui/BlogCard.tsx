@@ -16,10 +16,6 @@ export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, co
 
   // const boxShadow = active ? shadow: 'none';
   // const boxShadow = active ? shadow: 'none';
-  // const boxShadow = active ? shadow: 'none';
-  // const boxShadow = active ? shadow: 'none';
-  // const boxShadow = active ? shadow: 'none';
-  // const boxShadow = active ? shadow: 'none';
   const isEven = id % 2 === 0;  
   const boxShadow = active ? shadow : 'none';
   return (
