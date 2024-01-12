@@ -15,7 +15,12 @@ interface blogcardprops {
 export const BlogCard: React.FunctionComponent<blogcardprops> = ({src, title, content, id, background, active, shadow}) => {
 
   // const boxShadow = active ? shadow: 'none';
-  const isEven = id % 2 === 0;
+  // const boxShadow = active ? shadow: 'none';
+  // const boxShadow = active ? shadow: 'none';
+  // const boxShadow = active ? shadow: 'none';
+  // const boxShadow = active ? shadow: 'none';
+  // const boxShadow = active ? shadow: 'none';
+  const isEven = id % 2 === 0;  
   const boxShadow = active ? shadow : 'none';
   return (
     <div className={`h-full rounded-[1.9rem]`} style={{background: background, boxShadow}}>
