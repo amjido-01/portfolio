@@ -5,22 +5,25 @@ export const ProjectInfor = [
   {
     id: 0,
     title: "KUSTBoolets",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu 01.",
+    description: "Online solutions for seamless access to academic resources for university students.",
     img: project01,
-    hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]"
+    hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]",
+    route: 'https://kust-app.vercel.app/'
   },
   {
     id: 1,
     title: "Bookbay",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu. 02",
+    description: "Online Bookstore for buying, selling and borrowing of books",
     img: project02,
-    hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7"
+    hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7",
+    route: 'https://bookbay-app.vercel.app/'
   },
   {
     id: 2,
     title: "Lamuni",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet libero lacus sit sed. Congue pretium nec magna scelerisque eu scelerisque eu. 03",
+    description: "Small businesses inclusive crediting webapp",
     img: project03,
-    hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof"
+    hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof",
+    route: 'https://github.com/Bukharee/Lamuni'
   }
 ];

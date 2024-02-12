@@ -21,6 +21,9 @@ export const Works: React.FunctionComponent = () => {
     }, 300);
   };
 
+  const handleRoute = (path: string) => {
+    window.location.href=`${path}`
+  }
   // Render
   return (
     <div className="my-[12rem] md:my-[8.75rem] mb-[7rem]">
@@ -86,6 +89,7 @@ export const Works: React.FunctionComponent = () => {
                     title={item.title}
                     description={item.description}
                     handleClick={() => handleClick(item.id)}
+                    handleRoute={() => handleRoute(item.route)}
                   />
                 );
               })}

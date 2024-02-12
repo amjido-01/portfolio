@@ -16,12 +16,14 @@ type projectProps = {
   title: string;
   description: string;
   handleClick: () => void;
+  handleRoute: () => void;
 };
 // Project component
 export const Project: React.FunctionComponent<projectProps> = ({
   title,
   description,
   handleClick,
+  handleRoute,
 }) => {
   // component renders
   return (
@@ -46,6 +48,7 @@ export const Project: React.FunctionComponent<projectProps> = ({
           More Details
         </Button>
         <Button
+          onClick={handleRoute}
           variant="link"
           className="border-b-2 text-[#fff] flex justify-center gap-4 py-[0.65rem] px-[0.5rem] rounded-none md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[1.5rem] style hover:no-underline"
         >
