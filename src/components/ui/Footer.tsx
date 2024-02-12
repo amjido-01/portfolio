@@ -55,7 +55,7 @@ export const Footer: React.FunctionComponent = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="https://web.facebook.com/profile.php?id=100075080807782">
                         <img src={facebook} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
