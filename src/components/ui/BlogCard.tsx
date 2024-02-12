@@ -1,6 +1,4 @@
 import React from 'react';
-import { Button } from './button';
-import { ReadMore } from './ReadMore';
 
 interface blogcardprops {
     id: number
