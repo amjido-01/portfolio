@@ -45,12 +45,12 @@ export const Footer: React.FunctionComponent = () => {
           <div>
             <ul className='flex justify-center gap-[2rem] md:gap-[2.75rem]'>
                 <li>
-                    <a href="/https://github.com/amjido-01">
+                    <a href="https://github.com/amjido-01">
                         <img src={github} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem] cursor-pointer' alt="github" />
                     </a>
                 </li>
                 <li>
-                    <a href="/https://twitter.com/amJido_01">
+                    <a href="https://twitter.com/amJido_01">
                         <img src={twitter} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem] cursor-pointer' alt="linkedin" />
                     </a>
                 </li>
@@ -60,12 +60,12 @@ export const Footer: React.FunctionComponent = () => {
                         </a>
                 </li>
                 <li>
-                    <a href="/https://wa.me/2347031117199">
+                    <a href="https://wa.me/2347031117199">
                         <img src={whatsapp} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
                 <li>
-                    <a href="/https://www.linkedin.com/in/abubakar-muhammad-ala/">
+                    <a href="https://www.linkedin.com/in/abubakar-muhammad-ala/">
                         <img src={linkedin} className='w-[1.375rem] h-[1.375rem] :w-[2.5rem] :h-[2.5rem]' alt="linkedin" />
                         </a>
                 </li>
