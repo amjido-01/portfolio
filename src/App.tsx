@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { About } from "./pages/About";
@@ -6,7 +7,6 @@ import { Blogs } from "./pages/Blogs";
 import { Resume } from "./pages/Resume";
 import { Home } from "./pages/Home";
 import CustomCursor from "./components/ui/CustomCursor";
-// import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <BrowserRouter>
