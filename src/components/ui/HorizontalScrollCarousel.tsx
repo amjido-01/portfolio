@@ -45,7 +45,7 @@ export const HorizontalScrollCarousel: React.FunctionComponent<CarouselProps> = 
   return (
     <main
       ref={targetRef}
-      className="testimon relative h-[150vh] md:h-[160vh]"
+      className="testimon relative h-[150vh] md:h-[160vh] lg:h-[180vh]"
     >
       {/** The sticky container element. */}
       <div className="sticky top-0 flex items-center h-screen overflow-hidden">
