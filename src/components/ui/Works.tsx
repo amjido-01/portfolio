@@ -1,11 +1,11 @@
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { Project } from './Project';
-import { useState } from 'react';
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { Project } from "./Project";
+import { useState } from "react";
 // Imports the ImageComponent for use in this component
 import { ImageComponent } from "./ImageComponent";
 // Imports the ProjectInfor array data component for use in this component
-import { ProjectInfor } from '@/ProjectInfor';
+import { ProjectInfor } from "@/ProjectInfor";
 
 // Component summary
 export const Works: React.FunctionComponent = () => {
@@ -22,8 +22,8 @@ export const Works: React.FunctionComponent = () => {
   };
 
   const handleRoute = (path: string) => {
-    window.location.href=`${path}`
-  }
+    window.location.href = `${path}`;
+  };
   // Render
   return (
     <div className="my-[12rem] md:my-[8.75rem] mb-[7rem]">
@@ -37,7 +37,7 @@ export const Works: React.FunctionComponent = () => {
           {/* Image list */}
           <motion.div
             key={selectedProject}
-            className="lg:w-[45%] h-[26.875rem] md:h-[32rem] w-full"
+            className="lg:w-[50%] w-full aspect-video md:aspect-[16/10] lg:aspect-video flex justify-center items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
           >
@@ -46,14 +46,12 @@ export const Works: React.FunctionComponent = () => {
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 0.3 }}
-                className="flex justify-center items-center rounded-[1.5rem]"
+                className="w-full h-full flex justify-center items-center rounded-[1.5rem] overflow-hidden shadow-2xl"
               >
                 <ImageComponent
                   src={ProjectInfor[selectedProject].img}
                   alt="project thumbnail"
                   hash={ProjectInfor[selectedProject].hash}
-                  imageWidth="100%"
-                  imageHeight="100%"
                 />
               </motion.div>
             )}

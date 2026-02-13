@@ -10,15 +10,11 @@ import { Blurhash } from "react-blurhash";
 type imgProps = {
   src: string;
   alt: string;
-  imageWidth: string;
-  imageHeight: string;
   hash: string;
 };
 export const ImageComponent: React.FunctionComponent<imgProps> = ({
   src,
   alt,
-  imageWidth,
-  imageHeight,
   hash,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -39,12 +35,13 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({
           height: "100%",
           borderRadius: "1.5rem",
         }}
+        className="w-full h-full"
       >
         <Blurhash
-          className="w-full h-full objectcover rounded-[1.5rem]"
+          className="w-full h-full object-cover rounded-[1.5rem]"
           hash={hash}
-          width={imageWidth}
-          height={imageHeight}
+          width="100%"
+          height="100%"
           resolutionX={32}
           resolutionY={32}
           punch={1}
@@ -54,11 +51,11 @@ export const ImageComponent: React.FunctionComponent<imgProps> = ({
 
       <img
         loading="lazy"
-        className="w-[90%] sm:w-[80%] md:w-[75%] object-cover lg:w-[75%] rounded-[1.5rem] h-[26.875rem] sm:h-[35rem] md:h-[34rem] lg:h-[32rem]"
+        className="w-full h-full object-cover rounded-[1.5rem]"
         src={src}
         alt={alt}
         style={{
-          display: !imageLoaded ? "none" : "inline",
+          display: !imageLoaded ? "none" : "block",
           borderRadius: "1.5rem",
         }}
       />

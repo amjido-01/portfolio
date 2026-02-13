@@ -1,12 +1,13 @@
 // TiltEffect.tsx
-import React, { useRef, useState } from 'react';
-
+import React, { useRef, useState } from "react";
 
 interface TiltEffectProps {
   children: React.ReactNode;
 }
 
-export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children }) => {
+export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({
+  children,
+}) => {
   const tiltRef = useRef<HTMLDivElement>(null);
   const [isMouseDown, setIsMouseDown] = useState(false);
 
@@ -27,28 +28,31 @@ export const TiltEffect: React.FunctionComponent<TiltEffectProps> = ({ children 
 
   const handleMouseOut = () => {
     if (tiltRef.current) {
-      tiltRef.current.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+      tiltRef.current.style.transform =
+        "perspective(500px) scale(1) rotateX(0) rotateY(0)";
     }
   };
 
   const handleMouseDown = () => {
     setIsMouseDown(true);
-    console.log(isMouseDown, 'see');
+    console.log(isMouseDown, "see");
     if (tiltRef.current) {
-      tiltRef.current.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)';
+      tiltRef.current.style.transform =
+        "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
     }
   };
 
   const handleMouseUp = () => {
     setIsMouseDown(false);
     if (tiltRef.current) {
-      tiltRef.current.style.transform = 'perspective(500px) scale(1.0) rotateX(0) rotateY(0)';
+      tiltRef.current.style.transform =
+        "perspective(500px) scale(1.0) rotateX(0) rotateY(0)";
     }
   };
 
   return (
     <div
-     className="tilt"
+      className="tilt w-full h-full overflow-hidden rounded-full"
       ref={tiltRef}
       onMouseMove={handleMove}
       onMouseOut={handleMouseOut}

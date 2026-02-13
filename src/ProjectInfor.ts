@@ -1,29 +1,30 @@
-import project02 from "@/assets/project02.png";
-import project01 from "@/assets/project01.png";
-import project03 from "@/assets/project03.png";
+import webtray from "@/assets/webtray.png";
+import innospace from "@/assets/innospace.png";
+import learnoch from "@/assets/learnoch.png";
 export const ProjectInfor = [
   {
     id: 0,
-    title: "KUSTBoolets",
-    description: "Online solutions for seamless access to academic resources for university students.",
-    img: project01,
+    title: "InnospaceX",
+    description: "Empowering The Next Generation of Innovators.",
+    img: innospace,
     hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]",
-    route: 'https://kust-app.vercel.app/'
+    route: "https://innospacex.ng/",
   },
   {
     id: 1,
-    title: "Bookbay",
-    description: "Online Bookstore for buying, selling and borrowing of books",
-    img: project02,
+    title: "Webtray",
+    description:
+      "WebTray is the all-in-one SaaS platform for restaurants and retail shops. Manage inventory, create your online store, and grow your business with ease.",
+    img: webtray,
     hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7",
-    route: 'https://bookbay-app.vercel.app/'
+    route: "https://webtray.com/",
   },
   {
     id: 2,
-    title: "Lamuni",
-    description: "Small businesses inclusive crediting webapp",
-    img: project03,
+    title: "Learnoch",
+    description: "The personalized AI learning platform",
+    img: learnoch,
     hash: "LhOgQd%M~pRjM{ayWBof~qRj9Gof",
-    route: 'https://github.com/Bukharee/Lamuni'
-  }
+    route: "https://learnoch.com/",
+  },
 ];
