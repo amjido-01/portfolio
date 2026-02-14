@@ -1,76 +1,59 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "./button";
 
 interface blogcardprops {
   id: number;
   src: string;
   title: string;
   content: string;
-  background: string;
-  shadow: string;
-  active: boolean;
+  background?: string; // Optional now, as we override it
+  shadow?: string; // Optional
+  active?: boolean;
 }
 
-export const BlogCard: React.FunctionComponent<blogcardprops> = ({
+export const BlogCard: React.FC<blogcardprops> = ({
   src,
   title,
   content,
   id,
-  background,
-  active,
-  shadow,
 }) => {
-  // const boxShadow = active ? shadow: 'none';
-  // const boxShadow = active ? shadow: 'none';
-  const isEven = id % 2 === 0;
-  const boxShadow = active ? shadow : "none";
   return (
-    <div
-      className={`h-full rounded-[1.9rem]`}
-      style={{ background: background, boxShadow }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: id * 0.1 }}
+      className="group relative overflow-hidden rounded-2xl bg-[#111827] border border-gray-800 hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col"
     >
-      {isEven ? (
-        <div className="rounded-t-[2rem]">
-          <div className="flex justify-center items-center pt-[3.3rem]">
-            <div>
-              <h3 className="text-[#000] style font-black leading-normal capitalize w-[13.40638rem] md:w-[19.56675rem] montserrat text-[0.98094rem] md:text-[1.43169rem]">
-                {title}
-              </h3>
-              <p className="w-[11.85319rem] text-[0.57225rem] md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins md:text-[0.83519rem] style font-normal md:font-medium capitalize">
-                {content}
-              </p>
-            </div>
-          </div>
+      {/* Image Container */}
+      <div className="relative h-48 overflow-hidden">
+        <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 mix-blend-overlay" />
+        <img
+          src={src}
+          alt={title}
+          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+        />
+      </div>
 
-          <div className="mt-[5rem]">
-            <img
-              src={src}
-              alt="blog"
-              className="w-[26rem] h-[50%] md:h-[30%] rounded-b-[1.5rem]"
-            />
-          </div>
-        </div>
-      ) : (
-        <div className="">
-          <div>
-            <img
-              src={src}
-              alt="blog"
-              className="w-[26rem] h-[50%] md:h-[50%] rounded-t-[1.5rem]"
-            />
-          </div>
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-white montserrat mb-3 line-clamp-2 leading-tight group-hover:text-blue-400 transition-colors">
+          {title}
+        </h3>
+        <p className="text-gray-400 Poppins text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">
+          {content}
+        </p>
 
-          <div className="flex justify-center items-center mt-[3rem]">
-            <div>
-              <h3 className="text-[#000] style font-black leading-normal capitalize w-[13.40638rem] md:w-[19.56675rem] montserrat text-[0.98094rem] md:text-[1.43169rem]">
-                {title}
-              </h3>
-              <p className="w-[11.85319rem] text-[0.57225rem] md:w-[17.29988rem] mt-[0.7rem] text-[#000000] leading-normal Poppins md:text-[0.83519rem] style font-normal md:font-medium capitalize">
-                {content}
-              </p>
-            </div>
-          </div>
+        <div className="mt-auto">
+          <Button
+            variant="link"
+            className="p-0 h-auto text-blue-500 hover:text-blue-400 font-medium"
+          >
+            Read Article →
+          </Button>
         </div>
-      )}
-    </div>
+      </div>
+    </motion.div>
   );
 };

@@ -91,7 +91,7 @@ export const HamburgerMenu: React.FunctionComponent = () => {
               toggleMenu()
              }}
               >
-                Projects
+                Blogs
               </Links>
             </li>
             <li className="">
