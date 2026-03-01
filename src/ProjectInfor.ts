@@ -5,7 +5,6 @@ import sim from "@/assets/sim.png";
 import bia from "@/assets/bia.png";
 import saudi from "@/assets/saudi.png";
 import project01 from "@/assets/project01.png";
-import project02 from "@/assets/project02.png";
 
 export const ProjectInfor = [
   {
