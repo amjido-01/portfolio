@@ -24,13 +24,13 @@ export const Hero: React.FunctionComponent = () => {
     <div className="hero hero-bg text-white pt-[20px] relative overflow-hidden">
       {/* hamburger menu */}
       <HamburgerMenu />
-      { /* hamburger menu svg images for mobile view*/}
+      {/* hamburger menu svg images for mobile view*/}
       <img
         src={smUnion}
         alt=""
         className="absolute right-0 block -top-0 sm:hidden"
       />
-      { /* hamburger menu svg images for desktop view*/}
+      {/* hamburger menu svg images for desktop view*/}
       <img
         src={lgUnion}
         className="absolute hidden sm:block -top-[5rem] -right-[16rem] md:-top-[1rem] md:-right-[14rem] lg:-right-[2rem]"
@@ -39,18 +39,27 @@ export const Hero: React.FunctionComponent = () => {
       <div className="h-[90vh]">
         <div className="flex justify-center mx-auto">
           <div className="w-[85%] mt-[8.87rem] md:mt-[15rem]">
-            { /* intro text and call to action button*/}
+            {/* intro text and call to action button*/}
             <Intro />
           </div>
         </div>
-        <div className="mt-[3.8rem] md:mt-[8rem] lg:mt-[4rem] justify-center items-center flex">
+        <div className="mt-[3.8rem] md:mt-[8rem] lg:mt-[5rem] justify-center items-center flex gap-[1rem] md:gap-[1.5rem]">
           <Button
-            onClick={() => {navigate("/projects")}}
+            onClick={() => {
+              navigate("/projects");
+            }}
             size="lg"
             className="btn z-[2] text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem]"
           >
             Projects
           </Button>
+          <a
+            href="/resume.pdf"
+            download
+            className="z-[2] cursor-pointer font-montserrat inline-flex items-center justify-center whitespace-nowrap text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem] border border-white/50 bg-transparent hover:bg-white/10 transition-all duration-200"
+          >
+            Download CV
+          </a>
         </div>
         {/* down arrow */}
         <div className="down w-[85%] mx-auto">

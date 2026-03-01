@@ -16,8 +16,9 @@ export const SubIntro: React.FunctionComponent = () => {
         className="text-cente border2 w-[95%] md:w-[87%] lg:w-full text-[0.875rem] mt-[0.56rem] md:mt-[rem] lg:mt-[0.87rem] text-[#ccc] md:text-[1.5rem] sub-intro leading-[120%] normal-case"
       >
         {" "}
-        Frontend magic, from your vision to reality, witness the power of
-        turning concepts into captivating user-centric design.
+       I transform ideas into high-performing digital products that drive measurable growth by combining product strategy and frontend engineering to build scalable web experiences that perform and convert.
+        {/* Frontend magic, from your vision to reality, witness the power of
+        turning concepts into captivating user-centric design. */}
       </motion.p>
     </div>
   );

@@ -18,9 +18,12 @@ export const BlogSlides: React.FunctionComponent = () => {
 
   return (
     <div className="blog-container">
-      <h1 className="capitalize montserrat px-[1.5rem] md:px-[2.5rem] text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] mb-[2rem] mt-[1.38rem] md:my-[4rem]">
+      <h1 className="capitalize montserrat px-[1.5rem] md:px-[2.5rem] text-[1.5rem] md:text-[2.25rem] font-black leading-normal text-[#fff] mb-[0.5rem] mt-[1.38rem] md:mt-[4rem]">
         My Blogs
       </h1>
+      <p className="text-[#aaa] text-[0.875rem] md:text-[1rem] px-[1.5rem] md:px-[2.5rem] mb-[1.5rem] md:mb-[2.5rem] sub-intro">
+        Thoughts on frontend engineering, design systems, and web performance
+      </p>
       <Swiper
         effect={'coverflow'}
         autoplay={{

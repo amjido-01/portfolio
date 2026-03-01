@@ -24,11 +24,11 @@ export const Intro: React.FunctionComponent = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="intro text-[2rem] md:text-[3.25rem] leading-[120%] md:text-start"
         >
-          Transforming Ideas{" "}
+          Built to Perform. Designed to Convert.{" "}
           <span className="lg:hidden intro">into Digital</span>
         </motion.h1>
         { /* Animated subtext */ }
-        <div className="spin-text-container flex justify-start border2 h-[30px] md:h-[60px] intro text-[2rem] md:text-[3.25rem] leading-[120%]">
+        {/* <div className="spin-text-container flex justify-start border2 h-[30px] md:h-[60px] intro text-[2rem] md:text-[3.25rem] leading-[120%]">
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -43,14 +43,13 @@ export const Intro: React.FunctionComponent = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="word text-start"
           >
-            { /* Animated gradient text */ }
             <span className="gradient-text">Reality</span>
             <span className="gradient-text">Experience</span>
             <span className="gradient-text">Revolution</span>
             <span className="gradient-text">Excellence</span>
             <span className="gradient-text">Innovation</span>
           </motion.div>
-        </div>
+        </div> */}
         {/* animated subtext */}
         <div>
           <SubIntro />
