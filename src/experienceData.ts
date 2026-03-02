@@ -1,8 +1,8 @@
 import innospace from "@/assets/innospace.png";
-import webtray from "@/assets/webtray.png";
+import affix from "@/assets/affix.png";
 import learnoch from "@/assets/learnoch.png";
-import saudi from "@/assets/saudi.png";
-import project01 from "@/assets/project01.png";
+import sauraro from "@/assets/sauraro.jpg";
+import asibiti from "@/assets/asibiti.png";
 
 export const experienceData = [
   {
@@ -21,7 +21,7 @@ export const experienceData = [
     id: 2,
     title: "Frontend Engineer",
     company: "AFFIXDOT",
-    logo: webtray,
+    logo: affix,
     date: "Feb 2025 - June 2025",
     description: "Enhanced user engagement by optimizing real-time chat performance and implementing efficient chat pagination.",
     impact: [
@@ -46,7 +46,7 @@ export const experienceData = [
     id: 4,
     title: "Frontend Software Engineer",
     company: "SAURARO",
-    logo: saudi, // Placeholder for Sauraro logo
+    logo: sauraro, // Placeholder for Sauraro logo
     date: "Dec 2022 - Present",
     description: "Led the Front-End team in brainstorming, planning, and developing the full user interface for an online EdTech platform.",
     impact: [
@@ -58,7 +58,7 @@ export const experienceData = [
     id: 5,
     title: "Frontend Engineering Intern",
     company: "ASIBITI",
-    logo: project01, // Placeholder for Asibiti logo
+    logo: asibiti, // Placeholder for Asibiti logo
     date: "Oct 2021 - Feb 2022",
     description: "Revamped several pages from a generic Bootstrap design to a modern, customized UI using Tailwind CSS.",
     impact: [
