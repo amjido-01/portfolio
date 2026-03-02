@@ -10,7 +10,7 @@ export const ProjectInfor = [
   {
     id: 0,
     title: "InnospaceX",
-    description: "Empowering The Next Generation of Innovators.",
+    description: "Led the development of the innospaceX innovation platform, delivering a state-of-the-art interface characterized by high-performance interactive animations; utilized TypeScript and modular architecture to ensure code maintainability while optimizing state handling for a 20% increase in efficiency.",
     img: innospace,
     hash: "LZOy@c%2TJVs9t?wT0adK6wcrWx]",
     route: "https://innospacex.ng/",
@@ -21,7 +21,7 @@ export const ProjectInfor = [
     id: 1,
     title: "Webtray",
     description:
-      "WebTray is the all-in-one SaaS platform for restaurants and retail shops. Manage inventory, create your online store, and grow your business with ease.",
+      "Led end-to-end development of WebTray SaaS platform, coordinating across teams to deliver a scalable inventory and e-commerce system that boosted user adoption by 30%.",
     img: webtray,
     hash: "LYPQEQRk%fIU~pt7WAt7Se%Ms;t7",
     route: "https://webtray.com/",
@@ -42,7 +42,7 @@ export const ProjectInfor = [
     id: 3,
     title: "Simkash - Web/Mobile",
     description:
-      "A fintech platform enabling seamless mobile money transfers, bill payments, and digital wallet management for everyday users.",
+      "Architected scalable and secure mobile/web features that aligned with business growth opportunities, including API-driven transactions, partner workflows, and wallet management, while optimizing performance, reliability, and UX to support high-volume financial operations in a competitive fintech environment.",
     img: sim,
     hash: "LAS?DV~q4nIU%MRjWBj[D%j[WBj[",
     route: "#",
@@ -64,7 +64,7 @@ export const ProjectInfor = [
     id: 5,
     title: "Saudi Innovate",
     description:
-      "The Saudi Innovate platform is a community-driven platform for Saudi Arabia's innovators, entrepreneurs, and startups.",
+      "Led the design and development of the 'Saudi-Innovate' website. I implemented modern responsive design principles and UI best practices, including typography, layout, and information architecture, to deliver a user-friendly and visually appealing platform, which resulted in a successful launch, increased user engagement, and improved brand perception. Enabled user-centric localization via browser detection for English/Arabic content.",
     img: saudi,
     hash: "LES?DV~q4nIU%MRjWBj[D%j[WBj[",
     route: "#",

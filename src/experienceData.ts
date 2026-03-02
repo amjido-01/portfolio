@@ -1,52 +1,87 @@
 import innospace from "@/assets/innospace.png";
 import webtray from "@/assets/webtray.png";
 import learnoch from "@/assets/learnoch.png";
+import saudi from "@/assets/saudi.png";
+import project01 from "@/assets/project01.png";
 
 export const experienceData = [
   {
     id: 1,
-    title: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    logo: innospace, // Using available logos as placeholders/examples
-    date: "2023 - Present",
-    description:
-      "Leading the frontend team in building scalable web applications using React, Next.js, and TypeScript.",
+    title: "Frontend Software Engineer",
+    company: "TEKHAVEN SOLUTIONS",
+    logo: innospace,
+    date: "July 2025 - Present",
+    description: "Built, optimized and integrated APIs and WebSocket for admin panels, enabling real-time activity tracking and faster issue resolution.",
     impact: [
-      "Improved site performance by 40% through code splitting and asset optimization.",
-      "Implemented a comprehensive design system that reduced UI development time by 30%.",
-      "Mentored junior developers and established best practices for code reviews."
+      "Migrated and refactored legacy frontend into modular components, improving performance and maintainability.",
     ],
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: ["React", "TypeScript", "WebSocket", "API Integration"],
   },
   {
     id: 2,
-    title: "Full Stack Developer",
-    company: "Digital Innovations",
+    title: "Frontend Engineer",
+    company: "AFFIXDOT",
     logo: webtray,
-    date: "2021 - 2023",
-    description:
-      "Developed and maintained client websites and web applications with a focus on user experience.",
+    date: "Feb 2025 - June 2025",
+    description: "Enhanced user engagement by optimizing real-time chat performance and implementing efficient chat pagination.",
     impact: [
-      "Collaborated with designers to translate wireframes into pixel-perfect interactive interfaces.",
-      "Optimized backend queries, reducing API response times by 25%.",
-      "Integrated secure payment gateways and handled complex data migrations."
+      "Integrated Paystack into NestJS backend, enabling secure event ticket payments and increasing successful transactions by 15%.",
+      "Introduced animated emoji integration and message interaction features (reply, copy, reactions), resulting in a significantly smoother and interactive messaging experience.",
     ],
-    skills: ["JavaScript", "Node.js", "MongoDB", "Express"],
+    skills: ["Next.js", "NestJS", "Paystack", "TypeScript"],
   },
   {
     id: 3,
-    title: "Junior Web Developer",
-    company: "Creative Agency",
+    title: "Frontend Engineer",
+    company: "LEARNOCH",
     logo: learnoch,
-    date: "2020 - 2021",
-    description:
-      "Assisted in the development of marketing websites and high-conversion landing pages.",
+    date: "July 2023 - Present",
+    description: "Architected and implemented client-facing interface, covering authentication, transactions, and service modules using JavaScript and Next.js.",
     impact: [
-      "Gained proficiency in modern CSS techniques and responsive design principles.",
-      "Participated in the successful launch of 10+ client websites within tight deadlines.",
-      "Improved cross-browser compatibility across legacy and modern platforms."
+      "Improved platform accessibility by implementing a voice mode for learning and course consumption, featuring text highlighting, adjustable playback speed, and multiple voice options, enabling a more inclusive experience.",
     ],
-    skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+    skills: ["Next.js", "JavaScript", "Accessibility", "State Management"],
+  },
+  {
+    id: 4,
+    title: "Frontend Software Engineer",
+    company: "SAURARO",
+    logo: saudi, // Placeholder for Sauraro logo
+    date: "Dec 2022 - Present",
+    description: "Led the Front-End team in brainstorming, planning, and developing the full user interface for an online EdTech platform.",
+    impact: [
+      "Successfully integrated the Flutterwave Payment Gateway API, achieving a seamless user experience and increasing sales by 10%.",
+    ],
+    skills: ["React", "Project Leadership", "Flutterwave", "UI/UX"],
+  },
+  {
+    id: 5,
+    title: "Frontend Engineering Intern",
+    company: "ASIBITI",
+    logo: project01, // Placeholder for Asibiti logo
+    date: "Oct 2021 - Feb 2022",
+    description: "Revamped several pages from a generic Bootstrap design to a modern, customized UI using Tailwind CSS.",
+    impact: [
+      "Successfully achieved a responsive UI design using TypeScript and Next.js, enhancing user experience.",
+      "Significantly improved code maintainability and adhered to current UI standards.",
+    ],
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Bootstrap Migration"],
+  },
+];
+
+
+export const educationData = [
+  {
+    id: 1,
+    degree: "BACHELOR OF SCIENCE IN COMPUTER SCIENCE",
+    school: "Aliko Dangote University of Science And Technology, Kano, Nigeria",
+    date: "June 2021 - 2025",
+  },
+  {
+    id: 2,
+    degree: "PROFESSIONAL DIPLOMA IN DATA PROCESSING AND INFORMATION TECHNOLOGY",
+    school: "TIT Institute, Kano, Nigeria",
+    date: "July 2020 - Jan 2021",
   },
 ];
 

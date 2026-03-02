@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { Button } from "@/components/ui/button";
-import { experienceData, skillsData } from "@/experienceData";
+import { experienceData, skillsData, educationData } from "@/experienceData";
 import { motion } from "framer-motion";
 
 export const Resume: React.FC = () => {
@@ -24,7 +24,7 @@ export const Resume: React.FC = () => {
               My Resume
             </h1>
             <p className="text-gray-400 mt-2">
-              Full Stack Developer & UI/UX Enthusiast
+              Frontend Software Engineer & UI/UX Expert
             </p>
           </div>
           <Button
@@ -44,15 +44,16 @@ export const Resume: React.FC = () => {
           {/* Resume Header */}
           <header className="border-b border-gray-700 pb-8 mb-8 print:border-gray-300">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 montserrat print:text-black">
-              Ala jido
+              Abubakar Muhammad Ala
             </h1>
             <p className="text-xl text-blue-500 font-medium mb-4 print:text-blue-700">
-              Senior Frontend Developer
+              Frontend Software Engineer
             </p>
             <div className="flex flex-wrap gap-4 text-gray-400 text-sm print:text-gray-600">
-              <span>📍 Remote / Worldwide</span>
-              <span>📧 alajido@example.com</span>
-              <span>🔗 portfolio.com</span>
+              <span>📍 Kano, Nigeria / Remote</span>
+              <span>📧 youndsadeeq10@gmail.com</span>
+              <span>🔗 alemtech.vercel.app</span>
+              <span>📞 +234 7038172450</span>
             </div>
           </header>
 
@@ -63,11 +64,10 @@ export const Resume: React.FC = () => {
               Profile
             </h2>
             <p className="text-gray-300 Poppins leading-relaxed print:text-gray-800">
-              Computer scientist with 5 years of experience crafting
-              user-centric interfaces. Specializing in React ecosystem,
-              accessibility, and modern design systems. Passionate about
-              bridging the gap between design and engineering to build scalable,
-              high-performance web applications.
+              Computer scientist with a strong foundation in frontend engineering. 
+              Specializing in the React ecosystem, TypeScript, and modern design systems like Tailwind CSS and Framer Motion. 
+              Experienced in building high-performance, accessible, and user-centric web applications. 
+              Proven track record of delivering scalable solutions and leading teams to achieve impactful results.
             </p>
           </section>
 
@@ -95,9 +95,14 @@ export const Resume: React.FC = () => {
                   <p className="text-gray-400 font-medium mb-2 print:text-gray-600">
                     {job.company}
                   </p>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-3 print:text-gray-800">
-                    {job.description}
-                  </p>
+                  <div className="text-gray-300 text-sm leading-relaxed mb-3 print:text-gray-800">
+                    <p className="mb-2">{job.description}</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                      {job.impact.map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
                   <div className="flex flex-wrap gap-2">
                     {job.skills?.map((skill) => (
                       <span
@@ -131,22 +136,26 @@ export const Resume: React.FC = () => {
             </div>
           </section>
 
-          {/* Education (Static for now) */}
+          {/* Education */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 montserrat flex items-center gap-2 print:text-black">
               <span className="w-2 h-8 bg-blue-500 rounded-full inline-block"></span>
               Education
             </h2>
-            <div className="pl-4 border-l-2 border-gray-700 print:border-gray-300">
-              <h3 className="text-xl font-bold text-white print:text-black">
-                Bachelor of Computer Science
-              </h3>
-              <p className="text-gray-400 print:text-gray-600">
-                University of Technology
-              </p>
-              <p className="text-gray-500 text-sm print:text-gray-500">
-                2016 - 2020
-              </p>
+            <div className="space-y-6">
+              {educationData.map((edu) => (
+                <div key={edu.id} className="pl-4 border-l-2 border-gray-700 print:border-gray-300">
+                  <h3 className="text-xl font-bold text-white print:text-black">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-gray-400 print:text-gray-600">
+                    {edu.school}
+                  </p>
+                  <p className="text-gray-500 text-sm print:text-gray-500">
+                    {edu.date}
+                  </p>
+                </div>
+              ))}
             </div>
           </section>
         </motion.div>

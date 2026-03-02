@@ -10,6 +10,10 @@ import earewa from '@/assets/earewa.png';
 import asibiti from '@/assets/asibiti.png';
 import gdg from '@/assets/gdg.png';
 import sauraro from '@/assets/Sauraro.png'
+import bia from '@/assets/bial.png'
+import learnoch from '@/assets/learnoch-logo.png'
+import innospace from '@/assets/inno.png'
+import simk from "@/assets/simk.png"
 // import sauraro from '@/assets/sauraro.png'
 
 const logos = [ 
@@ -18,6 +22,8 @@ const logos = [
     stem,
     bench,
     asibiti,
+    bia,
+    learnoch
 ]
 const logos2 = [
   earewa,
@@ -25,6 +31,8 @@ const logos2 = [
   gdg,
   sauraro,
    gdsc,
+   innospace,
+   simk
 ]
 export const Slides: React.FunctionComponent = () => {
   return (
