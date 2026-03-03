@@ -1,3 +1,4 @@
+import inno from "@/assets/inno.png";
 import innospace from "@/assets/innospace.png";
 import affix from "@/assets/affix.png";
 import learnoch from "@/assets/learnoch.png";
@@ -7,10 +8,24 @@ import asibiti from "@/assets/asibiti.png";
 export const experienceData = [
   {
     id: 1,
+    title: "Lead Frontend Engineer",
+    company: "INNOSPACEX",
+    logo: inno,
+    date: "Jan 2025 - Present",
+    description: "Leading the frontend engineering team in building a cutting-edge platform for space-tech innovation, driving architecture decisions and mentoring junior engineers.",
+    impact: [
+      "Architected and led development of the core platform UI, reducing onboarding time by 40% through improved UX and streamlined workflows.",
+      "Established frontend engineering standards, code review processes, and reusable component libraries, boosting team productivity by 30%.",
+      "Collaborated cross-functionally with design and backend teams to deliver mission-critical features ahead of schedule.",
+    ],
+    skills: ["React", "Next.js", "TypeScript", "Team Leadership", "System Architecture", "API Integration"],
+  },
+  {
+    id: 2,
     title: "Frontend Software Engineer",
     company: "TEKHAVEN SOLUTIONS",
     logo: innospace,
-    date: "July 2025 - Present",
+    date: "July 2025 - Dec 2025",
     description: "Built, optimized and integrated APIs and WebSocket for admin panels, enabling real-time activity tracking and faster issue resolution.",
     impact: [
       "Migrated and refactored legacy frontend into modular components, improving performance and maintainability.",
@@ -18,7 +33,7 @@ export const experienceData = [
     skills: ["React", "TypeScript", "WebSocket", "API Integration"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Frontend Engineer",
     company: "AFFIXDOT",
     logo: affix,
@@ -31,7 +46,7 @@ export const experienceData = [
     skills: ["Next.js", "NestJS", "Paystack", "TypeScript"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Frontend Engineer",
     company: "LEARNOCH",
     logo: learnoch,
@@ -43,11 +58,11 @@ export const experienceData = [
     skills: ["Next.js", "JavaScript", "Accessibility", "State Management"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Frontend Software Engineer",
     company: "SAURARO",
-    logo: sauraro, // Placeholder for Sauraro logo
-    date: "Dec 2022 - Present",
+    logo: sauraro,
+    date: "Dec 2022 - 2024",
     description: "Led the Front-End team in brainstorming, planning, and developing the full user interface for an online EdTech platform.",
     impact: [
       "Successfully integrated the Flutterwave Payment Gateway API, achieving a seamless user experience and increasing sales by 10%.",
@@ -55,10 +70,10 @@ export const experienceData = [
     skills: ["React", "Project Leadership", "Flutterwave", "UI/UX"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Frontend Engineering Intern",
     company: "ASIBITI",
-    logo: asibiti, // Placeholder for Asibiti logo
+    logo: asibiti,
     date: "Oct 2021 - Feb 2022",
     description: "Revamped several pages from a generic Bootstrap design to a modern, customized UI using Tailwind CSS.",
     impact: [

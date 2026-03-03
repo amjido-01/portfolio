@@ -21,18 +21,19 @@ export const AboutHero: React.FC = () => {
           <span className="text-blue-500">Experiences</span>
         </h1>
         <p className="text-gray-400 Poppins text-lg md:text-xl mb-8 leading-relaxed">
-          I'm Ala jido, a Computer Scientist with a passion for building
-          consistent, accessible, and pixel-perfect web interfaces. With 5 years
+          I'm Abubakar, a Frontend Engineer with a passion for building
+          consistent, accessible, and pixel-perfect web interfaces. With 5+ years
           of experience, I bridge the gap between design and technology.
         </p>
 
         <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-          <Button
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
-            onClick={() => window.open("/resume", "_blank")}
-          >
-            Download CV
-          </Button>
+          <a href="/Abubakar_CV.pdf" download="Abubakar_CV.pdf">
+            <Button
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
+            >
+              Download CV
+            </Button>
+          </a>
           <Button
             variant="outline"
             className="border-gray-600 text-gray-300 hover:text-white hover:border-white py-3 px-8 rounded-full transition-all duration-300"

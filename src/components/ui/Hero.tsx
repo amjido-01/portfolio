@@ -54,7 +54,7 @@ export const Hero: React.FunctionComponent = () => {
             Projects
           </Button>
           <a
-            href="/resume.pdf"
+            href="/Abubakar_CV.pdf"
             download
             className="z-[2] cursor-pointer font-montserrat inline-flex items-center justify-center whitespace-nowrap text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] md:px-[4rem] border border-white/50 bg-transparent hover:bg-white/10 transition-all duration-200"
           >

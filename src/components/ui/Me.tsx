@@ -32,23 +32,23 @@ export const Me: React.FunctionComponent = () => {
         <div className="w-full md:w-[85%] lg:w-[30.00006rem] sm:text-start">
           <div className="content capitalize leading-normal p-2 md:p-0">
             <h1 className="montserrat text-[#fff] text-[1.5rem] md:text-[2.25rem] style font-black leading-normal capitalize">
-              Hi there, I’m Ala jido{" "}
+              Hi there, I’m Abubakar
             </h1>
             {/* bio text*/}
             <p className="prety Poppins text-[#ccc] text-[0.875rem] md:text-[1.25rem] style mt-[1rem] md:my-[1.88rem] font-normal normal-case">
-              Computer scientist with 5 years of experience crafting
-              user-centric interfaces in Nextjs. Prioritizing accessibility, I'm
-              passionate about collaborating on projects that make a difference.
+              Frontend Engineer with 5+ years building fast, accessible, and user-focused web experiences. CS graduate with a business mindset bridging technical precision and real-world impact.
             </p>
           </div>
           {/* call to action buttons*/}
           <div className="footer flex mt-[2rem] justifybetween gap-[2rem] px-2 md:p-0 sm:justify-normal sm:gap-[4rem] items-end md:w-full mx-auto md:mx-0">
-            <Button
-              size="lg"
-              className="btn text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] style md:px-[4rem]"
-            >
-              Download CV
-            </Button>
+            <a href="/Abubakar_CV.pdf" download="Abubakar_CV.pdf">
+              <Button
+                size="lg"
+                className="btn text-[#fff] py-[0.65rem] rounded-[0.25rem] px-[2rem] md:w-[12.5rem] md:h-[3.125rem] md:py-[1rem] text-[0.76019rem] md:text-[1rem] capitalize leading-[120%] style md:px-[4rem]"
+              >
+                Download CV
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="link"
